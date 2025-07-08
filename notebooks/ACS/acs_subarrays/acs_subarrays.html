@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>ACS Image Reduction for Subarray Data &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ACS/acs_subarrays/acs_subarrays';</script>
@@ -166,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -362,9 +368,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -389,14 +395,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/ACS/acs_subarrays/acs_subarrays.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -554,9 +560,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -596,14 +602,14 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations-a-id-postsm4-a">De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations">De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-calibration-files-update-header-keywords">Download Calibration Files: Update Header Keywords</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-calibration-files">Download Calibration Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-subarray-images">Clean Subarray Images</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correct-the-wcs">Correct the WCS</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-custom-subarray-data-a-id-custom-a">Reducing Custom Subarray Data<a id="_custom"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-custom-subarray-data">Reducing Custom Subarray Data<a id="_custom"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Download Calibration Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#access-oscn-table">Access OSCN Table</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-bias-prescan-information">Get the Bias Prescan Information</a></li>
@@ -622,25 +628,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="alert alert-block alert-warning">
-<b>REQUIREMENT:</b>
-    Before proceeding, install or update your
-    <b><a class="divlink" href="https://stenv.readthedocs.io/en/latest/">
-    stenv
-    </a></b>
-    distribution. <b>stenv</b> is the replacement for AstroConda, which is unsupported as of February 2023.
-</div><p><a id="titleImageReduction"></a></p>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="titleImageReduction"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="acs-image-reduction-for-subarray-data">
-<h1>ACS Image Reduction for Subarray Data<a class="headerlink" href="#acs-image-reduction-for-subarray-data" title="Permalink to this heading">#</a></h1>
+<h1>ACS Image Reduction for Subarray Data<a class="headerlink" href="#acs-image-reduction-for-subarray-data" title="Link to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Subarray data requires different considerations than working with full frame images. This notebook will guide you through working with standard post-SM4 subarray data and custom subarray data.</p>
 <p>After Servicing Mission 4 (SM4; May 2009), the installation of the ASIC during the repair of ACS introduced <span class="math notranslate nohighlight">\(1/f\)</span> noise in all ACS images. In the calacs pipeline, only full-frame data have this striping removed. To correct subarray data, the alternative acs_destripe_plus pipeline must be used, which will apply all of calibration steps normally performed by calacs in addition to de-striping for subarray data. De-striping is only possible for 2K subarrays after SM4 until Cycle 24, after which a change to the flight software makes all subarrays eligible for de-striping.<!-- </div> --></p>
 <section id="this-tutorial-will-show-you-how-to-handle">
-<h3>This tutorial will show you how to handle…<a class="headerlink" href="#this-tutorial-will-show-you-how-to-handle" title="Permalink to this heading">#</a></h3>
+<h3>This tutorial will show you how to handle…<a class="headerlink" href="#this-tutorial-will-show-you-how-to-handle" title="Link to this heading">#</a></h3>
 <section id="post-sm4-subarray-data">
-<h4>1. <span class="xref myst">Post-SM4 Subarray Data</span><a class="headerlink" href="#post-sm4-subarray-data" title="Permalink to this heading">#</a></h4>
+<h4>1. <a class="reference internal" href="#_postsm4"><span class="xref myst">Post-SM4 Subarray Data</span></a><a class="headerlink" href="#post-sm4-subarray-data" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Update header keywords.</p></li>
 <li><p>Clean Subarray images with the option to correct CTE losses.</p></li>
@@ -648,7 +653,7 @@ document.write(`
 </ul>
 </section>
 <section id="custom-subarray-data">
-<h4>2. <span class="xref myst">Custom Subarray Data</span><a class="headerlink" href="#custom-subarray-data" title="Permalink to this heading">#</a></h4>
+<h4>2. <a class="reference internal" href="#_custom"><span class="xref myst">Custom Subarray Data</span></a><a class="headerlink" href="#custom-subarray-data" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> with ASN files to combine images.</p></li>
 </ul>
@@ -656,7 +661,7 @@ document.write(`
 </section>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we list the Python packages used in this notebook. Links to the documentation for each module is provided for convenience.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -736,25 +741,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: matplotlib not found, plotting is disabled [acstools.satdet]
-WARNING:astroquery:matplotlib not found, plotting is disabled
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/acstools/utils_findsat_mrt.py:24: UserWarning: skimage not installed. MRT calculation will not work: ModuleNotFoundError(&quot;No module named &#39;skimage&#39;&quot;)
-  warnings.warn(f&#39;skimage not installed. MRT calculation will not work: {repr(e)}&#39;)  # noqa
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/acstools/utils_findsat_mrt.py:30: UserWarning: scipy not installed. Kernel generation will not work
-  warnings.warn(&#39;scipy not installed. Kernel generation will not work&#39;)
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/acstools/utils_findsat_mrt.py:37: UserWarning: matplotlib not found, plotting is disabled
-  warnings.warn(&#39;matplotlib not found, plotting is disabled&#39;)
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/acstools/findsat_mrt.py:117: UserWarning: matplotlib not found, plotting is disabled
-  warnings.warn(&#39;matplotlib not found, plotting is disabled&#39;)
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here we set environment variables for later use with the Calibration Reference Data System (CRDS).</p>
 <div class="cell docutils container">
@@ -769,11 +755,11 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 </div>
 </section>
 <section id="download-the-data">
-<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Permalink to this heading">#</a></h2>
+<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we download all of the data required for this notebook. This is an important step! Some of the image processing steps require all relevant files to be in the working directory. We recommend working with a brand new directory for every new set of data.</p>
 <section id="go-proposal-14511-acs-ccd-stability-monitor">
-<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;id=14511">GO Proposal 14511</a>: “ACS CCD Stability Monitor”<a class="headerlink" href="#go-proposal-14511-acs-ccd-stability-monitor" title="Permalink to this heading">#</a></h3>
+<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;amp;id=14511">GO Proposal 14511</a>: “ACS CCD Stability Monitor”<a class="headerlink" href="#go-proposal-14511-acs-ccd-stability-monitor" title="Link to this heading">#</a></h3>
 <p>Our data for the first example comes from a routine calibration program of two images using the post-Cycle 24 WFC1A-1K 1024 x 2072 subarray. We will only use the data associated with the observation id <code class="docutils literal notranslate"><span class="pre">JD5702JWQ</span></code>.</p>
 <p>Using the python package <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, we can download files from the <a class="reference external" href="http://archive.stsci.edu">MAST</a> archive.</p>
 <div class="alert alert-danger">
@@ -785,14 +771,6 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 <span class="n">dl_table</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span><span class="n">obs_table</span><span class="p">[</span><span class="s1">&#39;obsid&#39;</span><span class="p">],</span>
                                           <span class="n">productSubGroupDescription</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;RAW&#39;</span><span class="p">],</span>
                                           <span class="n">mrp_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jd5702jwq_raw.fits to ./mastDownload/HST/jd5702jwq/jd5702jwq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
 </pre></div>
 </div>
 </div>
@@ -810,7 +788,7 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 </div>
 </section>
 <section id="go-proposal-10206-what-drives-the-outflows-in-powerful-radio-galaxies">
-<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;id=10206">GO Proposal 10206</a>: “What drives the outflows in powerful radio galaxies?”<a class="headerlink" href="#go-proposal-10206-what-drives-the-outflows-in-powerful-radio-galaxies" title="Permalink to this heading">#</a></h3>
+<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;amp;id=10206">GO Proposal 10206</a>: “What drives the outflows in powerful radio galaxies?”<a class="headerlink" href="#go-proposal-10206-what-drives-the-outflows-in-powerful-radio-galaxies" title="Link to this heading">#</a></h3>
 <p>For the second example, we will use a ramp filter observation of the galaxy PLS1345+12 (<em>HST</em> proposal 10206). The association name is J92SA0010, and we will only use one image in the association: J92SA0W6Q.</p>
 <p>Again, we use <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, to download files from the <a class="reference external" href="http://archive.stsci.edu">MAST</a> archive. Along with the raw images, we will also need the spt (telemetry) files to reduce our custom subarray data.</p>
 <div class="cell docutils container">
@@ -820,62 +798,6 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 <span class="n">dl_table</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span><span class="n">obs_table</span><span class="p">[</span><span class="s1">&#39;obsid&#39;</span><span class="p">],</span>
                                           <span class="n">productSubGroupDescription</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;RAW&#39;</span><span class="p">,</span> <span class="s1">&#39;SPT&#39;</span><span class="p">],</span>
                                           <span class="n">mrp_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0010_spt.fits to ./mastDownload/HST/j92sa0010/j92sa0010_spt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w6q_raw.fits to ./mastDownload/HST/j92sa0w6q/j92sa0w6q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w6q_spt.fits to ./mastDownload/HST/j92sa0w6q/j92sa0w6q_spt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w7q_raw.fits to ./mastDownload/HST/j92sa0w7q/j92sa0w7q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w7q_spt.fits to ./mastDownload/HST/j92sa0w7q/j92sa0w7q_spt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w8q_raw.fits to ./mastDownload/HST/j92sa0w8q/j92sa0w8q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w8q_spt.fits to ./mastDownload/HST/j92sa0w8q/j92sa0w8q_spt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w9q_raw.fits to ./mastDownload/HST/j92sa0w9q/j92sa0w9q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j92sa0w9q_spt.fits to ./mastDownload/HST/j92sa0w9q/j92sa0w9q_spt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
 </pre></div>
 </div>
 </div>
@@ -901,10 +823,10 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 </div>
 </section>
 <section id="file-information">
-<h3>File Information<a class="headerlink" href="#file-information" title="Permalink to this heading">#</a></h3>
+<h3>File Information<a class="headerlink" href="#file-information" title="Link to this heading">#</a></h3>
 <p>The structure of the fits files from ACS may be different depending on what kind of observation was made. For more information, refer to Section 2.2 of the <a class="reference external" href="https://hst-docs.stsci.edu/display/ACSIHB">ACS Data Handbook</a>.</p>
 <section id="raw-files">
-<h4>Raw Files<a class="headerlink" href="#raw-files" title="Permalink to this heading">#</a></h4>
+<h4>Raw Files<a class="headerlink" href="#raw-files" title="Link to this heading">#</a></h4>
 <p>A standard raw image file from a subarray has the same structure as you’d expect from full frame observation from ACS/WCS.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -940,7 +862,7 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 </div>
 </section>
 <section id="spt-files">
-<h4>SPT Files<a class="headerlink" href="#spt-files" title="Permalink to this heading">#</a></h4>
+<h4>SPT Files<a class="headerlink" href="#spt-files" title="Link to this heading">#</a></h4>
 <p>SPT files contain telemetry and engineering data from the telescope.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -975,31 +897,15 @@ WARNING:astroquery:matplotlib not found, plotting is disabled
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: j92sa0w6q_raw.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     216   ()      
-  1  SCI           1 ImageHDU        97   (1180, 1200)   int16 (rescales to uint16)   
-  2  ERR           1 ImageHDU        49   ()      
-  3  DQ            1 ImageHDU        43   ()      
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: j92sa0w6q_spt.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     341   ()      
-  1  UDL           1 ImageHDU       305   (965,)   int16   
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
 </section>
-<section id="de-striping-and-cte-correction-of-post-sm4-subarray-observations-a-id-postsm4-a">
-<h2>De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a><a class="headerlink" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations-a-id-postsm4-a" title="Permalink to this heading">#</a></h2>
+<section id="de-striping-and-cte-correction-of-post-sm4-subarray-observations">
+<h2>De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a><a class="headerlink" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <section id="download-calibration-files-update-header-keywords">
-<h3>Download Calibration Files: Update Header Keywords<a class="headerlink" href="#download-calibration-files-update-header-keywords" title="Permalink to this heading">#</a></h3>
+<h3>Download Calibration Files: Update Header Keywords<a class="headerlink" href="#download-calibration-files-update-header-keywords" title="Link to this heading">#</a></h3>
 <p>We can call the <a class="reference external" href="https://hst-crds.stsci.edu/">Calibration Reference Data System</a> (CRDS) to get the associated calibration files for this image.</p>
 <p>First we will need to turn on the CTE correction switch in the primary header. Turning on this switch will notify the <a class="reference external" href="https://hst-crds.stsci.edu">CRDS</a> <code class="docutils literal notranslate"><span class="pre">bestrefs</span></code> tool to add the names of the CTE correction parameters table ‘<code class="docutils literal notranslate"><span class="pre">PCTETAB</span></code>’ and CTE-corrected dark current image ‘<code class="docutils literal notranslate"><span class="pre">DRKCFILE</span></code>’ reference files to the header.</p>
 <div class="cell docutils container">
@@ -1014,7 +920,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </section>
 <section id="download-calibration-files">
-<h3>Download Calibration Files<a class="headerlink" href="#download-calibration-files" title="Permalink to this heading">#</a></h3>
+<h3>Download Calibration Files<a class="headerlink" href="#download-calibration-files" title="Link to this heading">#</a></h3>
 <p>The CRDS program can be run from the terminal to download the files specific to your observation. This program is packaged with astroconda.</p>
 <p>The command line input to download our files for <code class="docutils literal notranslate"><span class="pre">jd5702jwq_raw.fits</span></code> is as follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>crds bestrefs --files jd5702jwq_raw.fits --sync-references=1 --update-bestrefs
@@ -1031,7 +937,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </section>
 <section id="clean-subarray-images">
-<h3>Clean Subarray Images<a class="headerlink" href="#clean-subarray-images" title="Permalink to this heading">#</a></h3>
+<h3>Clean Subarray Images<a class="headerlink" href="#clean-subarray-images" title="Link to this heading">#</a></h3>
 <p>Next we will run the <a class="reference external" href="https://acstools.readthedocs.io/en/latest/api/acstools.acs_destripe_plus.destripe_plus.html#acstools.acs_destripe_plus.destripe_plus">acs_destripe_plus</a> code on our image. This will execute all of the calibration steps that are set to ‘PERFORM’ in the primary header of the FITS file.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">acs_destripe_plus</span></code> code will produce the FLT file is the calibrated output product from <code class="docutils literal notranslate"><span class="pre">CALACS</span></code>, <code class="docutils literal notranslate"><span class="pre">jd5702jmq_flt.fits</span></code>. With the CTE correction turned on, an FLC file will also be produced, which is the same as the FLT file but with the CTE correction applied.</p>
 <div class="cell docutils container">
@@ -1040,382 +946,10 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>git tag: ee6a390a-dirty
-git branch: HEAD
-HEAD @: ee6a390a7edc9597074d481a57a6d2926d1cc1c4
-Trying to open jd5702jwq_raw.fits...
-Read in Primary header from jd5702jwq_raw.fits...
-
-
-CALBEG*** ACSCCD -- Version 10.4.0 (07-May-2024) ***
-Begin    13-Feb-2025 16:42:38 UTC
-Input    jd5702jwq_raw.fits
-Output   jd5702jwq_blv_tmp.fits
-Trying to open jd5702jwq_raw.fits...
-Read in Primary header from jd5702jwq_raw.fits...
-APERTURE WFC1A-2K
-FILTER1 F606W
-FILTER2 CLEAR2L
-DETECTOR WFC
-
-
-CCDTAB   jref$72m1821dj_ccd.fits
-CCDTAB   PEDIGREE=inflight
-CCDTAB   DESCRIP =CCD table with updated readnoise values for CCDGAIN=2.-------------
-CCDTAB   DESCRIP =July 2009
-
-
-DQICORR  PERFORM
-DQITAB   jref$25g1256nj_bpx.fits
-DQITAB   PEDIGREE=INFLIGHT 30/03/2002 30/05/2002
-DQITAB   DESCRIP =FITS reference table for bad pixel locations on ACS WFC
-DQICORR  COMPLETE
-
-
-BIASCORR PERFORM
-BIASFILE jref$6641832dj_bia.fits
-BIASFILE PEDIGREE=INFLIGHT 08/02/2017 08/03/2017
-BIASFILE DESCRIP =Standard full-frame bias for data taken after Feb 07 2017 11:26:21-
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BIASCORR COMPLETE
-
-
-BLEVCORR PERFORM
-OSCNTAB  jref$17717071j_osc.fits
-OSCNTAB  PEDIGREE=GROUND
-OSCNTAB  DESCRIP =New OSCNTAB which includes entries for all subarrays.--------------
-This subarray data is supported for the bias shift correction.
-BLEVCORR PERFORM
-Performing bias-shift correction for subarray data.
-BLEVCORR PERFORM
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bias shift correcting for bias level in Amp A of 4197.2216 electrons.
-BLEVCORR COMPLETE
-Supported Subarray adjusted Darktime: 43.094452 for aperture: WFC1A-2K
-
-DARKTIME from SCI header: 43.094452  Offset from CCDTAB: 0.000000  Final DARKTIME: 43.094452
-
-Full-well saturation flagging being performed for imset 1.
-
-Subarray full-well saturation image flagging step being performed.
-
-Subarray full-well saturation image flagging step done.
-
-
-    Uncertainty array initialized,
-    readnoise =4.35,
-    gain =2.02,
-   default bias levels =4242,
-
-
-SINKCORR PERFORM
-SNKCFILE jref$25e1542jj_snk.fits
-SNKCFILE PEDIGREE=INFLIGHT 08/02/2017 08/03/2017
-SNKCFILE DESCRIP =Sink pixel reference file ----------------------------
-SINKCORR COMPLETE
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:Processing jd5702jwq_blv_tmp.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>End      13-Feb-2025 16:42:38 UTC
-
-
-*** ACSCCD complete ***
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:clean_streak - Performing image bias de-stripe:
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:clean_streak - Image bias de-stripe: Done.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:acs_destripe:clean_streak - Maximum number of clipping iterations specified by the user (15) has been reached.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - =====  Overall statistics for de-stripe corrections:  =====
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - STDDEV of applied de-stripe corrections 0.952.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - Estimated background: 4.6138.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - Maximum applied correction: 3.51.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - Effective number of clipping iterations: 15.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - Effective number of additional (repeated) cleanings: 0.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:perform_correction - Total number of corrected rows: 2048.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe:jd5702jwq_blv_tmp_strp.fits created
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>git tag: ee6a390a-dirty
-git branch: HEAD
-HEAD @: ee6a390a7edc9597074d481a57a6d2926d1cc1c4
-Setting max threads to 4 out of 4 available
-Trying to open jd5702jwq_blv_tmp.fits...
-Read in Primary header from jd5702jwq_blv_tmp.fits...
-
-
-CALBEG*** ACSCTE -- Version 10.4.0 (07-May-2024) ***
-Begin    13-Feb-2025 16:42:40 UTC
-Input    jd5702jwq_blv_tmp.fits
-Output   jd5702jwq_blc_tmp.fits
-Trying to open jd5702jwq_blv_tmp.fits...
-Read in Primary header from jd5702jwq_blv_tmp.fits...
-APERTURE WFC1A-2K
-FILTER1 F606W
-FILTER2 CLEAR2L
-DETECTOR WFC
-
-
-CCDTAB   jref$72m1821dj_ccd.fits
-CCDTAB   PEDIGREE=inflight
-CCDTAB   DESCRIP =CCD table with updated readnoise values for CCDGAIN=2.-------------
-CCDTAB   DESCRIP =July 2009
-
-
-PCTECORR PERFORM
-PCTEFILE jref$8ch1518tj_cte.fits
-PCTEFILE PEDIGREE=INFLIGHT 01/03/2002 22/07/2010
-PCTEFILE DESCRIP =Parameters needed for gen3 pixel-based CTE correction -----------
-Trying to open jref$8ch1518tj_cte.fits...
-Read in Primary header from jref$8ch1518tj_cte.fits...
-(pctecorr) Parallel and Serial PCTETAB file auto-detected.
-(pctecorr) Reading CTE parameters from PCTETAB file: &#39;jref$8ch1518tj_cte.fits&#39;...
-(pctecorr) Collecting data for Correction Type: parallel.
-
-Trying to open jref$8ch1518tj_cte.fits...
-Read in Primary header from jref$8ch1518tj_cte.fits...
-
-CTE_NAME: Par/Serial PixelCTE 2023
-CTE_VER: 3.0
-PCTERNOI: 4.300000
-PCTENSMD: 0
-PCTETRSH: -10
-FIXROCR: 1
-Opening jref$8ch1518tj_cte.fits[1] to read QPROF table.
-CTEDATE0: 52334.9
-CTEDATE1: 57710.4
-PCTETLEN: 60
-PCTENFOR: 5
-PCTENPAR: 7
-Opening jref$8ch1518tj_cte.fits[2] to read SCLBYCOL table.
-Reading in image from RPROF EXTVER 1.
-Reading in image from CPROF EXTVER 1.
-Begin attempt to read CTE keywords from input image header. Missing CTE keywords
-from input image header are not a fatal error as the values from PCTETAB will be used.
-ERROR:    Keyword = `PCTENSMD&#39;.
-ERROR:    Keyword = `PCTETLEN&#39;.
-ERROR:    Keyword = `PCTERNOI&#39;.
-ERROR:    Keyword = `PCTENFOR&#39;.
-ERROR:    Keyword = `PCTENPAR&#39;.
-ERROR:    Keyword = `FIXROCR&#39;.
-End attempt to read CTE keywords from input image header.
-(pctecorr) The parallel CTE processing parameters have been read.
-Warning    (pctecorr) IGNORING read noise level PCTERNOI from PCTETAB: 4.300000. Using amp dependent values from CCDTAB instead
-(pctecorr) Readout simulation forward modeling iterations PCTENFOR: 5
-(pctecorr) Number of iterations used in the parallel transfer PCTENPAR: 7
-(pctecorr) CTE_FRAC: 1.020340
-
-(pctecorr) NOTE: No serial CTE correction is done for any subarray data.
-
-(pctecorr) Using multiprocessing provided by OpenMP inside CTE routine.
-(pctecorr) Performing CTE correction type parallel for amp A.
-(pctecorr) Read noise level from CCDTAB: 4.350000.
-(pctecorr) Calculating smooth readnoise image...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(pctecorr) Time taken to smooth image: 1.97(s) with 4 threads
-(pctecorr) ...complete.
-(pctecorr) Creating charge trap image...
-(pctecorr) Time taken to populate pixel trap map image: 0.01(s) with 4 threads
-(pctecorr) ...complete.
-(pctecorr) Running correction algorithm...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(pctecorr) ...complete.
-(pctecorr) Total count difference (corrected-raw) incurred from correction: 530760.750000 (0.575928%)
-(pctecorr) CTE run time for current chip: 321.56(s) with 4 procs/threads
-
-PCTECORR COMPLETE
-
-
-End      13-Feb-2025 16:48:03 UTC
-
-
-*** ACSCTE complete ***
-git tag: ee6a390a-dirty
-git branch: HEAD
-HEAD @: ee6a390a7edc9597074d481a57a6d2926d1cc1c4
-Trying to open jd5702jwq_blv_tmp.fits...
-Read in Primary header from jd5702jwq_blv_tmp.fits...
-
-
-CALBEG*** ACS2D -- Version 10.4.0 (07-May-2024) ***
-Begin    13-Feb-2025 16:48:03 UTC
-Input    jd5702jwq_blv_tmp.fits
-Output   jd5702jwq_flt.fits
-Trying to open jd5702jwq_blv_tmp.fits...
-Read in Primary header from jd5702jwq_blv_tmp.fits...
-APERTURE WFC1A-2K
-FILTER1 F606W
-FILTER2 CLEAR2L
-DETECTOR WFC
-
-
-Imset 1  Begin 16:48:03 UTC
-
-
-CCDTAB   jref$72m1821dj_ccd.fits
-CCDTAB   PEDIGREE=inflight
-CCDTAB   DESCRIP =CCD table with updated readnoise values for CCDGAIN=2.-------------
-CCDTAB   DESCRIP =July 2009
-
-
-DQICORR  OMIT
-
-
-DARKCORR PERFORM
-DARKFILE jref$78f1759ej_drk.fits
-DARKFILE PEDIGREE=INFLIGHT 08/02/2017 08/03/2017
-DARKFILE DESCRIP =Standard full-frame dark for data taken after Feb 07 2017 11:26:21-
-Darktime from header 43.094452
-Mean of dark image (MEANDARK) = 0.503474
-DARKCORR COMPLETE
-
-
-FLSHCORR OMIT
-
-
-FLATCORR PERFORM
-PFLTFILE jref$qb12257sj_pfl.fits
-PFLTFILE PEDIGREE=INFLIGHT 18/04/2002 - 04/07/2006
-PFLTFILE DESCRIP =F606W step +1 flat w/ mote shifted to -1 step
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FLATCORR COMPLETE
-
-
-SHADCORR OMIT
-
-
-PHOTCORR PERFORM
-Found parameterized variable 1.
-NUMPAR=1, N=1
-Allocated 1 parnames
-Adding parameter mjd#57819.7836 as parnames[0]
-==&gt; Value of PHOTFLAM = 7.8819263e-20
-==&gt; Value of PHOTPLAM = 5921.892
-==&gt; Value of PHOTBW = 672.48329
-IMPHTTAB jref$4af1559ij_imp.fits
-IMPHTTAB PEDIGREE=INFLIGHT 18/04/2000 29/09/2020
-IMPHTTAB DESCRIP =photometry keywords reference file---------------------------------
-PHOTCORR COMPLETE
-Imset 1  End 16:48:03 UTC
-
-
-End      13-Feb-2025 16:48:03 UTC
-
-
-*** ACS2D complete ***
-git tag: ee6a390a-dirty
-git branch: HEAD
-HEAD @: ee6a390a7edc9597074d481a57a6d2926d1cc1c4
-Trying to open jd5702jwq_blc_tmp.fits...
-Read in Primary header from jd5702jwq_blc_tmp.fits...
-
-
-CALBEG*** ACS2D -- Version 10.4.0 (07-May-2024) ***
-Begin    13-Feb-2025 16:48:03 UTC
-Input    jd5702jwq_blc_tmp.fits
-Output   jd5702jwq_flc.fits
-Trying to open jd5702jwq_blc_tmp.fits...
-Read in Primary header from jd5702jwq_blc_tmp.fits...
-APERTURE WFC1A-2K
-FILTER1 F606W
-FILTER2 CLEAR2L
-DETECTOR WFC
-
-
-Imset 1  Begin 16:48:03 UTC
-
-
-CCDTAB   jref$72m1821dj_ccd.fits
-CCDTAB   PEDIGREE=inflight
-CCDTAB   DESCRIP =CCD table with updated readnoise values for CCDGAIN=2.-------------
-CCDTAB   DESCRIP =July 2009
-
-
-DQICORR  OMIT
-
-
-DARKCORR PERFORM
-DARKFILE jref$78g0231bj_dkc.fits
-DARKFILE PEDIGREE=INFLIGHT 08/02/2017 08/03/2017
-DARKFILE DESCRIP =CTE corrected dark for WFC data taken after Feb 07 2017 11:26:21---
-Darktime from header 43.094452
-Mean of dark image (MEANDARK) = 0.411565
-DARKCORR COMPLETE
-
-
-FLSHCORR OMIT
-
-
-FLATCORR PERFORM
-PFLTFILE jref$qb12257sj_pfl.fits
-PFLTFILE PEDIGREE=INFLIGHT 18/04/2002 - 04/07/2006
-PFLTFILE DESCRIP =F606W step +1 flat w/ mote shifted to -1 step
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:acs_destripe_plus:Done.
-FLT: jd5702jwq_flt.fits
-FLC: jd5702jwq_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FLATCORR COMPLETE
-
-
-SHADCORR OMIT
-
-
-PHOTCORR PERFORM
-Found parameterized variable 1.
-NUMPAR=1, N=1
-Allocated 1 parnames
-Adding parameter mjd#57819.7836 as parnames[0]
-==&gt; Value of PHOTFLAM = 7.8819263e-20
-==&gt; Value of PHOTPLAM = 5921.892
-==&gt; Value of PHOTBW = 672.48329
-IMPHTTAB jref$4af1559ij_imp.fits
-IMPHTTAB PEDIGREE=INFLIGHT 18/04/2000 29/09/2020
-IMPHTTAB DESCRIP =photometry keywords reference file---------------------------------
-PHOTCORR COMPLETE
-Imset 1  End 16:48:03 UTC
-
-
-End      13-Feb-2025 16:48:03 UTC
-
-
-*** ACS2D complete ***
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="correct-the-wcs">
-<h3>Correct the WCS<a class="headerlink" href="#correct-the-wcs" title="Permalink to this heading">#</a></h3>
+<h3>Correct the WCS<a class="headerlink" href="#correct-the-wcs" title="Link to this heading">#</a></h3>
 <p>The subarray products produced by this process do not have the proper WCS information in the header. The WCS is normally updated by the pipeline via an additional call to AstroDrizzle. Here, we can manually update the WCS of our FLC product using <code class="docutils literal notranslate"><span class="pre">stwcs.updatewcs</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1423,25 +957,14 @@ End      13-Feb-2025 16:48:03 UTC
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using 2015-calibrated VAFACTOR-corrected TDD correction...
-- IDCTAB: Distortion model from row 443 for chip 1 : F606W
-Using 2015-calibrated VAFACTOR-corrected TDD correction...
-- IDCTAB: Distortion model from row 443 for chip 1 : F606W
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;jd5702jwq_flc.fits&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
-<section id="reducing-custom-subarray-data-a-id-custom-a">
-<h2>Reducing Custom Subarray Data<a id="_custom"></a><a class="headerlink" href="#reducing-custom-subarray-data-a-id-custom-a" title="Permalink to this heading">#</a></h2>
+<section id="reducing-custom-subarray-data">
+<h2>Reducing Custom Subarray Data<a id="_custom"></a><a class="headerlink" href="#reducing-custom-subarray-data" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <section id="id1">
-<h3>Download Calibration Files<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Download Calibration Files<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Like before, we can use CRDS to get the associated calibration files for this image.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1454,7 +977,7 @@ Using 2015-calibrated VAFACTOR-corrected TDD correction...
 </div>
 </section>
 <section id="access-oscn-table">
-<h3>Access OSCN Table<a class="headerlink" href="#access-oscn-table" title="Permalink to this heading">#</a></h3>
+<h3>Access OSCN Table<a class="headerlink" href="#access-oscn-table" title="Link to this heading">#</a></h3>
 <p>The name in the header is of the format ‘<font face='courier'>ref\<span class="math notranslate nohighlight">\(oscn_name.fits&lt;/font&gt;', therefore we need to split the string on the '\)</span>’ character.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1474,11 +997,6 @@ Using 2015-calibrated VAFACTOR-corrected TDD correction...
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./crds_cache/references/hst/acs/17717071j_osc.fits
-</pre></div>
-</div>
-</div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">utils_calib.check_oscntab</span></code> from <a class="reference external" href="http://acstools.readthedocs.io">acstools</a> checks the <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> file if any entry matches the combination of readout amplifier, image size, and number of bias prescan columns for a given subarray observation. We will need to use several header keyword values to test if a subarray is in <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code>.</p>
 <div class="cell docutils container">
@@ -1494,7 +1012,7 @@ Using 2015-calibrated VAFACTOR-corrected TDD correction...
 <p>The raw image has 1180 columns and 1200 rows, which does not correspond to any entry in the <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> file, but a visual examination of the image shows that it contains bias prescan columns.</p>
 </section>
 <section id="get-the-bias-prescan-information">
-<h3>Get the Bias Prescan Information<a class="headerlink" href="#get-the-bias-prescan-information" title="Permalink to this heading">#</a></h3>
+<h3>Get the Bias Prescan Information<a class="headerlink" href="#get-the-bias-prescan-information" title="Link to this heading">#</a></h3>
 <p>From the science image PRI and SCI extension headers that we opened earlier, we can get the information about the readout amplifier and dimensions of the image.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1503,11 +1021,6 @@ Using 2015-calibrated VAFACTOR-corrected TDD correction...
 <span class="n">ysize</span> <span class="o">=</span> <span class="n">scihdr</span><span class="p">[</span><span class="s1">&#39;NAXIS2&#39;</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">xsize</span><span class="p">,</span> <span class="n">ysize</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1180 1200
 </pre></div>
 </div>
 </div>
@@ -1531,51 +1044,14 @@ Using 2015-calibrated VAFACTOR-corrected TDD correction...
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: UnitsWarning: &#39;pixels&#39; did not parse as fits unit: At col 0, Unit &#39;pixels&#39; not supported by the FITS standard. Did you mean pixel? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
-WARNING:astroquery:UnitsWarning: &#39;pixels&#39; did not parse as fits unit: At col 0, Unit &#39;pixels&#39; not supported by the FITS standard. Did you mean pixel? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="update-oscntab">
-<h3>Update OSCNTAB<a class="headerlink" href="#update-oscntab" title="Permalink to this heading">#</a></h3>
+<h3>Update OSCNTAB<a class="headerlink" href="#update-oscntab" title="Link to this heading">#</a></h3>
 <p>Now that we have confirmed that the <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> file does not contain information about our subarray data, we need to add a new row to the table with our definitions. Let’s first view the first few rows of <code class="docutils literal notranslate"><span class="pre">OSCNTAB</span></code> to see what our new entry needs to look like.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">oscntable</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDAMP CCDCHIP BINX BINY  NX  ... VX1 VX2 VY1 VY2
------- ------- ---- ---- ---- ... --- --- --- ---
-     C       2    1    1 4144 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2070 ...   0   0   0   0
-  C          2    1    1  534 ...   0   0   0   0
-  D          2    1    1 4144 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-   ...     ...  ...  ...  ... ... ... ... ... ...
-  B          1    1    1 2072 ...   0   0   0   0
-  B          1    1    1 2072 ...   0   0   0   0
-  B          1    1    1 2070 ...   0   0   0   0
-  B          1    1    1 1046 ...   0   0   0   0
-  B          1    1    1  534 ...   0   0   0   0
-  AC         1    1    1 4144 ...   0   0   0   0
-  AD         1    1    1 4144 ...   0   0   0   0
-  BC         1    1    1 4144 ...   0   0   0   0
-  BD         1    1    1 4144 ...   0   0   0   0
-  ABCD       1    1    1 4144 ...   0   0   0   0
-Length = 35 rows
 </pre></div>
 </div>
 </div>
@@ -1584,11 +1060,6 @@ Length = 35 rows
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">oscntable</span><span class="o">.</span><span class="n">colnames</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;CCDAMP&#39;, &#39;CCDCHIP&#39;, &#39;BINX&#39;, &#39;BINY&#39;, &#39;NX&#39;, &#39;NY&#39;, &#39;TRIMX1&#39;, &#39;TRIMX2&#39;, &#39;TRIMY1&#39;, &#39;TRIMY2&#39;, &#39;BIASSECTA1&#39;, &#39;BIASSECTA2&#39;, &#39;BIASSECTB1&#39;, &#39;BIASSECTB2&#39;, &#39;DESCRIPTION&#39;, &#39;VX1&#39;, &#39;VX2&#39;, &#39;VY1&#39;, &#39;VY2&#39;]
 </pre></div>
 </div>
 </div>
@@ -1680,34 +1151,6 @@ Length = 35 rows
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDAMP CCDCHIP BINX BINY  NX  ... VX1 VX2 VY1 VY2
------- ------- ---- ---- ---- ... --- --- --- ---
-     C       2    1    1 4144 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2070 ...   0   0   0   0
-  C          2    1    1  534 ...   0   0   0   0
-  D          2    1    1 4144 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-   ...     ...  ...  ...  ... ... ... ... ... ...
-  B          1    1    1 2072 ...   0   0   0   0
-  B          1    1    1 2070 ...   0   0   0   0
-  B          1    1    1 1046 ...   0   0   0   0
-  B          1    1    1  534 ...   0   0   0   0
-  AC         1    1    1 4144 ...   0   0   0   0
-  AD         1    1    1 4144 ...   0   0   0   0
-  BC         1    1    1 4144 ...   0   0   0   0
-  BD         1    1    1 4144 ...   0   0   0   0
-  ABCD       1    1    1 4144 ...   0   0   0   0
-     A       1    1    1 1180 ...   0   0   0   0
-Length = 36 rows
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now we have an idential FITS rec table, but with an additional row for our new information.</p>
 <div class="cell docutils container">
@@ -1715,34 +1158,6 @@ Length = 36 rows
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">oscnrec_new</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">FITS_rec</span><span class="o">.</span><span class="n">from_columns</span><span class="p">(</span><span class="n">oscnrec</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> 
                                          <span class="n">nrows</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">oscntable</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="n">oscnrec_new</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDAMP CCDCHIP BINX BINY  NX  ... VX1 VX2 VY1 VY2
------- ------- ---- ---- ---- ... --- --- --- ---
-     C       2    1    1 4144 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2070 ...   0   0   0   0
-  C          2    1    1  534 ...   0   0   0   0
-  D          2    1    1 4144 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-   ...     ...  ...  ...  ... ... ... ... ... ...
-  B          1    1    1 2072 ...   0   0   0   0
-  B          1    1    1 2070 ...   0   0   0   0
-  B          1    1    1 1046 ...   0   0   0   0
-  B          1    1    1  534 ...   0   0   0   0
-  AC         1    1    1 4144 ...   0   0   0   0
-  AD         1    1    1 4144 ...   0   0   0   0
-  BC         1    1    1 4144 ...   0   0   0   0
-  BD         1    1    1 4144 ...   0   0   0   0
-  ABCD       1    1    1 4144 ...   0   0   0   0
-             0    0    0    0 ...   0   0   0   0
-Length = 36 rows
 </pre></div>
 </div>
 </div>
@@ -1759,34 +1174,6 @@ Length = 36 rows
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="n">oscnrec_new</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDAMP CCDCHIP BINX BINY  NX  ... VX1 VX2 VY1 VY2
------- ------- ---- ---- ---- ... --- --- --- ---
-     C       2    1    1 4144 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2072 ...   0   0   0   0
-     C       2    1    1 2070 ...   0   0   0   0
-  C          2    1    1  534 ...   0   0   0   0
-  D          2    1    1 4144 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-  D          2    1    1 2072 ...   0   0   0   0
-   ...     ...  ...  ...  ... ... ... ... ... ...
-  B          1    1    1 2072 ...   0   0   0   0
-  B          1    1    1 2070 ...   0   0   0   0
-  B          1    1    1 1046 ...   0   0   0   0
-  B          1    1    1  534 ...   0   0   0   0
-  AC         1    1    1 4144 ...   0   0   0   0
-  AD         1    1    1 4144 ...   0   0   0   0
-  BC         1    1    1 4144 ...   0   0   0   0
-  BD         1    1    1 4144 ...   0   0   0   0
-  ABCD       1    1    1 4144 ...   0   0   0   0
-     A       1    1    1 1180 ...   0   0   0   0
-Length = 36 rows
 </pre></div>
 </div>
 </div>
@@ -1809,23 +1196,14 @@ Length = 36 rows
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: UnitsWarning: &#39;pixels&#39; did not parse as fits unit: At col 0, Unit &#39;pixels&#39; not supported by the FITS standard. Did you mean pixel? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
-WARNING:astroquery:UnitsWarning: &#39;pixels&#39; did not parse as fits unit: At col 0, Unit &#39;pixels&#39; not supported by the FITS standard. Did you mean pixel? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Defined in OSCNTAB? True
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="for-more-help">
-<h3>For more help:<a class="headerlink" href="#for-more-help" title="Permalink to this heading">#</a></h3>
+<h3>For more help:<a class="headerlink" href="#for-more-help" title="Link to this heading">#</a></h3>
 <p>More details may be found on the <a class="reference external" href="http://www.stsci.edu/hst/instrumentation/acs">ACS website</a> and in the <a class="reference external" href="https://hst-docs.stsci.edu/display/ACSIHB">ACS Instrument</a> and <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/other-documents/_documents/acs_dhb.pdf">Data Handbooks</a>.</p>
 <p>Please visit the <a class="reference external" href="http://hsthelp.stsci.edu">HST Help Desk</a>. Through the help desk portal, you can explore the <em>HST</em> Knowledge Base and request additional help from experts.</p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#titleImageReduction"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a>
 <br></br>
 <br></br></p>
@@ -1916,14 +1294,14 @@ WARNING:astroquery:UnitsWarning: &#39;pixels&#39; did not parse as fits unit: At
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations-a-id-postsm4-a">De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-striping-and-cte-correction-of-post-sm4-subarray-observations">De-striping and CTE Correction of Post-SM4 Subarray Observations<a id="_postsm4"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-calibration-files-update-header-keywords">Download Calibration Files: Update Header Keywords</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#download-calibration-files">Download Calibration Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-subarray-images">Clean Subarray Images</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correct-the-wcs">Correct the WCS</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-custom-subarray-data-a-id-custom-a">Reducing Custom Subarray Data<a id="_custom"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-custom-subarray-data">Reducing Custom Subarray Data<a id="_custom"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Download Calibration Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#access-oscn-table">Access OSCN Table</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-bias-prescan-information">Get the Bias Prescan Information</a></li>

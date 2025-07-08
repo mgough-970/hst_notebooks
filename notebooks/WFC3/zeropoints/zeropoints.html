@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Calculating WFC3 Zeropoints with STSynphot &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/WFC3/zeropoints/zeropoints';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -360,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -387,14 +393,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/WFC3/zeropoints/zeropoints.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -552,9 +558,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -603,12 +609,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id="title"></a></p>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="title"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="calculating-wfc3-zeropoints-with-stsynphot">
-<h1>Calculating WFC3 Zeropoints with STSynphot<a class="headerlink" href="#calculating-wfc3-zeropoints-with-stsynphot" title="Permalink to this heading">#</a></h1>
+<h1>Calculating WFC3 Zeropoints with STSynphot<a class="headerlink" href="#calculating-wfc3-zeropoints-with-stsynphot" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="learning-goals">
-<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will:</p>
 <ul class="simple">
 <li><p>Calculate zeropoints and other photometric properties using <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code>.</p></li>
@@ -616,29 +628,29 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Introduction</span> <br>
-<span class="xref myst">1. Imports</span> <br>
-<span class="xref myst">2. Download throughput tables and define variables</span> <br>
-<span class="xref myst">3. Set up the ‘obsmode’ string</span> <br>
-<span class="xref myst">4. Basic usage for a single ‘obsmode’</span> <br>
-<span class="xref myst">5. Compute zeropoints and other photometric properties</span> <br>
-<span class="xref myst">6. Iterate over multiple ‘obsmodes’</span> <br>
-<span class="xref myst">7. Create and plot ‘total system throughput’ tables</span> <br>
-<span class="xref myst">8. Conclusions</span> <br>
-<span class="xref myst">Additional Resources</span> <br>
-<span class="xref myst">About the Notebook</span> <br>
-<span class="xref myst">Citations</span> <br></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#intro"><span class="xref myst">Introduction</span></a> <br>
+<a class="reference internal" href="#imports"><span class="xref myst">1. Imports</span></a> <br>
+<a class="reference internal" href="#envvar"><span class="xref myst">2. Download throughput tables and define variables</span></a> <br>
+<a class="reference internal" href="#inps"><span class="xref myst">3. Set up the ‘obsmode’ string</span></a> <br>
+<a class="reference internal" href="#usage"><span class="xref myst">4. Basic usage for a single ‘obsmode’</span></a> <br>
+<a class="reference internal" href="#zps"><span class="xref myst">5. Compute zeropoints and other photometric properties</span></a> <br>
+<a class="reference internal" href="#iterate"><span class="xref myst">6. Iterate over multiple ‘obsmodes’</span></a> <br>
+<a class="reference internal" href="#curves"><span class="xref myst">7. Create and plot ‘total system throughput’ tables</span></a> <br>
+<a class="reference internal" href="#conclusions"><span class="xref myst">8. Conclusions</span></a> <br>
+<a class="reference internal" href="#resources"><span class="xref myst">Additional Resources</span></a> <br>
+<a class="reference internal" href="#about"><span class="xref myst">About the Notebook</span></a> <br>
+<a class="reference internal" href="#cite"><span class="xref myst">Citations</span></a> <br></p>
 <p><a id="intro"></a></p>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>This notebook shows how to calculate photometric zeropoints using the Python package <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> for any WFC3 detector, filter, date, or aperture. This tutorial is especially useful for calculating Vegamag zeropoints, which require an input spectrum. The notebook is also useful for computing time-dependent WFC3/UVIS zeropoints for any observation date, as the values listed in <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/wfc3/documentation/instrument-science-reports-isrs/_documents/2021/WFC3_ISR_2021-04.pdf">WFC3 ISR 2021-04</a> are defined for the reference epoch. As of mid-2021, the WFC3/IR zeropoints are not time-dependent.</p>
-<p>More documentation on <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> is available <a class="reference external" href="https://stsynphot.readthedocs.io/en/latest/index.html">here</a>. Using <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> requires downloading the throughput curves for the HST instruments and optical path.  One method of doing this is shown in <span class="xref myst">Section 2</span>.  More information on the throughput tables can be found <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/synphot-throughput-tables">here</a>.</p>
+<p>More documentation on <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> is available <a class="reference external" href="https://stsynphot.readthedocs.io/en/latest/index.html">here</a>. Using <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> requires downloading the throughput curves for the HST instruments and optical path.  One method of doing this is shown in <a class="reference internal" href="#envvar"><span class="xref myst">Section 2</span></a>.  More information on the throughput tables can be found <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/synphot-throughput-tables">here</a>.</p>
 <p><a id="imports"></a></p>
 </section>
 <section id="imports">
-<h2>1. Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>1. Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <p>This notebook assumes you have created the virtual environment in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/WFC3/README.md">WFC3 notebooks’</a> installation instructions.</p>
 <p>We import:</p>
 <ul class="simple">
@@ -668,31 +680,11 @@ document.write(`
 <p><a class="anchor" id="envvar"></a></p>
 </section>
 <section id="download-throughput-tables-and-define-variables">
-<h2>2. Download throughput tables and define variables<a class="headerlink" href="#download-throughput-tables-and-define-variables" title="Permalink to this heading">#</a></h2>
+<h2>2. Download throughput tables and define variables<a class="headerlink" href="#download-throughput-tables-and-define-variables" title="Link to this heading">#</a></h2>
 <p>This section obtains the WFC3 throughput component tables for use with <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code>. This step only needs to be done once. If these reference files have already been downloaded, this section can be skipped.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>curl<span class="w"> </span>-O<span class="w"> </span>https://archive.stsci.edu/hlsps/reference-atlases/hlsp_reference-atlases_hst_multi_everything_multi_v11_sed.tar
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 18  796M   18  145M    0     0   196M      0  0:00:04 --:--:--  0:00:04  196M
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51  796M   51  407M    0     0   233M      0  0:00:03  0:00:01  0:00:02  233M
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 83  796M   83  668M    0     0   243M      0  0:00:03  0:00:02  0:00:01  243M
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100  796M  100  796M    0     0   242M      0  0:00:03  0:00:03 --:--:--  242M
 </pre></div>
 </div>
 </div>
@@ -717,11 +709,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Failed to load Vega spectrum from hlsp_reference-atlases_hst_multi_everything_multi_v11_sed/grp/redcat/trds//calspec/alpha_lyr_stis_011.fits; Functionality involving Vega will be severely limited: FileNotFoundError(2, &#39;No such file or directory&#39;) [stsynphot.spectrum]
-</pre></div>
-</div>
-</div>
 </div>
 <p>Rather than downloading the entire calspec database (synphot6.tar.gz), we can point directly to the latest Vega spectrum which is required for computing VEGAMAG.</p>
 <div class="cell docutils container">
@@ -735,7 +722,7 @@ document.write(`
 <p><a class="anchor" id="inps"></a></p>
 </section>
 <section id="set-up-the-obsmode-string">
-<h2>3. Set up the ‘obsmode’ string<a class="headerlink" href="#set-up-the-obsmode-string" title="Permalink to this heading">#</a></h2>
+<h2>3. Set up the ‘obsmode’ string<a class="headerlink" href="#set-up-the-obsmode-string" title="Link to this heading">#</a></h2>
 <p>Parameters to set in the <code class="docutils literal notranslate"><span class="pre">obsmode</span></code> string include:</p>
 <ol class="arabic simple">
 <li><p>detector,</p></li>
@@ -795,7 +782,7 @@ document.write(`
 <p><a class="anchor" id="usage"></a></p>
 </section>
 <section id="basic-usage-for-a-single-obsmode">
-<h2>4. Basic usage for a single ‘obsmode’<a class="headerlink" href="#basic-usage-for-a-single-obsmode" title="Permalink to this heading">#</a></h2>
+<h2>4. Basic usage for a single ‘obsmode’<a class="headerlink" href="#basic-usage-for-a-single-obsmode" title="Link to this heading">#</a></h2>
 <p>The calculation of the zeropoints starts with creating a specific bandpass object.  Bandpasses generally consist of at least an instrument name, detector name, and filter name, though other parameters (such as the MJD and aperture radius shown above) are optional.</p>
 <p>The cell below defines <code class="docutils literal notranslate"><span class="pre">obsmode</span></code> and creates a bandpass object.</p>
 <div class="cell docutils container">
@@ -815,7 +802,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>In addition, we can use the parameters defined in <span class="xref myst">Section 3</span>.</p>
+<p>In addition, we can use the parameters defined in <a class="reference internal" href="#inps"><span class="xref myst">Section 3</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">obsmode</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;wfc3, </span><span class="si">{</span><span class="n">detectors</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">filtnames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">, mjd#</span><span class="si">{</span><span class="n">mjd</span><span class="si">}</span><span class="s1">, aper#</span><span class="si">{</span><span class="n">aper</span><span class="si">}</span><span class="s1">&#39;</span>
@@ -827,7 +814,7 @@ document.write(`
 <p><a class="anchor" id="zps"></a></p>
 </section>
 <section id="compute-zeropoints-and-other-photometric-properties">
-<h2>5. Compute zeropoints and other photometric properties<a class="headerlink" href="#compute-zeropoints-and-other-photometric-properties" title="Permalink to this heading">#</a></h2>
+<h2>5. Compute zeropoints and other photometric properties<a class="headerlink" href="#compute-zeropoints-and-other-photometric-properties" title="Link to this heading">#</a></h2>
 <p>With the bandpass objects, we can now calculate zeropoints, pivot wavelengths, and photometric bandwidths.  To calculate Vegamag zeropoints, we use the Vega spectrum to calculate the flux in a given bandpass.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -866,18 +853,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Obsmode                              PivotWave Photflam   STMAG   ABMAG   VEGAMAG
-wfc3, uvis1, f200lp, mjd#55008, aper#6.0, 4971.9, 4.9157e-20, 27.171, 27.381, 26.931
-</pre></div>
-</div>
-</div>
 </div>
 <p><a class="anchor" id="iterate"></a></p>
 </section>
 <section id="iterate-over-multiple-obsmodes">
-<h2>6. Iterate over multiple ‘obsmodes’<a class="headerlink" href="#iterate-over-multiple-obsmodes" title="Permalink to this heading">#</a></h2>
-<p>To calculate zeropoints for multiple detectors and/or filters, we can use the function defined above and loop through detectors and filters defined in <span class="xref myst">Section 3</span>.</p>
+<h2>6. Iterate over multiple ‘obsmodes’<a class="headerlink" href="#iterate-over-multiple-obsmodes" title="Link to this heading">#</a></h2>
+<p>To calculate zeropoints for multiple detectors and/or filters, we can use the function defined above and loop through detectors and filters defined in <a class="reference internal" href="#inps"><span class="xref myst">Section 3</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">oms</span><span class="p">,</span> <span class="n">pivots</span><span class="p">,</span> <span class="n">bws</span><span class="p">,</span> <span class="n">pfs</span><span class="p">,</span> <span class="n">st</span><span class="p">,</span> <span class="n">ab</span><span class="p">,</span> <span class="n">vm</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
@@ -898,81 +879,6 @@ wfc3, uvis1, f200lp, mjd#55008, aper#6.0, 4971.9, 4.9157e-20, 27.171, 27.381, 26
         <span class="n">st</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stmag</span><span class="p">)</span>
         <span class="n">ab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">abmag</span><span class="p">)</span>
         <span class="n">vm</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vegamag</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Obsmode                              PivotWave Photflam   STMAG   ABMAG   VEGAMAG
-wfc3, uvis1, f200lp, mjd#55008, aper#6.0, 4971.9, 4.9157e-20, 27.171, 27.381, 26.931
-wfc3, uvis1, f218w, mjd#55008, aper#6.0, 2228.0, 1.4594e-17, 20.990, 22.942, 21.278
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f225w, mjd#55008, aper#6.0, 2372.1, 4.5688e-18, 22.251, 24.067, 22.430
-wfc3, uvis1, f275w, mjd#55008, aper#6.0, 2709.7, 3.2206e-18, 22.630, 24.158, 22.677
-wfc3, uvis1, f280n, mjd#55008, aper#6.0, 2832.9, 5.7472e-17, 19.501, 20.932, 19.516
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f300x, mjd#55008, aper#6.0, 2820.5, 1.4093e-18, 23.527, 24.968, 23.565
-wfc3, uvis1, f336w, mjd#55008, aper#6.0, 3354.5, 1.2848e-18, 23.628, 24.692, 23.527
-wfc3, uvis1, f343n, mjd#55008, aper#6.0, 3435.2, 2.5672e-18, 22.876, 23.889, 22.754
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f350lp, mjd#55008, aper#6.0, 5873.9, 5.1638e-20, 27.118, 26.965, 26.810
-wfc3, uvis1, f373n, mjd#55008, aper#6.0, 3730.2, 1.3488e-17, 21.075, 21.909, 21.036
-wfc3, uvis1, f390m, mjd#55008, aper#6.0, 3897.2, 2.5524e-18, 22.883, 23.621, 23.545
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f390w, mjd#55008, aper#6.0, 3923.7, 5.0142e-19, 24.649, 25.373, 25.174
-wfc3, uvis1, f395n, mjd#55008, aper#6.0, 3955.2, 5.9589e-18, 21.962, 22.668, 22.712
-wfc3, uvis1, f410m, mjd#55008, aper#6.0, 4109.0, 2.3481e-18, 22.973, 23.597, 23.771
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f438w, mjd#55008, aper#6.0, 4326.2, 6.7475e-19, 24.327, 24.839, 25.003
-wfc3, uvis1, f467m, mjd#55008, aper#6.0, 4682.6, 1.6498e-18, 23.356, 23.696, 23.859
-wfc3, uvis1, f469n, mjd#55008, aper#6.0, 4688.1, 9.3089e-18, 21.478, 21.815, 21.981
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f475w, mjd#55008, aper#6.0, 4773.1, 2.4962e-19, 25.407, 25.705, 25.810
-wfc3, uvis1, f475x, mjd#55008, aper#6.0, 4940.7, 1.5343e-19, 25.935, 26.158, 26.216
-wfc3, uvis1, f487n, mjd#55008, aper#6.0, 4871.4, 5.8860e-18, 21.975, 22.229, 22.050
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f502n, mjd#55008, aper#6.0, 5009.6, 5.0824e-18, 22.135, 22.328, 22.421
-wfc3, uvis1, f547m, mjd#55008, aper#6.0, 5447.5, 4.5847e-19, 24.747, 24.758, 24.761
-wfc3, uvis1, f555w, mjd#55008, aper#6.0, 5308.4, 1.8272e-19, 25.746, 25.813, 25.841
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f600lp, mjd#55008, aper#6.0, 7468.1, 8.6226e-20, 26.561, 25.887, 25.554
-wfc3, uvis1, f606w, mjd#55008, aper#6.0, 5889.2, 1.1506e-19, 26.248, 26.090, 26.006
-wfc3, uvis1, f621m, mjd#55008, aper#6.0, 6218.9, 4.0126e-19, 24.891, 24.615, 24.465
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f625w, mjd#55008, aper#6.0, 6242.6, 1.7139e-19, 25.815, 25.530, 25.379
-wfc3, uvis1, f631n, mjd#55008, aper#6.0, 6304.3, 4.8250e-18, 22.191, 21.885, 21.723
-wfc3, uvis1, f645n, mjd#55008, aper#6.0, 6453.6, 3.3059e-18, 22.602, 22.245, 22.049
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f656n, mjd#55008, aper#6.0, 6561.4, 1.6713e-17, 20.842, 20.450, 19.868
-wfc3, uvis1, f657n, mjd#55008, aper#6.0, 6566.6, 2.1811e-18, 23.053, 22.659, 22.333
-wfc3, uvis1, f658n, mjd#55008, aper#6.0, 6584.0, 9.7496e-18, 21.428, 21.027, 20.672
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f665n, mjd#55008, aper#6.0, 6655.9, 1.9774e-18, 23.160, 22.736, 22.492
-wfc3, uvis1, f673n, mjd#55008, aper#6.0, 6765.9, 2.1926e-18, 23.048, 22.588, 22.343
-wfc3, uvis1, f680n, mjd#55008, aper#6.0, 6877.6, 6.8241e-19, 24.315, 23.820, 23.556
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f689m, mjd#55008, aper#6.0, 6876.8, 3.7208e-19, 24.973, 24.479, 24.196
-wfc3, uvis1, f763m, mjd#55008, aper#6.0, 7614.4, 3.8291e-19, 24.942, 24.226, 23.837
-wfc3, uvis1, f775w, mjd#55008, aper#6.0, 7651.4, 2.0922e-19, 25.599, 24.872, 24.480
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f814w, mjd#55008, aper#6.0, 8039.1, 1.4994e-19, 25.960, 25.126, 24.698
-wfc3, uvis1, f845m, mjd#55008, aper#6.0, 8439.1, 4.5207e-19, 24.762, 23.823, 23.316
-wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23.326
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wfc3, uvis1, f953n, mjd#55008, aper#6.0, 9530.6, 8.0946e-18, 21.630, 20.426, 19.803
 </pre></div>
 </div>
 </div>
@@ -1005,32 +911,6 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=42</i>
-<table id="table140492090936400" class="table-striped table-bordered table-condensed">
-<thead><tr><th>Obsmode</th><th>Pivot Wave</th><th>Bandwidth</th><th>Photflam</th><th>STMag</th><th>ABMag</th><th>VegaMag</th></tr></thead>
-<thead><tr><th>str40</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>wfc3, uvis1, f200lp, mjd#55008, aper#6.0</td><td>4971.860</td><td>1742.198</td><td>4.9157e-20</td><td>27.171</td><td>27.381</td><td>26.931</td></tr>
-<tr><td>wfc3, uvis1, f218w, mjd#55008, aper#6.0</td><td>2228.039</td><td>128.941</td><td>1.4594e-17</td><td>20.990</td><td>22.942</td><td>21.278</td></tr>
-<tr><td>wfc3, uvis1, f225w, mjd#55008, aper#6.0</td><td>2372.053</td><td>177.430</td><td>4.5688e-18</td><td>22.251</td><td>24.067</td><td>22.430</td></tr>
-<tr><td>wfc3, uvis1, f275w, mjd#55008, aper#6.0</td><td>2709.689</td><td>164.435</td><td>3.2206e-18</td><td>22.630</td><td>24.158</td><td>22.677</td></tr>
-<tr><td>wfc3, uvis1, f280n, mjd#55008, aper#6.0</td><td>2832.862</td><td>200.689</td><td>5.7472e-17</td><td>19.501</td><td>20.932</td><td>19.516</td></tr>
-<tr><td>wfc3, uvis1, f300x, mjd#55008, aper#6.0</td><td>2820.469</td><td>316.561</td><td>1.4093e-18</td><td>23.527</td><td>24.968</td><td>23.565</td></tr>
-<tr><td>wfc3, uvis1, f336w, mjd#55008, aper#6.0</td><td>3354.492</td><td>158.422</td><td>1.2848e-18</td><td>23.628</td><td>24.692</td><td>23.527</td></tr>
-<tr><td>wfc3, uvis1, f343n, mjd#55008, aper#6.0</td><td>3435.151</td><td>86.713</td><td>2.5672e-18</td><td>22.876</td><td>23.889</td><td>22.754</td></tr>
-<tr><td>wfc3, uvis1, f350lp, mjd#55008, aper#6.0</td><td>5873.870</td><td>1490.060</td><td>5.1638e-20</td><td>27.118</td><td>26.965</td><td>26.810</td></tr>
-<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-<tr><td>wfc3, uvis1, f665n, mjd#55008, aper#6.0</td><td>6655.876</td><td>42.191</td><td>1.9774e-18</td><td>23.160</td><td>22.736</td><td>22.492</td></tr>
-<tr><td>wfc3, uvis1, f673n, mjd#55008, aper#6.0</td><td>6765.939</td><td>41.943</td><td>2.1926e-18</td><td>23.048</td><td>22.588</td><td>22.343</td></tr>
-<tr><td>wfc3, uvis1, f680n, mjd#55008, aper#6.0</td><td>6877.596</td><td>112.013</td><td>6.8241e-19</td><td>24.315</td><td>23.820</td><td>23.556</td></tr>
-<tr><td>wfc3, uvis1, f689m, mjd#55008, aper#6.0</td><td>6876.755</td><td>207.613</td><td>3.7208e-19</td><td>24.973</td><td>24.479</td><td>24.196</td></tr>
-<tr><td>wfc3, uvis1, f763m, mjd#55008, aper#6.0</td><td>7614.371</td><td>229.425</td><td>3.8291e-19</td><td>24.942</td><td>24.226</td><td>23.837</td></tr>
-<tr><td>wfc3, uvis1, f775w, mjd#55008, aper#6.0</td><td>7651.363</td><td>419.719</td><td>2.0922e-19</td><td>25.599</td><td>24.872</td><td>24.480</td></tr>
-<tr><td>wfc3, uvis1, f814w, mjd#55008, aper#6.0</td><td>8039.056</td><td>666.760</td><td>1.4994e-19</td><td>25.960</td><td>25.126</td><td>24.698</td></tr>
-<tr><td>wfc3, uvis1, f845m, mjd#55008, aper#6.0</td><td>8439.057</td><td>260.304</td><td>4.5207e-19</td><td>24.762</td><td>23.823</td><td>23.316</td></tr>
-<tr><td>wfc3, uvis1, f850lp, mjd#55008, aper#6.0</td><td>9176.126</td><td>470.529</td><td>3.7052e-19</td><td>24.978</td><td>23.857</td><td>23.326</td></tr>
-<tr><td>wfc3, uvis1, f953n, mjd#55008, aper#6.0</td><td>9530.579</td><td>71.190</td><td>8.0946e-18</td><td>21.630</td><td>20.426</td><td>19.803</td></tr>
-</table></div></div></div>
 </div>
 <p>We can finally save the table as a .txt file.</p>
 <div class="cell docutils container">
@@ -1044,7 +924,7 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 <p><a class="anchor" id="curves"></a></p>
 </section>
 <section id="create-and-plot-total-system-throughput-tables">
-<h2>7. Create and plot ‘total system throughput’ tables<a class="headerlink" href="#create-and-plot-total-system-throughput-tables" title="Permalink to this heading">#</a></h2>
+<h2>7. Create and plot ‘total system throughput’ tables<a class="headerlink" href="#create-and-plot-total-system-throughput-tables" title="Link to this heading">#</a></h2>
 <p>The function below returns a tuple containing two objects, the first being an array of wavelengths, and the second being the throughput at each of those wavelengths.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1084,12 +964,6 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;WFC3,UVIS1,F200LP&#39;)
-</pre></div>
-</div>
-<img alt="../../../_images/ce5957fffe405e4ce9de026d67c05b9e9cba535dfaece854f8cf908f115609a6.png" src="../../../_images/ce5957fffe405e4ce9de026d67c05b9e9cba535dfaece854f8cf908f115609a6.png" />
-</div>
 </div>
 <p>To save the curve in an ascii table, simply pass the argument <code class="docutils literal notranslate"><span class="pre">save=True</span></code>:</p>
 <div class="cell docutils container">
@@ -1098,14 +972,8 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;Quantity [  500.,  1000.,  1010., ..., 20002., 30000., 30010.] Angstrom&gt;,
- &lt;Quantity [0., 0., 0., ..., 0., 0., 0.]&gt;)
-</pre></div>
 </div>
-</div>
-</div>
-<p>To save curves for all obsmodes defined in <span class="xref myst">Section 3</span> in the input list, we can loop through detectors and filters.</p>
+<p>To save curves for all obsmodes defined in <a class="reference internal" href="#inps"><span class="xref myst">Section 3</span></a> in the input list, we can loop through detectors and filters.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">det</span> <span class="ow">in</span> <span class="n">detectors</span><span class="p">:</span>
@@ -1126,41 +994,23 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;wfc3, uvis1, f200lp.txt&#39;  &#39;wfc3, uvis1, f438w.txt&#39;   &#39;wfc3, uvis1, f645n.txt&#39;
-&#39;wfc3, uvis1, f218w.txt&#39;   &#39;wfc3, uvis1, f467m.txt&#39;   &#39;wfc3, uvis1, f656n.txt&#39;
-&#39;wfc3, uvis1, f225w.txt&#39;   &#39;wfc3, uvis1, f469n.txt&#39;   &#39;wfc3, uvis1, f657n.txt&#39;
-&#39;wfc3, uvis1, f275w.txt&#39;   &#39;wfc3, uvis1, f475w.txt&#39;   &#39;wfc3, uvis1, f658n.txt&#39;
-&#39;wfc3, uvis1, f280n.txt&#39;   &#39;wfc3, uvis1, f475x.txt&#39;   &#39;wfc3, uvis1, f665n.txt&#39;
-&#39;wfc3, uvis1, f300x.txt&#39;   &#39;wfc3, uvis1, f487n.txt&#39;   &#39;wfc3, uvis1, f673n.txt&#39;
-&#39;wfc3, uvis1, f336w.txt&#39;   &#39;wfc3, uvis1, f502n.txt&#39;   &#39;wfc3, uvis1, f680n.txt&#39;
-&#39;wfc3, uvis1, f343n.txt&#39;   &#39;wfc3, uvis1, f547m.txt&#39;   &#39;wfc3, uvis1, f689m.txt&#39;
-&#39;wfc3, uvis1, f350lp.txt&#39;  &#39;wfc3, uvis1, f555w.txt&#39;   &#39;wfc3, uvis1, f763m.txt&#39;
-&#39;wfc3, uvis1, f373n.txt&#39;   &#39;wfc3, uvis1, f600lp.txt&#39;  &#39;wfc3, uvis1, f775w.txt&#39;
-&#39;wfc3, uvis1, f390m.txt&#39;   &#39;wfc3, uvis1, f606w.txt&#39;   &#39;wfc3, uvis1, f814w.txt&#39;
-&#39;wfc3, uvis1, f390w.txt&#39;   &#39;wfc3, uvis1, f621m.txt&#39;   &#39;wfc3, uvis1, f845m.txt&#39;
-&#39;wfc3, uvis1, f395n.txt&#39;   &#39;wfc3, uvis1, f625w.txt&#39;   &#39;wfc3, uvis1, f850lp.txt&#39;
-&#39;wfc3, uvis1, f410m.txt&#39;   &#39;wfc3, uvis1, f631n.txt&#39;   &#39;wfc3, uvis1, f953n.txt&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id="conclusions"></a></p>
 </section>
 <section id="conclusions">
-<h2>8. Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
+<h2>8. Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h2>
 <p>Thank you for walking through this notebook. Now using WFC3 data, you should be more familiar with:</p>
 <ul class="simple">
 <li><p>Calculating zeropoints and other photometric properties using <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code>.</p></li>
 <li><p>Creating, plotting, and saving ‘total system throughput’ tables.</p></li>
 </ul>
 <section id="congratulations-you-have-completed-the-notebook">
-<h3>Congratulations, you have completed the notebook!<a class="headerlink" href="#congratulations-you-have-completed-the-notebook" title="Permalink to this heading">#</a></h3>
+<h3>Congratulations, you have completed the notebook!<a class="headerlink" href="#congratulations-you-have-completed-the-notebook" title="Link to this heading">#</a></h3>
 <p><a id="resources"></a></p>
 </section>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h2>
 <p>Below are some additional resources that may be helpful. Please send any questions through the <a class="reference external" href="https://stsci.service-now.com/hst">HST Helpdesk</a>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.stsci.edu/hst/instrumentation/wfc3">WFC3 Website</a></p></li>
@@ -1174,13 +1024,13 @@ wfc3, uvis1, f850lp, mjd#55008, aper#6.0, 9176.1, 3.7052e-19, 24.978, 23.857, 23
 <p><a id="about"></a></p>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Authors:</strong> Varun Bajaj, Jennifer Mack; WFC3 Instrument Team</p>
 <p><strong>Updated on:</strong> 2024-03-18</p>
 <p><a id="cite"></a></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">synphot</span></code>, or <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> for published research, please cite the
 authors. Follow these links for more information about citing the libraries below:</p>
 <ul class="simple">
@@ -1190,7 +1040,7 @@ authors. Follow these links for more information about citing the libraries belo
 <li><p><a class="reference external" href="https://stsynphot.readthedocs.io/en/latest/index.html">Citing <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code></a></p></li>
 </ul>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#title"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 </section>
 </section>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Splitting COS Exposures into sub-exposures with splittag &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/COS/SplitTag/SplitTag';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -360,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -387,14 +393,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/COS/SplitTag/SplitTag.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -552,9 +558,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -612,21 +618,33 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id="topSp"></a></p>
+  <div style='background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #dc3545;'>
+<h3 style='color: #721c24; margin-top: 0;'>🚨 DEPRECATED NOTEBOOK</h3>
+<p style='color: #721c24; margin-bottom: 5px;'><strong>This notebook is deprecated and may be removed in the future.</strong></p>
+<p style='color: #721c24; margin-bottom: 0;'>Please migrate to newer alternatives or contact maintainers before using this notebook in production.</p>
+<p style='color: #721c24; margin-bottom: 0; font-size: 0.9em;'><em>This warning was automatically generated during documentation build.</em></p>
+</div>
+<div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="topSp"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="splitting-cos-exposures-into-sub-exposures-with-splittag">
-<h1>Splitting COS Exposures into sub-exposures with <code class="docutils literal notranslate"><span class="pre">splittag</span></code><a class="headerlink" href="#splitting-cos-exposures-into-sub-exposures-with-splittag" title="Permalink to this heading">#</a></h1>
+<h1>Splitting COS Exposures into sub-exposures with <code class="docutils literal notranslate"><span class="pre">splittag</span></code><a class="headerlink" href="#splitting-cos-exposures-into-sub-exposures-with-splittag" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="learning-goals">
-<h1>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h1>
+<h1>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h1>
 <p><font size="4 ">This Notebook is designed to walk the user (<em>you</em>) through:</font><br></p>
 <p><strong>Filtering Cosmic Origins Spectrograph (COS) <code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code> data using the <code class="docutils literal notranslate"><span class="pre">splittag</span></code> tool</strong> by</p>
-<p><strong>1. <span class="xref myst">Examining the data to determine how to split the files</span></strong></p>
-<p><strong>2. <span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">splittag</span></code> to create multiple sub-exposure files</span></strong></p>
-<p><strong>3. <span class="xref myst">Extracting spectra from the sub-exposures using <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code></span></strong></p>
-<p><strong>4. <span class="xref myst">Creating multiple sub-exposure files at regular intervals</span></strong></p>
+<p><strong>1. <a class="reference internal" href="#exSpdata"><span class="xref myst">Examining the data to determine how to split the files</span></a></strong></p>
+<p><strong>2. <a class="reference internal" href="#SpSp"><span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">splittag</span></code> to create multiple sub-exposure files</span></a></strong></p>
+<p><strong>3. <a class="reference internal" href="#extractSp"><span class="xref myst">Extracting spectra from the sub-exposures using <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code></span></a></strong></p>
+<p><strong>4. <a class="reference internal" href="#reg"><span class="xref myst">Creating multiple sub-exposure files at regular intervals</span></a></strong></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>0. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<h1>0. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p><strong>The Cosmic Origins Spectrograph (<a class="reference external" href="https://www.nasa.gov/content/hubble-space-telescope-cosmic-origins-spectrograph"><em>COS</em></a>) is an ultraviolet spectrograph on-board the Hubble Space Telescope (<a class="reference external" href="https://www.stsci.edu/hst/about"><em>HST</em></a>) with capabilities in the near ultraviolet (<em>NUV</em>) and far ultraviolet (<em>FUV</em>).</strong></p>
 <p><strong>This tutorial aims to prepare you to work with the COS data of your choice by walking you through filtering <code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code> datapoints obtained by COS based on arbitrary times.</strong></p>
 <p>COS Data can be taken in <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-1-cos-overview/1-1-instrument-capabilities-and-design"><code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code></a> mode, in which each individual encounter with a photon is recorded with its own metadata such as the time of the encounter. You may wish to split a COS exposure into multiple sub-exposure files. For instance, a transit may occur during your exposure, and you may wish to see the difference between the source’s spectrum before, during, and after the transit. This is possible with <code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code> data, and the functionality to do this is built into the <a class="reference external" href="https://github.com/spacetelescope/costools"><code class="docutils literal notranslate"><span class="pre">COSTools</span></code> python module</a> with the tool <code class="docutils literal notranslate"><span class="pre">splittag</span></code>.</p>
@@ -646,7 +664,7 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">astroquery.mast</span> <span class="pre">Mast</span></code> and <code class="docutils literal notranslate"><span class="pre">Observations</span></code> for finding and downloading data from the <a class="reference external" href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html">MAST</a> archive</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">warnings</span></code> and <code class="docutils literal notranslate"><span class="pre">astropy.units</span> <span class="pre">Warnings</span></code> for suppressing a warning that is not helpful later on.</p></li>
 </ul>
-<p>New versions of <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> are currently incompatible with astroconda. To create a Python environment capable of running all the data analyses in these COS Notebooks, please see Section 1 of our Notebook tutorial on <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/Setup/Setup.ipynb">setting up an environment</a>. Your version of <code class="docutils literal notranslate"><span class="pre">costools</span></code> may display a message on input about <code class="docutils literal notranslate"><span class="pre">TEAL</span></code> support (described <span class="xref myst">here</span>), but you may ignore this as it is largely irrelevant to our discussion.</p>
+<p>New versions of <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> are currently incompatible with astroconda. To create a Python environment capable of running all the data analyses in these COS Notebooks, please see Section 1 of our Notebook tutorial on <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/Setup/Setup.ipynb">setting up an environment</a>. Your version of <code class="docutils literal notranslate"><span class="pre">costools</span></code> may display a message on input about <code class="docutils literal notranslate"><span class="pre">TEAL</span></code> support (described <a class="reference internal" href="#tealST"><span class="xref myst">here</span></a>), but you may ignore this as it is largely irrelevant to our discussion.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For array manipulation</span>
@@ -680,12 +698,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the costools package can be run with TEAL:
-         splittag                 timefilter                 x1dcorr
-</pre></div>
-</div>
-</div>
 </div>
 <p><font size="5"> We will also define a few directories we will need: </font></p>
 <div class="cell docutils container">
@@ -703,7 +715,7 @@ document.write(`
 </div>
 <p><font size="5"> And we will need to download the data we wish to filter and analyze </font></p>
 <p>We choose the exposure with obs_id: <code class="docutils literal notranslate"><span class="pre">lc1va0010</span></code>, because we happen to know it contains an exposure taken while the target, <a class="reference external" href="http://simbad.u-strasbg.fr/simbad/sim-id?Ident=IY+UMa">IY UMa</a>, underwent a transit event. For more information on downloading COS data, see our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/DataDl/DataDl.ipynb">notebook tutorial on downloading COS data</a>.</p>
-<p>We will download <code class="docutils literal notranslate"><span class="pre">corrtag</span></code> files for both segments. The <code class="docutils literal notranslate"><span class="pre">corrtag</span></code> file is a corrected events list for <code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code> data (more info in the <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-2-cos-data-files/2-4-cos-data-products#:~:text=Science%20Data%20Files-,Corrected%20Events%20Lists%20(corrtag),-The%20COS%20pipeline">Data Handbook</a>). In the <span class="xref myst">next section</span>, we will use this file to create a rough light curve of the exposure.</p>
+<p>We will download <code class="docutils literal notranslate"><span class="pre">corrtag</span></code> files for both segments. The <code class="docutils literal notranslate"><span class="pre">corrtag</span></code> file is a corrected events list for <code class="docutils literal notranslate"><span class="pre">TIME-TAG</span></code> data (more info in the <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-2-cos-data-files/2-4-cos-data-products#:~:text=Science%20Data%20Files-,Corrected%20Events%20Lists%20(corrtag),-The%20COS%20pipeline">Data Handbook</a>). In the <a class="reference internal" href="#exSpdata"><span class="xref myst">next section</span></a>, we will use this file to create a rough light curve of the exposure.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Find all MAST data on this obs_id:</span>
@@ -723,41 +735,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lc1va0yeq_corrtag_a.fits to ./mastDownload/HST/lc1va0yeq/lc1va0yeq_corrtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lc1va0yjq_corrtag_a.fits to ./mastDownload/HST/lc1va0yjq/lc1va0yjq_corrtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lc1va0zcq_corrtag_a.fits to ./mastDownload/HST/lc1va0zcq/lc1va0zcq_corrtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lc1va0zgq_corrtag_a.fits to ./mastDownload/HST/lc1va0zgq/lc1va0zgq_corrtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>#####
-Found 4 corrtag exposure files from the COS FUV detector (segment A only)
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id= exSpdata></a></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="examining-the-data-to-determine-how-to-split-the-files">
-<h1>1. Examining the data to determine how to split the files<a class="headerlink" href="#examining-the-data-to-determine-how-to-split-the-files" title="Permalink to this heading">#</a></h1>
+<h1>1. Examining the data to determine how to split the files<a class="headerlink" href="#examining-the-data-to-determine-how-to-split-the-files" title="Link to this heading">#</a></h1>
 <p>We chose this dataset because of its transit event. However, let’s suppose for a moment that we don’t know which, if any, of our exposures have transits or other time-variable events. We’ll imagine we are simply investigating our data.</p>
 <p><strong>To look for transits and other anomalies, we will create and examine a rough lightcurve of our four exposures.</strong></p>
 <p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Light_curve">lightcurve</a> is simply a graph of net light or photon counts over time. We can make one by grabbing the time of all recorded photon events from each exposure, and plotting a histogram of the times. There are packages which can create detailed lightcurves, such as the <a class="reference external" href="https://github.com/justincely/lightcurve">lightcurve</a> package, but we will make these simple lightcurve plots ourselves. We also do not claim to explain every feature of all the lightcurves created. We will focus on any clear transit shapes.</p>
@@ -819,9 +801,6 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/2b2763bc98897bb4b0e47e58da526839a2a15cb64c3812cd1701fa9aed6b89d4.png" src="../../../_images/2b2763bc98897bb4b0e47e58da526839a2a15cb64c3812cd1701fa9aed6b89d4.png" />
-</div>
 </div>
 <p>We can see an apparent transit in the exposure <code class="docutils literal notranslate"><span class="pre">lc1va0zgq</span></code>, occurring from about 450 - 850 seconds into the exposure. We highlight this in Figure 1.2 below.</p>
 <p>Exposure <code class="docutils literal notranslate"><span class="pre">lc1va0yeq</span></code> also seems to contain at least the latter part of a transit, but for now we’ll focus on <code class="docutils literal notranslate"><span class="pre">lc1va0zgq</span></code>.</p>
@@ -877,12 +856,6 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The length of the exposure is ~1337 s
-</pre></div>
-</div>
-<img alt="../../../_images/4010bbd9c26a9e7999482cc05e4b0e14a56b40d42b8c5673d965b0c2092a861e.png" src="../../../_images/4010bbd9c26a9e7999482cc05e4b0e14a56b40d42b8c5673d965b0c2092a861e.png" />
-</div>
 </div>
 <p><strong>We now wish to actually split the file into three sub-exposures with the counts gathered during these three windows of time.</strong></p>
 <p>For research purposes, the transit should be measured more carefully than simply looking at this rough lightcurve. However for our purposes, we explicitly and somewhat arbitrarily define the windows, ‘by eye’, as:</p>
@@ -908,7 +881,7 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 <p><a id=SpSp></a></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="using-splittag-to-create-multiple-sub-exposure-files">
-<h1>2. Using <code class="docutils literal notranslate"><span class="pre">splittag</span></code> to create multiple sub-exposure files<a class="headerlink" href="#using-splittag-to-create-multiple-sub-exposure-files" title="Permalink to this heading">#</a></h1>
+<h1>2. Using <code class="docutils literal notranslate"><span class="pre">splittag</span></code> to create multiple sub-exposure files<a class="headerlink" href="#using-splittag-to-create-multiple-sub-exposure-files" title="Link to this heading">#</a></h1>
 <p>The next cell creates a directory for the sub-exposure files we’re about to create, and uses <code class="docutils literal notranslate"><span class="pre">splittag</span></code> to split the exposures.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">time_list</span></code> parameter defines the times at which the exposure will be split. Because we pass this parameter the list <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">550,</span> <span class="pre">850,</span> <span class="pre">&lt;time</span> <span class="pre">of</span> <span class="pre">last</span> <span class="pre">recorded</span> <span class="pre">count&gt;]</span></code>, <code class="docutils literal notranslate"><span class="pre">splittag</span></code> will produce 3 sub-exposure files with data taken from:</p>
 <ol class="arabic simple">
@@ -947,23 +920,6 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 <span class="n">splittag</span><span class="o">.</span><span class="n">splittag</span><span class="p">(</span><span class="n">infiles</span><span class="o">=</span><span class="n">transit_exp</span><span class="p">,</span>
                   <span class="n">outroot</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;./output/spec_intervals/</span><span class="si">{</span><span class="n">transit_basename</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
                   <span class="n">time_list</span><span class="o">=</span><span class="n">split_list</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Creating and writing split files...
-&gt; File 1 contains counts from time: 0 - 550 seconds
-&gt; File 2 contains counts from time: 550 - 850 seconds
-&gt; File 3 contains counts from time: 850 - 1337.2159423828125 seconds
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/spec_intervals/lc1va0zgq_1_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/spec_intervals/lc1va0zgq_2_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/spec_intervals/lc1va0zgq_3_corrtag_a.fits written
 </pre></div>
 </div>
 </div>
@@ -1025,13 +981,10 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/3dca6829058bb781643b9388b4b6dc2fd8296695ab933bc3f8db6dff2d397482.png" src="../../../_images/3dca6829058bb781643b9388b4b6dc2fd8296695ab933bc3f8db6dff2d397482.png" />
-</div>
 </div>
 <p>Now that we have the three sub-exposure files, we can process them into 1-dimensional spectra using the <a class="reference external" href="https://github.com/spacetelescope/calcos">COS Calibration Pipeline: <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code></a>.</p>
 <section id="exercise-1-practice-sub-dividing-with-splittag">
-<h2>Exercise 1: <em>Practice sub-dividing with <code class="docutils literal notranslate"><span class="pre">splittag</span></code></em><a class="headerlink" href="#exercise-1-practice-sub-dividing-with-splittag" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 1: <em>Practice sub-dividing with <code class="docutils literal notranslate"><span class="pre">splittag</span></code></em><a class="headerlink" href="#exercise-1-practice-sub-dividing-with-splittag" title="Link to this heading">#</a></h2>
 <p>Examining Fig 2.1, we see that from approximately 450-550 seconds, there is are in fact 2 drops in flux. Starting from an initial flux similar to that at the start of the exposure, the flux drops first by ~50% at around 450 seconds, and then drops by ~75% at around 550 seconds to its depth for the duration of the transit.</p>
 <p>Separate out the data taken during this initial drop (from ~450-550 seconds) into its own sub-exposure file using <code class="docutils literal notranslate"><span class="pre">splittag</span></code>. Then, demonstrate your split files with a lightcurve like that in Fig 2.1.</p>
 <div class="cell docutils container">
@@ -1045,7 +998,7 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="extracting-spectra-from-the-sub-exposures-using-calcos">
-<h1>3. Extracting spectra from the sub-exposures using <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code><a class="headerlink" href="#extracting-spectra-from-the-sub-exposures-using-calcos" title="Permalink to this heading">#</a></h1>
+<h1>3. Extracting spectra from the sub-exposures using <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code><a class="headerlink" href="#extracting-spectra-from-the-sub-exposures-using-calcos" title="Link to this heading">#</a></h1>
 <p>While for most circumstances, <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> is best run on an association file, (a FITS table which specifies a series of exposures to calibrate and combine into a spectrum,) the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> pipeline can usually be run on individual <code class="docutils literal notranslate"><span class="pre">rawtag</span></code> or <code class="docutils literal notranslate"><span class="pre">corrtag</span></code> files.</p>
 <ul class="simple">
 <li><p>More information on running <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> can be found in <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration/3-6-customizing-cos-data-calibration#id-3.6CustomizingCOSDataCalibration-3.6.1MechanicsofTailoredRecalibration">Chapter 3.6 of the COS Instrument Handbook</a></p></li>
@@ -1053,7 +1006,7 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 </ul>
 <p><a id=setlref></a></p>
 <section id="getting-the-lref-reference-files">
-<h2>3.1 Getting the <code class="docutils literal notranslate"><span class="pre">lref</span></code> reference files<a class="headerlink" href="#getting-the-lref-reference-files" title="Permalink to this heading">#</a></h2>
+<h2>3.1 Getting the <code class="docutils literal notranslate"><span class="pre">lref</span></code> reference files<a class="headerlink" href="#getting-the-lref-reference-files" title="Link to this heading">#</a></h2>
 <p>To run <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>, your computer will need an <code class="docutils literal notranslate"><span class="pre">lref</span></code> system variable to tell the pipeline where to find your reference files. If you are on the STScI internet network (including via VPN), you may set this to the shared Institute <code class="docutils literal notranslate"><span class="pre">lref</span></code> directory. However, if you’re not on the network, you will need to use the <code class="docutils literal notranslate"><span class="pre">CRDS</span></code> command to download the necessary reference files. This process is described in detail in Chapter 3 of our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/Setup/Setup.ipynb#crdsS">notebook on setting up an environment for working with COS data</a>.</p>
 <p>The code in this cell ensures that the “lref” path is correctly set in the environment variables and the crds files will be downloaded.</p>
 <div class="cell docutils container">
@@ -1071,7 +1024,7 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 <p><a id=#runcalcos></a></p>
 </section>
 <section id="running-calcos-and-processing-sub-exposure-files">
-<h2>3.2 Running <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> and processing sub-exposure files<a class="headerlink" href="#running-calcos-and-processing-sub-exposure-files" title="Permalink to this heading">#</a></h2>
+<h2>3.2 Running <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> and processing sub-exposure files<a class="headerlink" href="#running-calcos-and-processing-sub-exposure-files" title="Link to this heading">#</a></h2>
 <p><strong>We can now run the pipeline on each of our new sub-exposure files to create processed spectra based on data taken in the three time periods.</strong></p>
 <p>The cells may take several minutes to run.</p>
 <div class="cell docutils container">
@@ -1096,107 +1049,6 @@ Found 4 corrtag exposure files from the COS FUV detector (segment A only)
 
 <span class="c1"># Print a message at the end to let us know it&#39;s finished:</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done running the pipeline.&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting file ./output/spec_intervals/lc1va0zgq_1_corrtag_a.fits using CalCOS
-CALCOS version 3.6.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy version 2.2.2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy version 7.0.1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Begin 13-Feb-2025 16:43:55 UTC
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Don&#39;t add simulated wavecal because association has no exp_swave members
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  No trace profile, using zero
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  spt file not found, so TIMELINE extension is incomplete
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extraction algorithm = BOXCAR
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    error estimate for y location = 6.95, FWHM = 5.50
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting file ./output/spec_intervals/lc1va0zgq_2_corrtag_a.fits using CalCOS
-CALCOS version 3.6.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy version 2.2.2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy version 7.0.1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Don&#39;t add simulated wavecal because association has no exp_swave members
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  No trace profile, using zero
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  spt file not found, so TIMELINE extension is incomplete
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extraction algorithm = BOXCAR
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    error estimate for y location = 43.10, FWHM = 6.52
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting file ./output/spec_intervals/lc1va0zgq_3_corrtag_a.fits using CalCOS
-CALCOS version 3.6.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy version 2.2.2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy version 7.0.1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Don&#39;t add simulated wavecal because association has no exp_swave members
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  No trace profile, using zero
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  spt file not found, so TIMELINE extension is incomplete
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extraction algorithm = BOXCAR
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    error estimate for y location = 7.86, FWHM = 5.25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Done running the pipeline.
 </pre></div>
 </div>
 </div>
@@ -1263,15 +1115,12 @@ CALCOS version 3.6.0
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/8e2a82af82a903dd4eac586c38e33cc59a0dbaf7bc593b3594ecbe41575b9ae3.png" src="../../../_images/8e2a82af82a903dd4eac586c38e33cc59a0dbaf7bc593b3594ecbe41575b9ae3.png" />
-</div>
 </div>
 <p>Now we can take a closer look at two spectral regions the region from 1200 - 1230 and from 1250 - 1350 Angstroms.
 In the first region, we see the 1215 Angstrom Lyman-alpha line, much of which is <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/cos/calibration/airglow">generated by geocoronal emission</a>. At this line, the flux of the the three epochs is very similar, because the transit in the IY UMa system has no effect on Earth’s atmosphere. There are slight differences because the sun’s changing position in the sky changes the geocoronal glow. This causes the third sub-exposure to have a slightly higher Lyman-alpha line. However these are small differences compared to the flux of these lines.</p>
 <p>For this and the following plots, we will plot the errors as well, to see if the apparent differences in flux between epochs are significant.</p>
 <section id="for-the-1200-1230-angstrom-region">
-<h3><strong>For the 1200 - 1230 Angstrom region:</strong><a class="headerlink" href="#for-the-1200-1230-angstrom-region" title="Permalink to this heading">#</a></h3>
+<h3><strong>For the 1200 - 1230 Angstrom region:</strong><a class="headerlink" href="#for-the-1200-1230-angstrom-region" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up figure</span>
@@ -1350,13 +1199,10 @@ In the first region, we see the 1215 Angstrom Lyman-alpha line, much of which is
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/3072b964296faa7d7e3f5d2327cf475bf3828c53b171c2db3dbf85bfed02d6a9.png" src="../../../_images/3072b964296faa7d7e3f5d2327cf475bf3828c53b171c2db3dbf85bfed02d6a9.png" />
-</div>
 </div>
 </section>
 <section id="for-the-1250-1350-angstrom-region">
-<h3><strong>For the 1250 - 1350 Angstrom region:</strong><a class="headerlink" href="#for-the-1250-1350-angstrom-region" title="Permalink to this heading">#</a></h3>
+<h3><strong>For the 1250 - 1350 Angstrom region:</strong><a class="headerlink" href="#for-the-1250-1350-angstrom-region" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up figure</span>
@@ -1439,9 +1285,6 @@ In the first region, we see the 1215 Angstrom Lyman-alpha line, much of which is
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/ff3b1ef84655fbb1c7664aa2442e41871c321536f458f87223bb0203f8fcd273.png" src="../../../_images/ff3b1ef84655fbb1c7664aa2442e41871c321536f458f87223bb0203f8fcd273.png" />
-</div>
 </div>
 <p>Examining Fig 3.3, we first notice that the very low number of counts in a given wavelength region has limited our spectra’s precision. This is especially evidenced by how epoch 2’s flux is visibly quantized to several values, corresponding with the very low numbers of counted photons in each wavelength bin.</p>
 <p>However, we can still detect a significant change in the spectrum during the transit, with certain spectral features absent or suppressed while the transit occurs. During the transit, COS receives almost no photons coming from the source at these spectral features.</p>
@@ -1450,7 +1293,7 @@ In the first region, we see the 1215 Angstrom Lyman-alpha line, much of which is
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-multiple-sub-exposure-files-at-regular-intervals">
-<h1>4. Creating multiple sub-exposure files at regular intervals<a class="headerlink" href="#creating-multiple-sub-exposure-files-at-regular-intervals" title="Permalink to this heading">#</a></h1>
+<h1>4. Creating multiple sub-exposure files at regular intervals<a class="headerlink" href="#creating-multiple-sub-exposure-files-at-regular-intervals" title="Link to this heading">#</a></h1>
 <p>Above, we split an input exposure at a series of specified times.
 The <code class="docutils literal notranslate"><span class="pre">splittag</span></code> command can also be used to split at regular time intervals. For instance, you can split the file every 100 seconds as shown in the code below:</p>
 <div class="cell docutils container">
@@ -1470,50 +1313,6 @@ The <code class="docutils literal notranslate"><span class="pre">splittag</span>
         <span class="n">endtime</span><span class="o">=</span><span class="mf">1300.</span>
     <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;files already exist&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_1_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_2_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_3_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_4_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_5_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_6_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_7_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_8_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_9_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_10_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_11_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_12_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>./output/regular_intervals/lc1va0zgq_13_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>files already exist
 </pre></div>
 </div>
 </div>
@@ -1592,12 +1391,9 @@ The <code class="docutils literal notranslate"><span class="pre">splittag</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/5f8eed1d7c8c560a15100e88807db0881db704c79a6fdcd6c0fa77ea0628e18c.png" src="../../../_images/5f8eed1d7c8c560a15100e88807db0881db704c79a6fdcd6c0fa77ea0628e18c.png" />
-</div>
 </div>
 <section id="exercise-2-examining-epoch-1-5">
-<h2>Exercise 2: <em>Examining epoch 1.5</em><a class="headerlink" href="#exercise-2-examining-epoch-1-5" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 2: <em>Examining epoch 1.5</em><a class="headerlink" href="#exercise-2-examining-epoch-1-5" title="Link to this heading">#</a></h2>
 <p>From Exercise 1, you have an additional epoch, from 450-550 seconds, which overlaps with the end of epoch 1, and has a flux between epoch 1 and epoch 2.</p>
 <p>We wish to know whether the data taken during epoch 1.5 more closely aligns with that during epoch 1 or 2. To analyze this,</p>
 <ul class="simple">
@@ -1616,12 +1412,12 @@ The <code class="docutils literal notranslate"><span class="pre">splittag</span>
 <p>However, you should now be equipped to use the <code class="docutils literal notranslate"><span class="pre">splittag</span></code> tool to subdivide exposures to look for time-variable phenomena.</p>
 </section>
 <section id="congratulations-you-finished-this-notebook">
-<h2>Congratulations! You finished this Notebook!<a class="headerlink" href="#congratulations-you-finished-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>Congratulations! You finished this Notebook!<a class="headerlink" href="#congratulations-you-finished-this-notebook" title="Link to this heading">#</a></h2>
 <p><font size="5">There are more COS data walkthrough Notebooks on different topics. You can find them <a href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/COS">here</a>.</font></p>
 </section>
 <hr class="docutils" />
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Author:</strong> Nat Kerman: <a class="reference external" href="mailto:nkerman&#37;&#52;&#48;stsci&#46;edu">nkerman<span>&#64;</span>stsci<span>&#46;</span>edu</a></p>
 <p><strong>Contributors:</strong> This Notebook drew from a previously existing <a class="reference external" href="https://github.com/justincely/AAS224/blob/master/splittag_tutorial.ipynb">Notebook written by Justin Ely</a>.</p>
 <p><strong>Updated On:</strong> 2022-01-04</p>
@@ -1630,7 +1426,7 @@ The <code class="docutils literal notranslate"><span class="pre">splittag</span>
 </div></blockquote>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the
 authors. Follow these links for more information about citations:</p>
 <ul class="simple">
@@ -1640,7 +1436,7 @@ authors. Follow these links for more information about citations:</p>
 <li><p><a class="reference external" href="https://astroquery.readthedocs.io/en/latest/">Citing <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></a></p></li>
 </ul>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#topSp"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 <p><br></br>
 <br></br>
@@ -1648,7 +1444,7 @@ authors. Follow these links for more information about citations:</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="exercise-solutions">
-<h1>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Permalink to this heading">#</a></h1>
+<h1>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 1:</span>
@@ -1665,17 +1461,6 @@ authors. Follow these links for more information about citations:</p>
 <span class="n">splittag</span><span class="o">.</span><span class="n">splittag</span><span class="p">(</span><span class="n">infiles</span><span class="o">=</span><span class="n">transit_exp</span><span class="p">,</span>
                   <span class="n">outroot</span><span class="o">=</span><span class="n">spec_int_dir2</span> <span class="o">/</span> <span class="s1">&#39;transit_basename&#39;</span><span class="p">,</span>
                   <span class="n">time_list</span><span class="o">=</span><span class="n">split_list</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output/spec_intervals_Ex1/transit_basename_1_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output/spec_intervals_Ex1/transit_basename_2_corrtag_a.fits written
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>output/spec_intervals_Ex1/transit_basename_3_corrtag_a.fits written
 </pre></div>
 </div>
 </div>
@@ -1703,41 +1488,6 @@ authors. Follow these links for more information about citations:</p>
     <span class="p">)</span>
 <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;An error occured&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CALCOS version 3.6.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy version 2.2.2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy version 7.0.1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Begin 13-Feb-2025 16:44:29 UTC
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Don&#39;t add simulated wavecal because association has no exp_swave members
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  No trace profile, using zero
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shifting to 189, 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning:  spt file not found, so TIMELINE extension is incomplete
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extraction algorithm = BOXCAR
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    error estimate for y location = 8.40, FWHM = 6.27
 </pre></div>
 </div>
 </div>
@@ -1827,9 +1577,6 @@ authors. Follow these links for more information about citations:</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/1f05b0b6951ef8c0c16161c051ab90a64ee8e380236205ea859b8d07976f214e.png" src="../../../_images/1f05b0b6951ef8c0c16161c051ab90a64ee8e380236205ea859b8d07976f214e.png" />
 </div>
 </div>
 <p><strong>Ex 2.3 (Analysis):</strong></p>

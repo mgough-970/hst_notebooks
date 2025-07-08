@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>SBC Dark Analysis &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ACS/acs_sbc_dark_analysis/acs_sbc_dark_analysis';</script>
@@ -166,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -362,9 +368,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -389,14 +395,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/ACS/acs_sbc_dark_analysis/acs_sbc_dark_analysis.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -554,9 +560,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -599,10 +605,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flt-files">FLT Files</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-affected-observations-a-id-identify-a">Identify Affected Observations <a id="_identify"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combine-science-images-a-id-scidrizzle-a">Combine science images<a id="_scidrizzle"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-dark-images-a-id-drkdrizzle-a">Create dark images <a id="_drkdrizzle"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry-a-id-photometry-a">Photometry<a id="_photometry"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-affected-observations">Identify Affected Observations <a id="_identify"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Combine science images<a id="_scidrizzle"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-dark-images">Create dark images <a id="_drkdrizzle"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry">Photometry<a id="_photometry"></a></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-more-help">For more help:</a></li>
 </ul>
@@ -618,25 +624,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="alert alert-block alert-warning">
-<b>REQUIREMENT:</b>
-    Before proceeding, install or update your
-    <b><a class="divlink" href="https://stenv.readthedocs.io/en/latest/">
-    stenv
-    </a></b>
-    distribution. <b>stenv</b> is the replacement for AstroConda, which is unsupported as of February 2023.
-</div><p><a id="titleSbc"></a></p>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="titleSbc"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="sbc-dark-analysis">
-<h1>SBC Dark Analysis<a class="headerlink" href="#sbc-dark-analysis" title="Permalink to this heading">#</a></h1>
+<h1>SBC Dark Analysis<a class="headerlink" href="#sbc-dark-analysis" title="Link to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>This notebook has been prepared as a demo on how to perform aperture photometry in SBC images that contain an elevated dark rate. This problem arises when the detector temperature goes above ~25 ºC.</p>
 <p>More information on the dark rate can be found in <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/instrument-science-reports-isrs/_documents/isr1704.pdf">ISR ACS 2017-04</a> (Avila 2017).</p>
 <section id="this-tutorial-will-show-you-how-to">
-<h3>This tutorial will show you how to…<a class="headerlink" href="#this-tutorial-will-show-you-how-to" title="Permalink to this heading">#</a></h3>
+<h3>This tutorial will show you how to…<a class="headerlink" href="#this-tutorial-will-show-you-how-to" title="Link to this heading">#</a></h3>
 <section id="identify-images-with-significant-dark-current">
-<h4>1. <span class="xref myst">Identify Images with Significant Dark Current</span><a class="headerlink" href="#identify-images-with-significant-dark-current" title="Permalink to this heading">#</a></h4>
+<h4>1. <a class="reference internal" href="#_identify"><span class="xref myst">Identify Images with Significant Dark Current</span></a><a class="headerlink" href="#identify-images-with-significant-dark-current" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Open files and extract information</p></li>
 <li><p>Organize information in a table</p></li>
@@ -644,20 +649,20 @@ document.write(`
 </ul>
 </section>
 <section id="combine-science-images">
-<h4>2. <span class="xref myst">Combine Science Images</span><a class="headerlink" href="#combine-science-images" title="Permalink to this heading">#</a></h4>
+<h4>2. <a class="reference internal" href="#_scidrizzle"><span class="xref myst">Combine Science Images</span></a><a class="headerlink" href="#combine-science-images" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> with ASN files to combine images.</p></li>
 </ul>
 </section>
 <section id="combined-dark-images">
-<h4>3. <span class="xref myst">Combined Dark Images</span><a class="headerlink" href="#combined-dark-images" title="Permalink to this heading">#</a></h4>
+<h4>3. <a class="reference internal" href="#_drkdrizzle"><span class="xref myst">Combined Dark Images</span></a><a class="headerlink" href="#combined-dark-images" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Identify which dark images to use for your data.</p></li>
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> to combine dark images.</p></li>
 </ul>
 </section>
 <section id="perform-photometry">
-<h4>4. <span class="xref myst">Perform Photometry</span><a class="headerlink" href="#perform-photometry" title="Permalink to this heading">#</a></h4>
+<h4>4. <a class="reference internal" href="#_photometry"><span class="xref myst">Perform Photometry</span></a><a class="headerlink" href="#perform-photometry" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Subtract dark current from science images using aperture photometry.</p></li>
 </ul>
@@ -665,7 +670,7 @@ document.write(`
 </section>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we list the Python packages used in this notebook. Links to the documentation for each module is provided for convenience.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -779,30 +784,28 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
-                                    skymatch                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the drizzlepac package can be run with TEAL:
-    astrodrizzle       config_testbed      imagefindpars           mapreg       
-       photeq            pixreplace           pixtopix            pixtosky      
-  refimagefindpars       resetbits          runastrodriz          skytopix      
-     tweakback            tweakreg           updatenpol
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">astroquery.mast</span><span class="w"> </span><span class="kn">import</span> <span class="n">Observations</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span><span class="w"> </span><span class="nn">drizzlepac.astrodrizzle</span><span class="w"> </span><span class="kn">import</span> <span class="n">AstroDrizzle</span> <span class="k">as</span> <span class="n">adriz</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">astropy.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">fits</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;astroquery&#39;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="download-the-data">
-<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Permalink to this heading">#</a></h2>
+<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we download all of the data required for this notebook. This is an important step! Some of the image processing steps require all relevant files to be in the working directory. We recommend working with a brand new directory for every new set of data.</p>
 <p>Using the python package <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, we can retreive files from the <a class="reference external" href="http://archive.stsci.edu">MAST</a> archive.</p>
 <section id="go-proposal-13655-how-lyman-alpha-bites-beats-the-dust">
-<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;id=13655">GO Proposal 13655</a>: “How Lyman alpha bites/beats the dust”<a class="headerlink" href="#go-proposal-13655-how-lyman-alpha-bites-beats-the-dust" title="Permalink to this heading">#</a></h3>
+<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;amp;id=13655">GO Proposal 13655</a>: “How Lyman alpha bites/beats the dust”<a class="headerlink" href="#go-proposal-13655-how-lyman-alpha-bites-beats-the-dust" title="Link to this heading">#</a></h3>
 <p>First, we will grab the FLT and ASN files from program 13655. For this example, we only want to retreive the files from visit 11 of this program. We will specify program ID ‘JCMC’ along with observation set ID ‘11’.</p>
 <div class="alert alert-danger">
 <b>MAY CHANGE:</b> The argument "mrp_only" stands for "minimum recommended products only". It currently needs to be set to False, although in the future, False is intended to be set as the default and can be left out.
@@ -818,132 +821,10 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f125lp_jcmc11cw_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f125lp_jcmc11cw/hst_13655_11_acs_sbc_f125lp_jcmc11cw_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f125lp_jcmc11dt_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f125lp_jcmc11dt/hst_13655_11_acs_sbc_f125lp_jcmc11dt_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f140lp_jcmc11cx_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f140lp_jcmc11cx/hst_13655_11_acs_sbc_f140lp_jcmc11cx_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f140lp_jcmc11ds_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f140lp_jcmc11ds/hst_13655_11_acs_sbc_f140lp_jcmc11ds_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f150lp_jcmc11de_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f150lp_jcmc11de/hst_13655_11_acs_sbc_f150lp_jcmc11de_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f150lp_jcmc11dh_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f150lp_jcmc11dh/hst_13655_11_acs_sbc_f150lp_jcmc11dh_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f165lp_jcmc11ct_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f165lp_jcmc11ct/hst_13655_11_acs_sbc_f165lp_jcmc11ct_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/hst_13655_11_acs_sbc_f165lp_jcmc11e6_flt.fits to ./mastDownload/HST/hst_13655_11_acs_sbc_f165lp_jcmc11e6/hst_13655_11_acs_sbc_f165lp_jcmc11e6_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11010_asn.fits to ./mastDownload/HST/jcmc11010/jcmc11010_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11020_asn.fits to ./mastDownload/HST/jcmc11020/jcmc11020_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11030_asn.fits to ./mastDownload/HST/jcmc11030/jcmc11030_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11040_asn.fits to ./mastDownload/HST/jcmc11040/jcmc11040_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11ctq_flt.fits to ./mastDownload/HST/jcmc11ctq/jcmc11ctq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11cwq_flt.fits to ./mastDownload/HST/jcmc11cwq/jcmc11cwq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11cxq_flt.fits to ./mastDownload/HST/jcmc11cxq/jcmc11cxq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11deq_flt.fits to ./mastDownload/HST/jcmc11deq/jcmc11deq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11dhq_flt.fits to ./mastDownload/HST/jcmc11dhq/jcmc11dhq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11dsq_flt.fits to ./mastDownload/HST/jcmc11dsq/jcmc11dsq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11dtq_flt.fits to ./mastDownload/HST/jcmc11dtq/jcmc11dtq_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcmc11e6q_flt.fits to ./mastDownload/HST/jcmc11e6q/jcmc11e6q_flt.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="go-proposal-13961-sbc-dark-current-measurement">
-<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;id=13961">GO Proposal 13961</a>: “SBC Dark Current Measurement”<a class="headerlink" href="#go-proposal-13961-sbc-dark-current-measurement" title="Permalink to this heading">#</a></h3>
+<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;amp;id=13961">GO Proposal 13961</a>: “SBC Dark Current Measurement”<a class="headerlink" href="#go-proposal-13961-sbc-dark-current-measurement" title="Link to this heading">#</a></h3>
 <p>Now we need a set of dark calibration images. You can use any calibration set as long as the dark rate in the image matches that of your science image (discussed later in this notebook). For convenience, here we download the RAW dark frames from one calibration program: GO Proposal 13961.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -953,128 +834,6 @@ document.write(`
                                               <span class="n">productSubGroupDescription</span><span class="o">=</span><span class="p">[</span>
                                                   <span class="s1">&#39;RAW&#39;</span><span class="p">],</span>
                                               <span class="n">mrp_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01iiq_raw.fits to ./mastDownload/HST/jcrx01iiq/jcrx01iiq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ijq_raw.fits to ./mastDownload/HST/jcrx01ijq/jcrx01ijq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ikq_raw.fits to ./mastDownload/HST/jcrx01ikq/jcrx01ikq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ilq_raw.fits to ./mastDownload/HST/jcrx01ilq/jcrx01ilq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01imq_raw.fits to ./mastDownload/HST/jcrx01imq/jcrx01imq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01inq_raw.fits to ./mastDownload/HST/jcrx01inq/jcrx01inq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ioq_raw.fits to ./mastDownload/HST/jcrx01ioq/jcrx01ioq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ipq_raw.fits to ./mastDownload/HST/jcrx01ipq/jcrx01ipq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01iqq_raw.fits to ./mastDownload/HST/jcrx01iqq/jcrx01iqq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01irq_raw.fits to ./mastDownload/HST/jcrx01irq/jcrx01irq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01isq_raw.fits to ./mastDownload/HST/jcrx01isq/jcrx01isq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01itq_raw.fits to ./mastDownload/HST/jcrx01itq/jcrx01itq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01iuq_raw.fits to ./mastDownload/HST/jcrx01iuq/jcrx01iuq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ivq_raw.fits to ./mastDownload/HST/jcrx01ivq/jcrx01ivq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01iwq_raw.fits to ./mastDownload/HST/jcrx01iwq/jcrx01iwq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01ixq_raw.fits to ./mastDownload/HST/jcrx01ixq/jcrx01ixq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01iyq_raw.fits to ./mastDownload/HST/jcrx01iyq/jcrx01iyq_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01j0q_raw.fits to ./mastDownload/HST/jcrx01j0q/jcrx01j0q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01j1q_raw.fits to ./mastDownload/HST/jcrx01j1q/jcrx01j1q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcrx01j2q_raw.fits to ./mastDownload/HST/jcrx01j2q/jcrx01j2q_raw.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
 </pre></div>
 </div>
 </div>
@@ -1107,11 +866,11 @@ document.write(`
 </section>
 </section>
 <section id="file-information">
-<h2>File Information<a class="headerlink" href="#file-information" title="Permalink to this heading">#</a></h2>
+<h2>File Information<a class="headerlink" href="#file-information" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>The structure of the fits files from ACS may be different depending on what kind of observation was made. For more information, refer to Section 2.2 of the <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/other-documents/_documents/acs_dhb.pdf">ACS Data Handbook</a>.</p>
 <section id="association-files">
-<h3>Association Files<a class="headerlink" href="#association-files" title="Permalink to this heading">#</a></h3>
+<h3>Association Files<a class="headerlink" href="#association-files" title="Link to this heading">#</a></h3>
 <p>Association files only contain one extension which lists associated files and their types.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1137,7 +896,7 @@ document.write(`
 </div>
 </section>
 <section id="raw-files">
-<h3>Raw Files<a class="headerlink" href="#raw-files" title="Permalink to this heading">#</a></h3>
+<h3>Raw Files<a class="headerlink" href="#raw-files" title="Link to this heading">#</a></h3>
 <p>A standard raw image file from the SBC has the same structure as you’d expect from full frame observation from ACS.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1173,7 +932,7 @@ document.write(`
 </div>
 </section>
 <section id="flt-files">
-<h3>FLT Files<a class="headerlink" href="#flt-files" title="Permalink to this heading">#</a></h3>
+<h3>FLT Files<a class="headerlink" href="#flt-files" title="Link to this heading">#</a></h3>
 <p>SBC flat-fielded files have the same structure as the raw files, with additional HDUs for WCS corrections.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1225,21 +984,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: jcrx01iuq_raw.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     173   ()      
-  1  SCI           1 ImageHDU        85   (1024, 1024)   int16   
-  2  ERR           1 ImageHDU        49   ()      
-  3  DQ            1 ImageHDU        43   ()      
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
-<section id="identify-affected-observations-a-id-identify-a">
-<h2>Identify Affected Observations <a id="_identify"></a><a class="headerlink" href="#identify-affected-observations-a-id-identify-a" title="Permalink to this heading">#</a></h2>
+<section id="identify-affected-observations">
+<h2>Identify Affected Observations <a id="_identify"></a><a class="headerlink" href="#identify-affected-observations" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Let’s take a look at some information from our science images. We want to find observations with an average temperature greater than 25<span class="math notranslate nohighlight">\(^o\)</span>C. We can organize the information in a <code class="docutils literal notranslate"><span class="pre">Table</span></code> object from <code class="docutils literal notranslate"><span class="pre">astropy.table</span></code> for convenience. Here, we define a table with column names and respective data types.</p>
 <p><b>Note:</b> The FITS header keywords <code class="docutils literal notranslate"><span class="pre">mdecodt1</span></code> and <code class="docutils literal notranslate"><span class="pre">mdecodt2</span></code> refer to the temperature at the beginning and end of the exposure respectively.</p>
@@ -1274,28 +1023,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                     file                     ...      avgtemp      
---------------------------------------------- ... ------------------
-                           jcmc11deq_flt.fits ... 22.820700000000002
-hst_13655_11_acs_sbc_f150lp_jcmc11dh_flt.fits ...            23.3091
-                           jcmc11ctq_flt.fits ...            17.3262
-hst_13655_11_acs_sbc_f125lp_jcmc11cw_flt.fits ...            18.6693
-hst_13655_11_acs_sbc_f165lp_jcmc11ct_flt.fits ...            17.3262
-                           jcmc11cxq_flt.fits ...             19.524
-                           jcmc11dhq_flt.fits ...            23.3091
-                           jcmc11dtq_flt.fits ... 24.163800000000002
-hst_13655_11_acs_sbc_f165lp_jcmc11e6_flt.fits ...            25.9953
-hst_13655_11_acs_sbc_f125lp_jcmc11dt_flt.fits ... 24.163800000000002
-hst_13655_11_acs_sbc_f140lp_jcmc11cx_flt.fits ...             19.524
-                           jcmc11dsq_flt.fits ...            23.7975
-hst_13655_11_acs_sbc_f150lp_jcmc11de_flt.fits ... 22.820700000000002
-                           jcmc11cwq_flt.fits ...            18.6693
-hst_13655_11_acs_sbc_f140lp_jcmc11ds_flt.fits ...            23.7975
-                           jcmc11e6q_flt.fits ...            25.9953
-</pre></div>
-</div>
-</div>
 </div>
 <p>We can sort the table by column value for analysis. Since we are interested in temperature, we’ll sort this table by the column ‘avgtemp’</p>
 <div class="cell docutils container">
@@ -1305,34 +1032,12 @@ hst_13655_11_acs_sbc_f140lp_jcmc11ds_flt.fits ...            23.7975
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                     file                     ...      avgtemp      
---------------------------------------------- ... ------------------
-                           jcmc11ctq_flt.fits ...            17.3262
-hst_13655_11_acs_sbc_f165lp_jcmc11ct_flt.fits ...            17.3262
-hst_13655_11_acs_sbc_f125lp_jcmc11cw_flt.fits ...            18.6693
-                           jcmc11cwq_flt.fits ...            18.6693
-hst_13655_11_acs_sbc_f140lp_jcmc11cx_flt.fits ...             19.524
-                           jcmc11cxq_flt.fits ...             19.524
-                           jcmc11deq_flt.fits ... 22.820700000000002
-hst_13655_11_acs_sbc_f150lp_jcmc11de_flt.fits ... 22.820700000000002
-hst_13655_11_acs_sbc_f150lp_jcmc11dh_flt.fits ...            23.3091
-                           jcmc11dhq_flt.fits ...            23.3091
-hst_13655_11_acs_sbc_f140lp_jcmc11ds_flt.fits ...            23.7975
-                           jcmc11dsq_flt.fits ...            23.7975
-                           jcmc11dtq_flt.fits ... 24.163800000000002
-hst_13655_11_acs_sbc_f125lp_jcmc11dt_flt.fits ... 24.163800000000002
-hst_13655_11_acs_sbc_f165lp_jcmc11e6_flt.fits ...            25.9953
-                           jcmc11e6q_flt.fits ...            25.9953
-</pre></div>
-</div>
-</div>
 </div>
 <p>Sorting the table by average temperature gives us a sense of how temperature of the SBC behaves over time. Only the last image was affected by a temperature of over 25<span class="math notranslate nohighlight">\(^o\)</span>C, and therefore the only image to be affected by elevated dark current.</p>
 <p>The table shows us that this image was taken with the filter F165LP- which is also same filter that the first image was taken with. This is not a coincidence! Take a moment to consider the time-based symmetry of the images, and what that means for the dark current of the combined images.</p>
 </section>
-<section id="combine-science-images-a-id-scidrizzle-a">
-<h2>Combine science images<a id="_scidrizzle"></a><a class="headerlink" href="#combine-science-images-a-id-scidrizzle-a" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h2>Combine science images<a id="_scidrizzle"></a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Let’s make drizzled products for each filter. We do this by using the ASN files for each filter. The ASN files will tell AstroDrizzle which flat images to combine for a given filter.  Steps 1-6 of the drizzling procedure have been turned off since their purpose is to identify and mask cosmic rays, which do not affect SBC images.</p>
 <p>The drizzle keyword parameters below are the appropriate ones for SBC data. For “final_scale” we use the pixel scale of SBC, 0.025 arcseconds.</p>
@@ -1365,426 +1070,10 @@ hst_13655_11_acs_sbc_f165lp_jcmc11e6_flt.fits ...            25.9953
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file created...
-AstroDrizzle log file: jcmc11030.tra
-AstroDrizzle Version 3.9.0 started at: 16:42:28.145 (13/02/2025)
-
-==== Processing Step  Initialization  started at  16:42:28.145 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-WARNING: No cte correction will be made for this SBC data.
-WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55871142745008 38.043205302369955 
-CRPIX : 707.5000105276703 686.0000102072953 
-CD1_1 CD1_2  : -5.080790365666934e-06 -4.73401287515374e-06 
-CD2_1 CD2_2  : -4.73401287515374e-06 5.080790365666934e-06 
-NAXIS : 1416  1373
-********************************************************************************
-*
-*  Estimated memory usage:  up to 30 Mb.
-*  Output image size:       1416 X 1373 pixels. 
-*  Output image file:       ~ 22 Mb. 
-*  Cores available:         1
-*
-********************************************************************************
-==== Processing Step Initialization finished at 16:42:28.47 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Static Mask  started at  16:42:28.477 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Static Mask finished at 16:42:28.477 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Subtract Sky  started at  16:42:28.47 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Subtract Sky finished at 16:42:28.527 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Separate Drizzle  started at  16:42:28.527 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Separate Drizzle finished at 16:42:28.528 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Create Median  started at  16:42:28.528 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Blot  started at  16:42:28.528 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Blot finished at 16:42:28.529 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Driz_CR  started at  16:42:28.529 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Final Drizzle  started at  16:42:28.530 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55871142745008 38.043205302369955 
-CRPIX : 707.5000105276703 686.0000102072953 
-CD1_1 CD1_2  : -5.080790365666934e-06 -4.73401287515374e-06 
-CD2_1 CD2_2  : -4.73401287515374e-06 5.080790365666934e-06 
-NAXIS : 1416  1373
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-Generating simple FITS output: jcmc11030_drz_sci.fits
-Deleted all instances of WCS with key A in extensions [0]
-Writing out image to disk: jcmc11030_drz_sci.fits
-Writing out image to disk: jcmc11030_drz_wht.fits
-==== Processing Step Final Drizzle finished at 16:42:29.560 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle Version 3.9.0 is finished processing at 16:42:29.561 (13/02/2025).
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   --------------------          --------------------
-                   Step          Elapsed time
-   --------------------          --------------------
-
-         Initialization          0.3311 sec.
-            Static Mask          0.0004 sec.
-           Subtract Sky          0.0493 sec.
-       Separate Drizzle          0.0004 sec.
-          Create Median          0.0000 sec.
-                   Blot          0.0004 sec.
-                Driz_CR          0.0000 sec.
-          Final Drizzle          1.0304 sec.
-   ====================          ====================
-                  Total          1.4120 sec.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file saved...
-No trailer file created...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle log file: jcmc11010.tra
-AstroDrizzle Version 3.9.0 started at: 16:42:29.58 (13/02/2025)
-
-==== Processing Step  Initialization  started at  16:42:29.589 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.5587124859804 38.04320516616883 
-CRPIX : 707.5000105276704 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1416  1373
-********************************************************************************
-*
-*  Estimated memory usage:  up to 30 Mb.
-*  Output image size:       1416 X 1373 pixels. 
-*  Output image file:       ~ 22 Mb. 
-*  Cores available:         1
-*
-********************************************************************************
-==== Processing Step Initialization finished at 16:42:29.817 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Static Mask  started at  16:42:29.818 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Static Mask finished at 16:42:29.818 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Subtract Sky  started at  16:42:29.819 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Subtract Sky finished at 16:42:29.867 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Separate Drizzle  started at  16:42:29.868 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Separate Drizzle finished at 16:42:29.868 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Create Median  started at  16:42:29.868 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Blot  started at  16:42:29.869 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Blot finished at 16:42:29.869 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Driz_CR  started at  16:42:29.869 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Final Drizzle  started at  16:42:29.870 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.5587124859804 38.04320516616883 
-CRPIX : 707.5000105276704 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1416  1373
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-Generating simple FITS output: jcmc11010_drz_sci.fits
-Deleted all instances of WCS with key A in extensions [0]
-Writing out image to disk: jcmc11010_drz_sci.fits
-Writing out image to disk: jcmc11010_drz_wht.fits
-==== Processing Step Final Drizzle finished at 16:42:30.897 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle Version 3.9.0 is finished processing at 16:42:30.898 (13/02/2025).
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   --------------------          --------------------
-                   Step          Elapsed time
-   --------------------          --------------------
-
-         Initialization          0.2287 sec.
-            Static Mask          0.0004 sec.
-           Subtract Sky          0.0485 sec.
-       Separate Drizzle          0.0004 sec.
-          Create Median          0.0000 sec.
-                   Blot          0.0004 sec.
-                Driz_CR          0.0000 sec.
-          Final Drizzle          1.0274 sec.
-   ====================          ====================
-                  Total          1.3058 sec.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file saved...
-No trailer file created...
-AstroDrizzle log file: jcmc11020.tra
-AstroDrizzle Version 3.9.0 started at: 16:42:30.925 (13/02/2025)
-
-==== Processing Step  Initialization  started at  16:42:30.925 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55871129084667 38.04320474124267 
-CRPIX : 707.5000105276703 686.0000102072953 
-CD1_1 CD1_2  : -5.080790365666934e-06 -4.73401287515374e-06 
-CD2_1 CD2_2  : -4.73401287515374e-06 5.080790365666934e-06 
-NAXIS : 1416  1373
-********************************************************************************
-*
-*  Estimated memory usage:  up to 30 Mb.
-*  Output image size:       1416 X 1373 pixels. 
-*  Output image file:       ~ 22 Mb. 
-*  Cores available:         1
-*
-********************************************************************************
-==== Processing Step Initialization finished at 16:42:31.149 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Static Mask  started at  16:42:31.149 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Static Mask finished at 16:42:31.150 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Subtract Sky  started at  16:42:31.150 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Subtract Sky finished at 16:42:31.199 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Separate Drizzle  started at  16:42:31.199 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Separate Drizzle finished at 16:42:31.199 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Create Median  started at  16:42:31.200 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Blot  started at  16:42:31.200 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Blot finished at 16:42:31.201 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Driz_CR  started at  16:42:31.201 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Final Drizzle  started at  16:42:31.201 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55871129084667 38.04320474124267 
-CRPIX : 707.5000105276703 686.0000102072953 
-CD1_1 CD1_2  : -5.080790365666934e-06 -4.73401287515374e-06 
-CD2_1 CD2_2  : -4.73401287515374e-06 5.080790365666934e-06 
-NAXIS : 1416  1373
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-Generating simple FITS output: jcmc11020_drz_sci.fits
-Deleted all instances of WCS with key A in extensions [0]
-Writing out image to disk: jcmc11020_drz_sci.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing out image to disk: jcmc11020_drz_wht.fits
-==== Processing Step Final Drizzle finished at 16:42:32.312 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle Version 3.9.0 is finished processing at 16:42:32.312 (13/02/2025).
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   --------------------          --------------------
-                   Step          Elapsed time
-   --------------------          --------------------
-
-         Initialization          0.2235 sec.
-            Static Mask          0.0005 sec.
-           Subtract Sky          0.0485 sec.
-       Separate Drizzle          0.0004 sec.
-          Create Median          0.0000 sec.
-                   Blot          0.0005 sec.
-                Driz_CR          0.0000 sec.
-          Final Drizzle          1.1104 sec.
-   ====================          ====================
-                  Total          1.3837 sec.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file saved...
-No trailer file created...
-AstroDrizzle log file: jcmc11040.tra
-AstroDrizzle Version 3.9.0 started at: 16:42:32.340 (13/02/2025)
-
-==== Processing Step  Initialization  started at  16:42:32.340 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55870940865276 38.04320257724112 
-CRPIX : 708.000010535121 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1417  1373
-********************************************************************************
-*
-*  Estimated memory usage:  up to 30 Mb.
-*  Output image size:       1417 X 1373 pixels. 
-*  Output image file:       ~ 22 Mb. 
-*  Cores available:         1
-*
-********************************************************************************
-==== Processing Step Initialization finished at 16:42:32.5 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Static Mask  started at  16:42:32.566 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Static Mask finished at 16:42:32.56 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Subtract Sky  started at  16:42:32.567 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Subtract Sky finished at 16:42:32.616 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Separate Drizzle  started at  16:42:32.616 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Separate Drizzle finished at 16:42:32.616 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Create Median  started at  16:42:32.617 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Blot  started at  16:42:32.617 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Blot finished at 16:42:32.618 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Driz_CR  started at  16:42:32.618 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Final Drizzle  started at  16:42:32.61 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.55870940865276 38.04320257724112 
-CRPIX : 708.000010535121 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1417  1373
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-Generating simple FITS output: jcmc11040_drz_sci.fits
-Deleted all instances of WCS with key A in extensions [0]
-Writing out image to disk: jcmc11040_drz_sci.fits
-Writing out image to disk: jcmc11040_drz_wht.fits
-==== Processing Step Final Drizzle finished at 16:42:33.636 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle Version 3.9.0 is finished processing at 16:42:33.637 (13/02/2025).
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   --------------------          --------------------
-                   Step          Elapsed time
-   --------------------          --------------------
-
-         Initialization          0.2251 sec.
-            Static Mask          0.0005 sec.
-           Subtract Sky          0.0491 sec.
-       Separate Drizzle          0.0004 sec.
-          Create Median          0.0000 sec.
-                   Blot          0.0004 sec.
-                Driz_CR          0.0000 sec.
-          Final Drizzle          1.0177 sec.
-   ====================          ====================
-                  Total          1.2932 sec.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file saved...
-</pre></div>
-</div>
-</div>
 </div>
 </section>
-<section id="create-dark-images-a-id-drkdrizzle-a">
-<h2>Create dark images <a id="_drkdrizzle"></a><a class="headerlink" href="#create-dark-images-a-id-drkdrizzle-a" title="Permalink to this heading">#</a></h2>
+<section id="create-dark-images">
+<h2>Create dark images <a id="_drkdrizzle"></a><a class="headerlink" href="#create-dark-images" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>We want to use dark frames to make a drizzled product that will be used to approximate the dark rate to be subtracted from the science product. The dark rate above 25C varies. We need to find the dark frame that contains a <em>dark rate</em> similar to your affected image.</p>
 <p>Below we open the two F165LP science frames, one being a high temperature image and the other being a lower temperature image with negligible dark current.</p>
@@ -1822,41 +1111,6 @@ Writing out image to disk: jcmc11040_drz_wht.fits
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Box Sums for Science Data:
-
-jcmc11ctq_flt.fits --&gt; 428.6138000488281
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcmc11e6q_flt.fits --&gt; 2379.35107421875
-
-----------------
-
-Box Sums for Dark Frames:
-
-jcrx01iuq_raw.fits --&gt; 1232
-jcrx01ijq_raw.fits --&gt; 294
-jcrx01imq_raw.fits --&gt; 299
-jcrx01ivq_raw.fits --&gt; 1532
-jcrx01iwq_raw.fits --&gt; 1904
-jcrx01ilq_raw.fits --&gt; 348
-jcrx01ipq_raw.fits --&gt; 347
-jcrx01ikq_raw.fits --&gt; 302
-jcrx01iyq_raw.fits --&gt; 2445
-jcrx01inq_raw.fits --&gt; 324
-jcrx01iqq_raw.fits --&gt; 492
-jcrx01ioq_raw.fits --&gt; 351
-jcrx01itq_raw.fits --&gt; 982
-jcrx01j2q_raw.fits --&gt; 3566
-jcrx01iiq_raw.fits --&gt; 300
-jcrx01irq_raw.fits --&gt; 644
-jcrx01ixq_raw.fits --&gt; 2196
-jcrx01isq_raw.fits --&gt; 777
-jcrx01j0q_raw.fits --&gt; 2922
-jcrx01j1q_raw.fits --&gt; 3141
-</pre></div>
-</div>
-</div>
 </div>
 <p>It looks like the two dark frames that come closest to the science frames are <strong>jcrx01iqq</strong> and <strong>jcrx01iyq</strong>. We will use those to make a combined master dark frame. Note that for programs with more exposures, you will need to do this for each input image in the combined mosaic.</p>
 <p>For better visualization, let’s take a look at one of our science images and matching dark frame. We will also highlight the dark rate extraction box in each plot.</p>
@@ -1886,12 +1140,6 @@ jcrx01j1q_raw.fits --&gt; 3141
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">patch1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.patches.Rectangle at 0x7fe1a83cfad0&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/c611d125ef50eb3b479a256c4051b8d765367526c44942d80c1f7f04cefd9eff.png" src="../../../_images/c611d125ef50eb3b479a256c4051b8d765367526c44942d80c1f7f04cefd9eff.png" />
 </div>
 </div>
 <p>To preserve important information in the header specific to the science image, such as the WCS solution, we will insert the data of the dark images into copies of the science images. We also must remember to adjust the exposure time of the copies of the science frames to that of the dark frames so that the drizzled products have the correct count rates.</p>
@@ -1939,112 +1187,6 @@ jcrx01j1q_raw.fits --&gt; 3141
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file created...
-AstroDrizzle log file: final.tra
-AstroDrizzle Version 3.9.0 started at: 16:42:34.580 (13/02/2025)
-
-==== Processing Step  Initialization  started at  16:42:34.580 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: No cte correction will be made for this SBC data.
-WARNING: No cte correction will be made for this SBC data.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.5587124859804 38.04320516616883 
-CRPIX : 707.5000105276704 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1416  1373
-********************************************************************************
-*
-*  Estimated memory usage:  up to 30 Mb.
-*  Output image size:       1416 X 1373 pixels. 
-*  Output image file:       ~ 22 Mb. 
-*  Cores available:         1
-*
-********************************************************************************
-==== Processing Step Initialization finished at 16:42:34.79 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Static Mask  started at  16:42:34.79 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Static Mask finished at 16:42:34.798 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Subtract Sky  started at  16:42:34.79 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Subtract Sky finished at 16:42:34.847 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Separate Drizzle  started at  16:42:34.847 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Separate Drizzle finished at 16:42:34.847 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Create Median  started at  16:42:34.848 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Blot  started at  16:42:34.84 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step Blot finished at 16:42:34.849 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Driz_CR  started at  16:42:34.849 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>==== Processing Step  Final Drizzle  started at  16:42:34.850 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WCS Keywords
-
-Number of WCS axes: 2
-CTYPE : &#39;RA---TAN&#39; &#39;DEC--TAN&#39; 
-CRVAL : 165.5587124859804 38.04320516616883 
-CRPIX : 707.5000105276704 686.0000102072954 
-CD1_1 CD1_2  : -5.080803516492815e-06 -4.733998760959866e-06 
-CD2_1 CD2_2  : -4.733998760959866e-06 5.080803516492815e-06 
-NAXIS : 1416  1373
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-Generating simple FITS output: masterdark_drz_sci.fits
-Deleted all instances of WCS with key A in extensions [0]
-Writing out image to disk: masterdark_drz_sci.fits
-Writing out image to disk: masterdark_drz_wht.fits
-==== Processing Step Final Drizzle finished at 16:42:35.860 (13/02/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AstroDrizzle Version 3.9.0 is finished processing at 16:42:35.860 (13/02/2025).
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   --------------------          --------------------
-                   Step          Elapsed time
-   --------------------          --------------------
-
-         Initialization          0.2169 sec.
-            Static Mask          0.0005 sec.
-           Subtract Sky          0.0485 sec.
-       Separate Drizzle          0.0005 sec.
-          Create Median          0.0000 sec.
-                   Blot          0.0005 sec.
-                Driz_CR          0.0000 sec.
-          Final Drizzle          1.0102 sec.
-   ====================          ====================
-                  Total          1.2770 sec.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No trailer file saved...
-</pre></div>
-</div>
-</div>
 </div>
 <p>We will now display the images to confirm that they show similar elevated dark rates. You might want do display them in DS9 (or any other viewer) outside of this notebook so you can play with the stretch a bit and so you can see bigger versions of the images.</p>
 <div class="cell docutils container">
@@ -2068,17 +1210,11 @@ Writing out image to disk: masterdark_drz_wht.fits
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fe1a6349d10&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/49b10b1496d10843c12f0443be6688366e833ecd392ca72287cd72b8b9500f72.png" src="../../../_images/49b10b1496d10843c12f0443be6688366e833ecd392ca72287cd72b8b9500f72.png" />
-</div>
 </div>
 <p>The images look comparable. We will now proceed to performing some photometric analysis to estimate the dark current in the source.</p>
 </section>
-<section id="photometry-a-id-photometry-a">
-<h2>Photometry<a id="_photometry"></a><a class="headerlink" href="#photometry-a-id-photometry-a" title="Permalink to this heading">#</a></h2>
+<section id="photometry">
+<h2>Photometry<a id="_photometry"></a><a class="headerlink" href="#photometry" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Now we will use the <code class="docutils literal notranslate"><span class="pre">photutils</span></code> package to set up the two apertures. We will use these apertures to measure the flux of different regions in the images.</p>
 <p>The first aperture is centered on our target at (735, 710), and is shaped as an elliptical to encompass all of the flux from the source. The other aperture will be the same exact shape, but located near the edge of the detector at (200, 200).</p>
@@ -2106,13 +1242,6 @@ Writing out image to disk: masterdark_drz_wht.fits
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.patches.Ellipse at 0x7fe1a7cb5cd0&gt;,
- &lt;matplotlib.patches.Ellipse at 0x7fe1a7ac0a50&gt;]
-</pre></div>
-</div>
-<img alt="../../../_images/21babb958224e65f350c6c50434d89cd03bb2fba2e69b428afeec07df6361c70.png" src="../../../_images/21babb958224e65f350c6c50434d89cd03bb2fba2e69b428afeec07df6361c70.png" />
-</div>
 </div>
 <p>Finally, we do the photometry using the two apertures on both images. We print out the tables to see the results.</p>
 <div class="cell docutils container">
@@ -2135,38 +1264,11 @@ Writing out image to disk: masterdark_drz_wht.fits
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Science data photometry:
-
- id xcenter ycenter     aperture_sum   
---- ------- ------- -------------------
-  1   735.0   710.0   2.885625333666923
-  2   200.0   200.0 0.09033901192133124
-
-
-Dark frame photometry:
-
- id xcenter ycenter     aperture_sum   
---- ------- ------- -------------------
-  1   735.0   710.0  0.3220912920189489
-  2   200.0   200.0 0.06844985468540221
-
-
-
-Difference of aperture sums (science - dark):
-
-    aperture_sum    
---------------------
-   2.563534041647974
-0.021889157235929033
-</pre></div>
-</div>
-</div>
 </div>
 <p>The target aperture has 2.89 cts/sec, while the same aperture in the dark frame has 0.322 cts/sec. That means that ~11% of the flux in your source comes from dark current and should be subtracted out, leaving a flux for you source of 2.564 cts/sec.</p>
 </section>
 <section id="final-thoughts">
-<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this heading">#</a></h2>
+<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>The difference in flux in the second aperture (the one in the lower left portion of the image) shows that there is a small residual background of ~0.02 cts/sec in the science frame. This could be real background from the sky (and not dark current from the detector that you might want to account for properly in your flux and error budget.</p></li>
@@ -2174,11 +1276,11 @@ Difference of aperture sums (science - dark):
 <li><p>These problems can be avoided using a few strategies detailed in <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/instrument-science-reports-isrs/_documents/isr1807.pdf">ISR ACS 2018-07</a> (Avila 2018).</p></li>
 </ol>
 <section id="for-more-help">
-<h3>For more help:<a class="headerlink" href="#for-more-help" title="Permalink to this heading">#</a></h3>
+<h3>For more help:<a class="headerlink" href="#for-more-help" title="Link to this heading">#</a></h3>
 <p>More details may be found on the <a class="reference external" href="http://www.stsci.edu/hst/instrumentation/acs">ACS website</a> and in the <a class="reference external" href="https://hst-docs.stsci.edu/display/ACSIHB">ACS Instrument</a> and <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/other-documents/_documents/acs_dhb.pdf">Data Handbooks</a>.</p>
 <p>Please visit the <a class="reference external" href="http://hsthelp.stsci.edu">HST Help Desk</a>. Through the help desk portal, you can explore the <em>HST</em> Knowledge Base and request additional help from experts.</p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#titleSbc"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a>
 <br></br>
 <br></br></p>
@@ -2272,10 +1374,10 @@ Difference of aperture sums (science - dark):
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flt-files">FLT Files</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-affected-observations-a-id-identify-a">Identify Affected Observations <a id="_identify"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combine-science-images-a-id-scidrizzle-a">Combine science images<a id="_scidrizzle"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-dark-images-a-id-drkdrizzle-a">Create dark images <a id="_drkdrizzle"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry-a-id-photometry-a">Photometry<a id="_photometry"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-affected-observations">Identify Affected Observations <a id="_identify"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Combine science images<a id="_scidrizzle"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-dark-images">Create dark images <a id="_drkdrizzle"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry">Photometry<a id="_photometry"></a></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-more-help">For more help:</a></li>
 </ul>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Drizzling new WFPC2 FLT data products with chip-normalization &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2';</script>
@@ -166,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -362,9 +368,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -389,14 +395,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -554,9 +560,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -578,26 +584,26 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-id-intro-a">1. Introduction <a id="intro"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction <a id="intro"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-packages">Import Packages</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data-a-id-data-a">2. Download the Data <a id="Data"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data">2. Download the Data <a id="Data"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#move-files-to-the-current-working-directory">Move files to the current working directory</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-file-structure">Inspect the File Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-photometric-keywords-from-the-handbook-with-the-image-headers">Compare photometric keywords from the handbook with the image headers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-the-equation-for-computing-stmag-using-the-new-and-the-old-workflow">Compare the equation for computing STMAG using the new and the old workflow:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-image-header-data-a-id-check-keywords-a">Check image header data <a id="check_keywords"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-image-header-data">Check image header data <a id="check_keywords"></a></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-wcs-a-id-wcs-a">3. Update the WCS <a id="WCS"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-the-images-a-id-align-a">4. Align the Images <a id="align"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-wcs">3. Update the WCS <a id="WCS"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-the-images">4. Align the Images <a id="align"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-the-alignment-is-unsuccessful-stop-the-notebook">If the alignment is unsuccessful, stop the notebook</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-shift-file-and-fit-residuals-a-id-fit-quality-sdss-a">Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-shift-file-and-fit-residuals">Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-astrometric-residual-scatter-plots">Inspect the Astrometric residual scatter plots</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drizzle-combine-the-images-a-id-drizzle-a">5. Drizzle-combine the images <a id="drizzle"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drizzle-combine-the-images">5. Drizzle-combine the images <a id="drizzle"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-flt-inputs">Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">flt</span></code> inputs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs">Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">c0m</span></code> inputs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization">Inspect the ratio of the two drizzled images to see changes due to photometric normalization</a></li>
@@ -606,7 +612,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region">Perform aperture photometry on three stars in the WF2, WF4 overlap region</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions-a-id-conclusions-a">Conclusions <a id="conclusions"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions <a id="conclusions"></a></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-citations">Software Citations</a></li>
@@ -623,25 +629,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id="top"></a></p>
-<section class="tex2jax_ignore mathjax_ignore" id="drizzling-new-wfpc2-flt-data-products-with-chip-normalization-space-telescope-logo">
-<h1>Drizzling new WFPC2 FLT data products with chip-normalization   <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a><a class="headerlink" href="#drizzling-new-wfpc2-flt-data-products-with-chip-normalization-space-telescope-logo" title="Permalink to this heading">#</a></h1>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="top"></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="drizzling-new-wfpc2-flt-data-products-with-chip-normalization">
+<h1>Drizzling new WFPC2 FLT data products with chip-normalization   <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a><a class="headerlink" href="#drizzling-new-wfpc2-flt-data-products-with-chip-normalization" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <div class="alert alert-block alert-warning" style="color:black" > <b> This notebook requires creating and activating a virtual environment using the requirements file in this notebook's repository. Please also review the README file before using the notebook.</b> <br> </div>
 <p><a id="toc"></a></p>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p>  <strong><span class="xref myst">1. Introduction</span> <br></strong>
-  <strong><span class="xref myst">2. Download the Data</span></strong> <br>
-  <strong><span class="xref myst">3. Update the WCS</span></strong> <br>
-  <strong><span class="xref myst">4. Align the Images</span></strong> <br>
-  <strong><span class="xref myst">5. Drizzle-combine the images</span></strong> <br>
-  <strong><span class="xref myst">Conclusions</span></strong> <br></p>
-<p><font color="red">This notebook currently fails to execute, use as reference only</font></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p>  <strong><a class="reference internal" href="#intro"><span class="xref myst">1. Introduction</span></a> <br></strong>
+  <strong><a class="reference internal" href="#Data"><span class="xref myst">2. Download the Data</span></a></strong> <br>
+  <strong><a class="reference internal" href="#WCS"><span class="xref myst">3. Update the WCS</span></a></strong> <br>
+  <strong><a class="reference internal" href="#align"><span class="xref myst">4. Align the Images</span></a></strong> <br>
+  <strong><a class="reference internal" href="#drizzle"><span class="xref myst">5. Drizzle-combine the images</span></a></strong> <br>
+  <strong><a class="reference internal" href="#conclusions"><span class="xref myst">Conclusions</span></a></strong> <br></p>
 </section>
-<section id="introduction-a-id-intro-a">
-<h2>1. Introduction <a id="intro"></a><a class="headerlink" href="#introduction-a-id-intro-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="introduction">
+<h2>1. Introduction <a id="intro"></a><a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>This notebook shows how to work with a new type of WFPC2 calibrated data product in MAST. The new data products combine the previously separate files containing the science array <code class="docutils literal notranslate"><span class="pre">c0m.fits</span></code>and data quality array <code class="docutils literal notranslate"><span class="pre">c1m.fits</span></code> into a new file with suffix <code class="docutils literal notranslate"><span class="pre">flt.fits</span></code>, similar to calibrated images for ACS and WFC3.</p>
 <p>These <code class="docutils literal notranslate"><span class="pre">flt</span></code> files have now been corrected for differences in the inverse sensitivity the science arrays of each chip using the software ‘<a class="reference external" href="https://drizzlepac.readthedocs.io/en/deployment/photeq.html">photeq</a>’ so that a single PHOTFLAM (or PHOTFNU) value may be used for photometry.</b></p>
 <p>The new <code class="docutils literal notranslate"><span class="pre">flt</span></code> files include four key differences from the older style <code class="docutils literal notranslate"><span class="pre">c0m</span></code>, <code class="docutils literal notranslate"><span class="pre">c1m</span></code> WFPC2 files:</p>
@@ -651,7 +662,7 @@ document.write(`
 4.) The SCI header WCS includes improved absolute astromentry (i.e. WCSNAME=&#39;*GAIA*&#39;).
 </pre></div>
 </div>
-<p><b> This example uses WFPC2 observations of Omega Centauri (NGC 5139) in the F555W filter taken from CAL proposal <a class="reference external" href="http://www.stsci.edu/cgi-bin/get-proposal-info?id=8447&amp;observatory=HST">8447</a>.</b> The two exposures have been dithered to place the same stars on the WF2 and WF4 chips to measure relative photometry across the two chips.  After using <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> to realign the images, we show how to combine the images with <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code>. We inspect the resulting science and weight images and compare the results with those derived from the older MAST data products.</p>
+<p><b> This example uses WFPC2 observations of Omega Centauri (NGC 5139) in the F555W filter taken from CAL proposal <a class="reference external" href="http://www.stsci.edu/cgi-bin/get-proposal-info?id=8447&amp;amp;observatory=HST">8447</a>.</b> The two exposures have been dithered to place the same stars on the WF2 and WF4 chips to measure relative photometry across the two chips.  After using <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> to realign the images, we show how to combine the images with <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code>. We inspect the resulting science and weight images and compare the results with those derived from the older MAST data products.</p>
 <p><strong>Acronyms:</strong></p>
 <ul class="simple">
 <li><p>Hubble Space Telescope (HST)</p></li>
@@ -667,8 +678,8 @@ document.write(`
 </ul>
 <p><a id="import"></a></p>
 <section id="import-packages">
-<h3>Import Packages<a class="headerlink" href="#import-packages" title="Permalink to this heading">#</a></h3>
-<p><span class="xref myst">Table of Contents</span></p>
+<h3>Import Packages<a class="headerlink" href="#import-packages" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <hr class="docutils" />
 <p>The following Python packages are required to run the Jupyter Notebook:</p>
 <ul class="simple">
@@ -748,9 +759,9 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="download-the-data-a-id-data-a">
-<h2>2. Download the Data <a id="Data"></a><a class="headerlink" href="#download-the-data-a-id-data-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="download-the-data">
+<h2>2. Download the Data <a id="Data"></a><a class="headerlink" href="#download-the-data" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>The WFPC2 data are downloaded using the <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> API to access the <a class="reference external" href="http://archive.stsci.edu">MAST</a> archive. The <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code> <a class="reference external" href="http://astroquery.readthedocs.io/en/latest/mast/mast.html">documentation</a> has more examples for how to find and download data from MAST.</p>
 <p>MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/latest/mast/mast_obsquery.html#observation-criteria-queries"> <code class="docutils literal notranslate"><span class="pre">query_criteria</span></code></a>, where we specify: <br></p>
 <p>    <span class="math notranslate nohighlight">\(\rightarrow\)</span> obs_id, proposal_id, and filters</p>
@@ -776,7 +787,7 @@ document.write(`
 </div>
 </div>
 <p>The MAST pipeline uses the new <code class="docutils literal notranslate"><span class="pre">flt</span></code> files to create two new types of WFPC2 drizzled products. Unlike the original <code class="docutils literal notranslate"><span class="pre">u*_drz.fits</span></code> files, which were drizzled to an output scale of the WF chips (0.0996”/pix), the new drizzled files <code class="docutils literal notranslate"><span class="pre">u*_drw.fits</span></code> are drizzled to an output scale of the PC chip (0.0455”/pix), where the new <code class="docutils literal notranslate"><span class="pre">drw</span></code> suffix reflects the improved WCS.</p>
-<p>A second drizzled product <code class="docutils literal notranslate"><span class="pre">hst_*drz.fits</span></code> combines all images in the same filter and may include improved relative alignment across filters in the same visit. These are referred to as Hubble Advanced Products and are listed below, but are beyond the scope of this notebook. For more details, see the <a class="reference external" href="https://outerspace.stsci.edu/pages/viewpage.action?spaceKey=HAdP&amp;title=Improvements+in+HST+Astrometry">HAP Webpage</a> and the <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac">Drizzlepac Handbook</a>.</p>
+<p>A second drizzled product <code class="docutils literal notranslate"><span class="pre">hst_*drz.fits</span></code> combines all images in the same filter and may include improved relative alignment across filters in the same visit. These are referred to as Hubble Advanced Products and are listed below, but are beyond the scope of this notebook. For more details, see the <a class="reference external" href="https://outerspace.stsci.edu/pages/viewpage.action?spaceKey=HAdP&amp;amp;title=Improvements+in+HST+Astrometry">HAP Webpage</a> and the <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac">Drizzlepac Handbook</a>.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Drizzled Image                             Dimensions    Scale     Input      Updated
                                                         (&quot;/pix)    File       WCS?
 ______________________________________________________________________________________
@@ -786,7 +797,7 @@ hst_8447_01_wfpc2_pc_f555w_u5jx01_drz.fits [6258, 6215]  0.0455   flt.fits    Y
 </pre></div>
 </div>
 <section id="move-files-to-the-current-working-directory">
-<h3>Move files to the current working directory<a class="headerlink" href="#move-files-to-the-current-working-directory" title="Permalink to this heading">#</a></h3>
+<h3>Move files to the current working directory<a class="headerlink" href="#move-files-to-the-current-working-directory" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fits_files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;mastDownload/HST/*/*.fits&#39;</span><span class="p">)</span>
@@ -802,7 +813,7 @@ hst_8447_01_wfpc2_pc_f555w_u5jx01_drz.fits [6258, 6215]  0.0455   flt.fits    Y
 </div>
 </section>
 <section id="inspect-the-file-structure">
-<h3>Inspect the File Structure<a class="headerlink" href="#inspect-the-file-structure" title="Permalink to this heading">#</a></h3>
+<h3>Inspect the File Structure<a class="headerlink" href="#inspect-the-file-structure" title="Link to this heading">#</a></h3>
 <p>While the <code class="docutils literal notranslate"><span class="pre">flt.fits</span></code> files use the same notation for different chips, <code class="docutils literal notranslate"><span class="pre">EXT=('SCI',1)</span></code> the order of the FITS extensions (<code class="docutils literal notranslate"><span class="pre">'SCI',</span> <span class="pre">'ERR',</span> <span class="pre">'DQ'</span></code>) is different for WFC3/UVIS and WFPC2.  For example:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    uvis_flt.fits[1]   =  uvis_flt.fits[&#39;SCI&#39;,1]   --&gt; UVIS2, SCI
     uvis_flt.fits[2]   =  uvis_flt.fits[&#39;ERR&#39;,1]   --&gt; UVIS2, ERR
@@ -849,7 +860,7 @@ hst_8447_01_wfpc2_pc_f555w_u5jx01_drz.fits [6258, 6215]  0.0455   flt.fits    Y
 </div>
 </section>
 <section id="compare-photometric-keywords-from-the-handbook-with-the-image-headers">
-<h3>Compare photometric keywords from the handbook with the image headers<a class="headerlink" href="#compare-photometric-keywords-from-the-handbook-with-the-image-headers" title="Permalink to this heading">#</a></h3>
+<h3>Compare photometric keywords from the handbook with the image headers<a class="headerlink" href="#compare-photometric-keywords-from-the-handbook-with-the-image-headers" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">PHOTFLAM</span></code> ‘inverse sensitivity’ values are listed in Table 5.1 of the WFPC2 DATA HANDBOOK Section 5.1 <a class="reference external" href="http://www.stsci.edu/instruments/wfpc2/Wfpc2_dhb/wfpc2_ch53.html">Photometric Zeropoint</a> for the gain 7 setting (which is the default setting for most science programs). The <code class="docutils literal notranslate"><span class="pre">PHOTFLAM</span></code> values for gain 14 can be obtained by multiplying by the gain ratios: 1.987 (PC1), 2.003 (WF2), 2.006 (WF3), and 1.955 (WF4), where the values are from <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1995PASP..107.1065H/abstract">Holtzman et al. (1995)</a>.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Filter   PC1           WF2           WF3           WF4
 -----    ---------     ---------     ---------     ---------
@@ -929,7 +940,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 <p>Note that <code class="docutils literal notranslate"><span class="pre">photeq</span></code> adjusts the pixels values in the SCI array so that photometry can be obtained using a single <code class="docutils literal notranslate"><span class="pre">PHOTFLAM</span></code>. The ratio of the count rates in the chips will therefore be equal to the ratio of the PHOTFLAM values.</p>
 </section>
 <section id="compare-the-equation-for-computing-stmag-using-the-new-and-the-old-workflow">
-<h3>Compare the equation for computing STMAG using the new and the old workflow:<a class="headerlink" href="#compare-the-equation-for-computing-stmag-using-the-new-and-the-old-workflow" title="Permalink to this heading">#</a></h3>
+<h3>Compare the equation for computing STMAG using the new and the old workflow:<a class="headerlink" href="#compare-the-equation-for-computing-stmag-using-the-new-and-the-old-workflow" title="Link to this heading">#</a></h3>
 <p><b>NEW: Use <code class="docutils literal notranslate"><span class="pre">flt</span></code> files</p>
 <p>Drizzle the ‘flt.fits’ files and do photometry for all chips at once;</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        STMAG = -21.1 -2.5*log (countrate * PHOTFLAM)  
@@ -943,8 +954,8 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 <p>option B.) Run <a class="reference external" href="https://drizzlepac.readthedocs.io/en/deployment/photeq.html">phot_eq</a> on the ‘c0m.fits’ files prior to drizzling, normalizing to the WF3 chip. Use the first equation with a single PHOTFLAM value which equal to PHOTFLAM for WF3 in the second equation.</p>
 <p>With the older <code class="docutils literal notranslate"><span class="pre">c0m</span></code> data products, caution must be taken when using <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> to combine chips of different sensitivity. <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> works with calibrated images in units of counts (electrons or Data Numbers) or count rates and not in units of flux.  It assumes that all input frames can be converted to physical flux units using a single inverse-sensitivity value, and the output drizzled product simply copies the <code class="docutils literal notranslate"><span class="pre">PHOTFLAM</span></code> keyword value from the first input image. When this occurs, the inverse-sensitivity will vary across the final drizzled product, and users will need to keep track of which sources fell on which chip when doing photometry. Moreover, varying detector sensitivities can affect the cosmic-ray rejection algorithm used by <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code>, and this may result in the misidentification of some good pixels as cosmic rays. Using the new FLT style files solves these issues by normalizing the chips to a single <code class="docutils literal notranslate"><span class="pre">PHOTFLAM</span></code> value.</p>
 </section>
-<section id="check-image-header-data-a-id-check-keywords-a">
-<h3>Check image header data <a id="check_keywords"></a><a class="headerlink" href="#check-image-header-data-a-id-check-keywords-a" title="Permalink to this heading">#</a></h3>
+<section id="check-image-header-data">
+<h3>Check image header data <a id="check_keywords"></a><a class="headerlink" href="#check-image-header-data" title="Link to this heading">#</a></h3>
 <p>In this section, we inspect keywords in the image headers which are useful for understanding the data. Note the <code class="docutils literal notranslate"><span class="pre">PHOTMODE</span></code> keyword in column 6 below, which lists the CCD gain.  Additionally, we inspect the keywords <code class="docutils literal notranslate"><span class="pre">WCSNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">NMATCHES</span></code> to determine whether the images have improved astrometry.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -974,9 +985,9 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 <p>Here we see that the images have been aligned to Gaia eDR3 with ~ 100 matched objects in the HST data.</p>
 </section>
 </section>
-<section id="update-the-wcs-a-id-wcs-a">
-<h2>3. Update the WCS <a id="WCS"></a><a class="headerlink" href="#update-the-wcs-a-id-wcs-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="update-the-wcs">
+<h2>3. Update the WCS <a id="WCS"></a><a class="headerlink" href="#update-the-wcs" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>Unlike the new <code class="docutils literal notranslate"><span class="pre">flt</span></code> products, the older WFPC2 <code class="docutils literal notranslate"><span class="pre">c0m</span></code> files contain World Coordinate System (WCS) information based on an older-style description of image distortions. Before these images can be processed with <code class="docutils literal notranslate"><span class="pre">drizzlepac</span></code>, their WCS must be converted to a new format. This can be achieved using <code class="docutils literal notranslate"><span class="pre">updatewcs()</span></code> function from the <code class="docutils literal notranslate"><span class="pre">stwcs</span></code> package.</p>
 <p>More details may be found in the DrizzlePac Handbook, chapter 4.4.5 under section: <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/scientific-community/software/drizzlepac/_documents/drizzlepac-handbook-v1.pdf">‘Making WFPC2 Images Compatible with AstroDrizzle’</a>. <b>NOTE: Running <code class="docutils literal notranslate"><span class="pre">updatewcs</span></code> is not necessary when working with <code class="docutils literal notranslate"><span class="pre">flt</span></code> files.</p>
 <p>First we download the necessary reference files from the CRDS website.</p>
@@ -1011,9 +1022,9 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </div>
 </section>
-<section id="align-the-images-a-id-align-a">
-<h2>4. Align the Images <a id="align"></a><a class="headerlink" href="#align-the-images-a-id-align-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="align-the-images">
+<h2>4. Align the Images <a id="align"></a><a class="headerlink" href="#align-the-images" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>After resetting the WCS, we check for any residual pointing errors between the two dithered exposures. Precise aligment is needed to achieve the best drizzle-combined products. The expected pointing accuracy for various observing scenerios is summarized in the DrizzlePac Handbook <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac/chapter-4-astrometric-information-in-the-header/4-4-hst-pointing-accuracy-and-stability">Chapter 4.4</a>. Input images must first be aligned so that when the coordinates of a given object (in detector space) are converted to sky coordinates (using the WCS), that object’s sky coordinates must be approximately equal in each frame.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">DrizzlePac</span></code> task <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> may be used to correct for any errors in the image header WCS. First, <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> finds sources in each image, matches sources in common across images, and finds a separate linear transformation to align each image. <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> then computes a new WCS for each image based on this linear transformation.</p>
 <p>Here we show a basic image alignment procedure. For a more detailed illustration of image alignment, please refer to other example notebooks in this repository. Note we use a farily large <code class="docutils literal notranslate"><span class="pre">searchrad</span></code> of 1 arcsec, because we have removed the Gaia WCS and are using the original ‘distortion only’ solution which can have large errors in the case of large dithers.</p>
@@ -1041,7 +1052,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </div>
 <section id="if-the-alignment-is-unsuccessful-stop-the-notebook">
-<h3>If the alignment is unsuccessful, stop the notebook<a class="headerlink" href="#if-the-alignment-is-unsuccessful-stop-the-notebook" title="Permalink to this heading">#</a></h3>
+<h3>If the alignment is unsuccessful, stop the notebook<a class="headerlink" href="#if-the-alignment-is-unsuccessful-stop-the-notebook" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;shift_flt.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">shift</span><span class="p">:</span>
@@ -1055,8 +1066,8 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </div>
 </section>
-<section id="inspect-the-shift-file-and-fit-residuals-a-id-fit-quality-sdss-a">
-<h3>Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a><a class="headerlink" href="#inspect-the-shift-file-and-fit-residuals-a-id-fit-quality-sdss-a" title="Permalink to this heading">#</a></h3>
+<section id="inspect-the-shift-file-and-fit-residuals">
+<h3>Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a><a class="headerlink" href="#inspect-the-shift-file-and-fit-residuals" title="Link to this heading">#</a></h3>
 <p>We can look at the shift file to see how well the fit did (or we could open the output png images for more information). The columns are:</p>
 <ul class="simple">
 <li><p>Filename, X Shift [pixels], Y Shift [pixels], Rotation [degrees], Scale, X RMS [pixels], Y RMS [pixels]</p></li>
@@ -1077,7 +1088,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="inspect-the-astrometric-residual-scatter-plots">
-<h3>Inspect the Astrometric residual scatter plots<a class="headerlink" href="#inspect-the-astrometric-residual-scatter-plots" title="Permalink to this heading">#</a></h3>
+<h3>Inspect the Astrometric residual scatter plots<a class="headerlink" href="#inspect-the-astrometric-residual-scatter-plots" title="Link to this heading">#</a></h3>
 <p>Good practice includes inspecting not only the shift file residuals, but also the accompanying diagnostic plots.  The residuals in the plot below are clustered around 0.0 with no obvious systematics.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1134,9 +1145,9 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 </section>
-<section id="drizzle-combine-the-images-a-id-drizzle-a">
-<h2>5. Drizzle-combine the images <a id="drizzle"></a><a class="headerlink" href="#drizzle-combine-the-images-a-id-drizzle-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="drizzle-combine-the-images">
+<h2>5. Drizzle-combine the images <a id="drizzle"></a><a class="headerlink" href="#drizzle-combine-the-images" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>All four chips are now drizzled together. For speed in the notebook, we set the output pixel scale to that of the WF chips, but this can be reset to the PC scale if desired, to match the scale of the new <code class="docutils literal notranslate"><span class="pre">drw</span></code> drizzled products.</p>
 <p>While we have turned sky subtraction off in the notebook, recommend using <code class="docutils literal notranslate"><span class="pre">skymethod</span></code> = ‘localmin’ and not ‘match’ for WFPC2 to avoid issues with overlapping vignetted regions along chip boundaries. See Figure 3.1.2 in the <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/legacy/wfpc2/_documents/wfpc2_ihb.pdf">WFPC2 Instrument Handbook</a>. For more information drizzling HST data, see the <a class="reference external" href="https://hst-docs.stsci.edu/drizzpac">Drizzlepac Handbook</a> and the list of commands in the <a class="reference external" href="https://drizzlepac.readthedocs.io/en/latest/drizzlepac_api/astrodrizzle.html">readthedocs</a>.</p>
 <p>Users may wish turn on the sky subtraction and cosmic-ray rejection steps by setting <code class="docutils literal notranslate"><span class="pre">skysub</span></code>, <code class="docutils literal notranslate"><span class="pre">median</span></code>, <code class="docutils literal notranslate"><span class="pre">blot</span></code>, and <code class="docutils literal notranslate"><span class="pre">driz_cr</span></code> parameters to <code class="docutils literal notranslate"><span class="pre">True</span></code>.  In that case, the recommended parameter settings for WFPC2 are <code class="docutils literal notranslate"><span class="pre">driz_cr_snr='5.5</span> <span class="pre">3.5'</span></code>, and <code class="docutils literal notranslate"><span class="pre">driz_cr_scale='2.0</span> <span class="pre">1.5'</span></code>.  For more discussion on drizzling parameters for WFPC2 when using the output scale of the WF chips, see the <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/scientific-community/software/drizzlepac/examples/_documents/DrizzlePac_EX7.pdf">Prior Drizzling Example</a>.</p>
@@ -1203,7 +1214,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </div>
 <section id="inspect-the-single-drizzled-output-frames-derived-from-the-dithered-flt-inputs">
-<h3>Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">flt</span></code> inputs<a class="headerlink" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-flt-inputs" title="Permalink to this heading">#</a></h3>
+<h3>Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">flt</span></code> inputs<a class="headerlink" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-flt-inputs" title="Link to this heading">#</a></h3>
 <p>Here we compare the single drizzled frames. Note that WF4 and WF2 overlap in the footprint on the sky.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1227,7 +1238,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs">
-<h3>Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">c0m</span></code> inputs<a class="headerlink" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs" title="Permalink to this heading">#</a></h3>
+<h3>Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">c0m</span></code> inputs<a class="headerlink" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drz1_c0m_single</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">getdata</span><span class="p">(</span><span class="s1">&#39;u5jx010hr_c0m_single_sci.fits&#39;</span><span class="p">)</span>
@@ -1250,7 +1261,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization">
-<h3>Inspect the ratio of the two drizzled images to see changes due to photometric normalization<a class="headerlink" href="#inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization" title="Permalink to this heading">#</a></h3>
+<h3>Inspect the ratio of the two drizzled images to see changes due to photometric normalization<a class="headerlink" href="#inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ratio_flt_c0m</span> <span class="o">=</span> <span class="n">drz1_single</span><span class="o">/</span><span class="n">drz1_c0m_single</span>
@@ -1264,7 +1275,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="compare-the-combined-drizzled-image-and-the-weight-image">
-<h3>Compare the combined drizzled image and the weight image.<a class="headerlink" href="#compare-the-combined-drizzled-image-and-the-weight-image" title="Permalink to this heading">#</a></h3>
+<h3>Compare the combined drizzled image and the weight image.<a class="headerlink" href="#compare-the-combined-drizzled-image-and-the-weight-image" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flt_drw_sci</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">getdata</span><span class="p">(</span><span class="s1">&#39;wfpc2_flt_drw_sci.fits&#39;</span><span class="p">)</span>
@@ -1317,7 +1328,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="plot-the-ratio-of-the-combined-drizzled-images-from-flt-and-c0m">
-<h3>Plot the ratio of the combined drizzled images from FLT and C0M<a class="headerlink" href="#plot-the-ratio-of-the-combined-drizzled-images-from-flt-and-c0m" title="Permalink to this heading">#</a></h3>
+<h3>Plot the ratio of the combined drizzled images from FLT and C0M<a class="headerlink" href="#plot-the-ratio-of-the-combined-drizzled-images-from-flt-and-c0m" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ratio_drw</span> <span class="o">=</span> <span class="n">flt_drw_sci</span><span class="o">/</span><span class="n">c0m_drw_sci</span>
@@ -1331,7 +1342,7 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </div>
 </section>
 <section id="perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region">
-<h3>Perform aperture photometry on three stars in the WF2, WF4 overlap region<a class="headerlink" href="#perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region" title="Permalink to this heading">#</a></h3>
+<h3>Perform aperture photometry on three stars in the WF2, WF4 overlap region<a class="headerlink" href="#perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region" title="Link to this heading">#</a></h3>
 <p>Here we perform aperture photometry in a radius of 5 pixels to show the change in count rates in each drizzle-combined image.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1386,15 +1397,15 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 <p>While the total change in photometry is only a few DN/sec, properly accounting for the relative gain across chips is necessary to achieve the best possible photometric precision. As we’ve demonstrated in this notebook, this is accomplished by using the new <code class="docutils literal notranslate"><span class="pre">flt</span></code> style files, or running photeq on the older <code class="docutils literal notranslate"><span class="pre">c0m</span></code> style files.</p>
 </section>
 </section>
-<section id="conclusions-a-id-conclusions-a">
-<h2>Conclusions <a id="conclusions"></a><a class="headerlink" href="#conclusions-a-id-conclusions-a" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<section id="conclusions">
+<h2>Conclusions <a id="conclusions"></a><a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>MAST now include new WFPC2 <code class="docutils literal notranslate"><span class="pre">flt.fits</span></code> data products to replace the old <code class="docutils literal notranslate"><span class="pre">c0m.fits</span></code>, <code class="docutils literal notranslate"><span class="pre">c1m.fits</span></code> files.  The new products include a new flux normalization between chips so that only a single zeropoint (inverse sensitivity, PHOTFLAM value) is needed for all chips.  This allows for different chips to be drizzled together, for example, when combining images at multiple orientations.</p>
 <p><a id="about"></a></p>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <hr class="docutils" />
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Created: 14 Dec 2018;     M. Cara
 Updated: 16 Nov 2023;     K. Huynh &amp; J. Mack
@@ -1404,7 +1415,7 @@ Updated: 10 Dec 2024;     J. Mack &amp; M. Revalski
 <p><strong>Source:</strong> <a class="github reference external" href="https://github.com/spacetelescope/hst_notebooks">spacetelescope/hst_notebooks</a></p>
 <p><a id="additional"></a></p>
 <section id="additional-resources">
-<h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h3>
+<h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h3>
 <p>Below are some additional resources that may be helpful. Please send any questions to the <a class="reference external" href="https://stsci.service-now.com/hst">HST Help Desk</a>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.stsci.edu/hst/instrumentation/legacy/wfpc2">WFPC2 Website</a></p></li>
@@ -1416,7 +1427,7 @@ Updated: 10 Dec 2024;     J. Mack &amp; M. Revalski
 <p><a id="cite"></a></p>
 </section>
 <section id="software-citations">
-<h3>Software Citations<a class="headerlink" href="#software-citations" title="Permalink to this heading">#</a></h3>
+<h3>Software Citations<a class="headerlink" href="#software-citations" title="Link to this heading">#</a></h3>
 <p>If you use Python packages such as <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, <code class="docutils literal notranslate"><span class="pre">drizzlepac</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the authors. Follow the links below for more information about citing various packages:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.astropy.org/acknowledging.html">Citing <code class="docutils literal notranslate"><span class="pre">astropy</span></code></a></p></li>
@@ -1427,7 +1438,7 @@ Updated: 10 Dec 2024;     J. Mack &amp; M. Revalski
 <li><p><a class="reference external" href="https://photutils.readthedocs.io/en/stable/getting_started/citation.html">Citing <code class="docutils literal notranslate"><span class="pre">photutils</span></code></a></p></li>
 </ul>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 </section>
 </section>
@@ -1498,26 +1509,26 @@ Updated: 10 Dec 2024;     J. Mack &amp; M. Revalski
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-a-id-intro-a">1. Introduction <a id="intro"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction <a id="intro"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-packages">Import Packages</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data-a-id-data-a">2. Download the Data <a id="Data"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data">2. Download the Data <a id="Data"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#move-files-to-the-current-working-directory">Move files to the current working directory</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-file-structure">Inspect the File Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-photometric-keywords-from-the-handbook-with-the-image-headers">Compare photometric keywords from the handbook with the image headers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-the-equation-for-computing-stmag-using-the-new-and-the-old-workflow">Compare the equation for computing STMAG using the new and the old workflow:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-image-header-data-a-id-check-keywords-a">Check image header data <a id="check_keywords"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-image-header-data">Check image header data <a id="check_keywords"></a></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-wcs-a-id-wcs-a">3. Update the WCS <a id="WCS"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-the-images-a-id-align-a">4. Align the Images <a id="align"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-wcs">3. Update the WCS <a id="WCS"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-the-images">4. Align the Images <a id="align"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-the-alignment-is-unsuccessful-stop-the-notebook">If the alignment is unsuccessful, stop the notebook</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-shift-file-and-fit-residuals-a-id-fit-quality-sdss-a">Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-shift-file-and-fit-residuals">Inspect the shift file and fit residuals<a id="fit_quality_sdss"></a></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-astrometric-residual-scatter-plots">Inspect the Astrometric residual scatter plots</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drizzle-combine-the-images-a-id-drizzle-a">5. Drizzle-combine the images <a id="drizzle"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drizzle-combine-the-images">5. Drizzle-combine the images <a id="drizzle"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-flt-inputs">Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">flt</span></code> inputs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs">Inspect the single drizzled output frames derived from the dithered <code class="docutils literal notranslate"><span class="pre">c0m</span></code> inputs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization">Inspect the ratio of the two drizzled images to see changes due to photometric normalization</a></li>
@@ -1526,7 +1537,7 @@ Updated: 10 Dec 2024;     J. Mack &amp; M. Revalski
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region">Perform aperture photometry on three stars in the WF2, WF4 overlap region</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions-a-id-conclusions-a">Conclusions <a id="conclusions"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions <a id="conclusions"></a></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-notebook">About this Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-citations">Software Citations</a></li>

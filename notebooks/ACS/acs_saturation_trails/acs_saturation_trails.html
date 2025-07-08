@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>ACS Linearity with Saturated Stars &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/ACS/acs_saturation_trails/acs_saturation_trails';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -360,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -387,14 +393,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/ACS/acs_saturation_trails/acs_saturation_trails.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -552,9 +558,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -590,19 +596,19 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data">Download the Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-proposal-14949-acs-external-cte-monitor">GO Proposal 14949: “ACS External CTE Monitor”</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-information-a-id-fileinfo-a">File Information <a id="_fileinfo"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-information">File Information <a id="_fileinfo"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-files">Raw Files</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spt-files">SPT Files</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-images-a-id-prep-a">1. Prepare Images <a id="_prep"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-saturated-stars-a-id-identify-a">2. Identify Saturated Stars <a id="_identify"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bleed-the-saturation-mask-a-id-bleed-a">3. Bleed the Saturation Mask <a id="_bleed"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-a-custom-aperture-a-id-define-a">4. Define a Custom Aperture <a id="_define"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry-with-a-custom-aperture-a-id-phot-a">5. Photometry with a Custom Aperture <a id="_phot"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-results-a-id-results-a">6.  Additional Results<a id="_results"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Prepare Images <a id="_prep"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Identify Saturated Stars <a id="_identify"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Bleed the Saturation Mask <a id="_bleed"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Define a Custom Aperture <a id="_define"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Photometry with a Custom Aperture <a id="_phot"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.  Additional Results<a id="_results"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-more-help">For more help:</a></li>
 </ul>
@@ -618,27 +624,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="alert alert-block alert-warning">
-<b>REQUIREMENT:</b>
-    Before proceeding, install or update your
-    <b><a class="divlink" href="https://stenv.readthedocs.io/en/latest/">
-    stenv
-    </a></b>
-     distribution. <b>stenv</b> is the replacement for AstroConda, which is unsupported as of February 2023.
-</div><p><a id="titleSaturation"></a></p>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="titleSaturation"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="acs-linearity-with-saturated-stars">
-<h1>ACS Linearity with Saturated Stars<a class="headerlink" href="#acs-linearity-with-saturated-stars" title="Permalink to this heading">#</a></h1>
+<h1>ACS Linearity with Saturated Stars<a class="headerlink" href="#acs-linearity-with-saturated-stars" title="Link to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>The ACS/WFC CCD becomes saturated around 80000 counts. When this occurs, excess charge from the source spills out lengthwise along the columns of the CCD. This can lead to issues with photometry when using very bright stars, since a significant portion of the star’s flux may fall outside of a reasonable extraction radius.</p>
 <p>However, accurate relative photometry can be obtained as long as a large enough aperture is selected to contain the spilled flux (<a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/instrument-science-reports-isrs/_documents/isr0401.pdf">ACS ISR 2004-01</a>). While one could simply use a larger circular aperture, that may introduce error when working with a crowded field (where bright stars are often located).</p>
 <p>Here we present a method to identify and perform photometry on saturated sources by defining a custom aperture that is a combination of a standard 0.5” arcsecond circular aperture and the pixels affected by saturation trails. This method has been tested on ACS/WFC observations of 47 Tuc in the F606W band. The plot below shows the results of using this alternative method to recover flux.</p>
-<a class="reference internal image-reference" href="../../../_images/photometry_recovery.png"><img alt="" src="../../../_images/photometry_recovery.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/photometry_recovery.png"><img alt="" src="../../../_images/photometry_recovery.png" style="width: 900px;" />
+</a>
 <section id="this-tutorial-will-show-you-how-to">
-<h3>This tutorial will show you how to…<a class="headerlink" href="#this-tutorial-will-show-you-how-to" title="Permalink to this heading">#</a></h3>
+<h3>This tutorial will show you how to…<a class="headerlink" href="#this-tutorial-will-show-you-how-to" title="Link to this heading">#</a></h3>
 <section id="prepare-images">
-<h4>1. <span class="xref myst">Prepare Images</span><a class="headerlink" href="#prepare-images" title="Permalink to this heading">#</a></h4>
+<h4>1. <a class="reference internal" href="#_prep"><span class="xref myst">Prepare Images</span></a><a class="headerlink" href="#prepare-images" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Apply Pixel Area Map</p></li>
 <li><p>Separate by long and short exposure</p></li>
@@ -646,21 +652,21 @@ document.write(`
 </ul>
 </section>
 <section id="identify-saturated-stars">
-<h4>2. <span class="xref myst">Identify Saturated Stars</span><a class="headerlink" href="#identify-saturated-stars" title="Permalink to this heading">#</a></h4>
+<h4>2. <a class="reference internal" href="#_identify"><span class="xref myst">Identify Saturated Stars</span></a><a class="headerlink" href="#identify-saturated-stars" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Identify the saturated pixels using the data quality (DQ) array</p></li>
 <li><p>Determine whether or not the saturation trails extend significantly away from the target</p></li>
 </ul>
 </section>
 <section id="bleed-the-saturation-mask">
-<h4>3. <span class="xref myst">Bleed the Saturation Mask</span><a class="headerlink" href="#bleed-the-saturation-mask" title="Permalink to this heading">#</a></h4>
+<h4>3. <a class="reference internal" href="#_bleed"><span class="xref myst">Bleed the Saturation Mask</span></a><a class="headerlink" href="#bleed-the-saturation-mask" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Construct a convolution kernel</p></li>
 <li><p>Bleed the saturation mask with the convolution kernel</p></li>
 </ul>
 </section>
 <section id="define-a-custom-aperture">
-<h4>4. <span class="xref myst">Define a Custom Aperture</span><a class="headerlink" href="#define-a-custom-aperture" title="Permalink to this heading">#</a></h4>
+<h4>4. <a class="reference internal" href="#_define"><span class="xref myst">Define a Custom Aperture</span></a><a class="headerlink" href="#define-a-custom-aperture" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Isolate central clump from your saturation mask</p></li>
 <li><p>Obtain circular aperture as a boolean mask</p></li>
@@ -668,14 +674,14 @@ document.write(`
 </ul>
 </section>
 <section id="photometry-with-a-custom-aperture">
-<h4>5. <span class="xref myst">Photometry with a Custom Aperture</span><a class="headerlink" href="#photometry-with-a-custom-aperture" title="Permalink to this heading">#</a></h4>
+<h4>5. <a class="reference internal" href="#_phot"><span class="xref myst">Photometry with a Custom Aperture</span></a><a class="headerlink" href="#photometry-with-a-custom-aperture" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Extract counts with the custom aperture</p></li>
 <li><p>Estimate background to be subtracted</p></li>
 </ul>
 </section>
 <section id="additional-results">
-<h4>5. <span class="xref myst">Additional Results</span><a class="headerlink" href="#additional-results" title="Permalink to this heading">#</a></h4>
+<h4>5. <a class="reference internal" href="#_results"><span class="xref myst">Additional Results</span></a><a class="headerlink" href="#additional-results" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>A worked example with several stars</p></li>
 </ul>
@@ -683,7 +689,7 @@ document.write(`
 </section>
 </section>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we list the Python packages used in this notebook. Links to the documentation for each module is provided for convenience.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -781,12 +787,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
-                                    skymatch                                    
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here we set environment variables for later use with the Calibration Reference Data System (CRDS).</p>
 <div class="cell docutils container">
@@ -801,11 +801,11 @@ document.write(`
 </div>
 </section>
 <section id="download-the-data">
-<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Permalink to this heading">#</a></h2>
+<h2>Download the Data<a class="headerlink" href="#download-the-data" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Here we download all of the data required for this notebook. This is an important step! Some of the image processing steps require all relevant files to be in the working directory. We recommend working with a brand new directory for every new set of data.</p>
 <section id="go-proposal-14949-acs-external-cte-monitor">
-<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;id=14949">GO Proposal 14949</a>: “ACS External CTE Monitor”<a class="headerlink" href="#go-proposal-14949-acs-external-cte-monitor" title="Permalink to this heading">#</a></h3>
+<h3><a class="reference external" href="https://stdatu.stsci.edu/proposal_search.php?mission=hst&amp;amp;id=14949">GO Proposal 14949</a>: “ACS External CTE Monitor”<a class="headerlink" href="#go-proposal-14949-acs-external-cte-monitor" title="Link to this heading">#</a></h3>
 <p>Using the python package <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, we can download files from the <a class="reference external" href="http://archive.stsci.edu">MAST</a> archive.</p>
 <div class="alert alert-danger">
 <b>MAY CHANGE:</b> The argument "mrp_only" stands for "minimum recommended products only". It currently needs to be set to False, although in the future, False is intended to be set as the default and can be left out.
@@ -817,117 +817,6 @@ document.write(`
                                           <span class="n">productSubGroupDescription</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;FLC&#39;</span><span class="p">],</span>
                                           <span class="n">mrp_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">unique_table</span> <span class="o">=</span> <span class="n">unique</span><span class="p">(</span><span class="n">dl_table</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="s1">&#39;Local Path&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: 18 of 36 products were duplicates. Only returning 18 unique product(s). [astroquery.mast.utils]
-Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301bwq_flc.fits to ./mastDownload/HST/jdg301bwq/jdg301bwq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301byq_flc.fits to ./mastDownload/HST/jdg301byq/jdg301byq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301c4q_flc.fits to ./mastDownload/HST/jdg301c4q/jdg301c4q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301c6q_flc.fits to ./mastDownload/HST/jdg301c6q/jdg301c6q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301ccq_flc.fits to ./mastDownload/HST/jdg301ccq/jdg301ccq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg301ceq_flc.fits to ./mastDownload/HST/jdg301ceq/jdg301ceq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302clq_flc.fits to ./mastDownload/HST/jdg302clq/jdg302clq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302cnq_flc.fits to ./mastDownload/HST/jdg302cnq/jdg302cnq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302ctq_flc.fits to ./mastDownload/HST/jdg302ctq/jdg302ctq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302cvq_flc.fits to ./mastDownload/HST/jdg302cvq/jdg302cvq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302cxq_flc.fits to ./mastDownload/HST/jdg302cxq/jdg302cxq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg302czq_flc.fits to ./mastDownload/HST/jdg302czq/jdg302czq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303d5q_flc.fits to ./mastDownload/HST/jdg303d5q/jdg303d5q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303d7q_flc.fits to ./mastDownload/HST/jdg303d7q/jdg303d7q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303d9q_flc.fits to ./mastDownload/HST/jdg303d9q/jdg303d9q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303dbq_flc.fits to ./mastDownload/HST/jdg303dbq/jdg303dbq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303dlq_flc.fits to ./mastDownload/HST/jdg303dlq/jdg303dlq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jdg303dnq_flc.fits to ./mastDownload/HST/jdg303dnq/jdg303dnq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
 </pre></div>
 </div>
 </div>
@@ -944,64 +833,6 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/produ
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301bwq/jdg301bwq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301byq/jdg301byq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301c4q/jdg301c4q_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301c6q/jdg301c6q_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301ccq/jdg301ccq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg301ceq/jdg301ceq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302clq/jdg302clq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302cnq/jdg302cnq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302ctq/jdg302ctq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302cvq/jdg302cvq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302cxq/jdg302cxq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg302czq/jdg302czq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303d5q/jdg303d5q_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303d7q/jdg303d7q_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303d9q/jdg303d9q_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303dbq/jdg303dbq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303dlq/jdg303dlq_flc.fits COMPLETE    None None
-                   Local Path                    Status  Message URL 
------------------------------------------------ -------- ------- ----
-./mastDownload/HST/jdg303dnq/jdg303dnq_flc.fits COMPLETE    None None
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now that all of our files are in the current working directory, we delete the leftover MAST file structure.</p>
 <div class="cell docutils container">
@@ -1012,12 +843,12 @@ Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/produ
 </div>
 </div>
 </section>
-<section id="file-information-a-id-fileinfo-a">
-<h3>File Information <a id="_fileinfo"></a><a class="headerlink" href="#file-information-a-id-fileinfo-a" title="Permalink to this heading">#</a></h3>
+<section id="file-information">
+<h3>File Information <a id="_fileinfo"></a><a class="headerlink" href="#file-information" title="Link to this heading">#</a></h3>
 <p>The structure of the fits files from ACS may be different depending on what kind of observation was made.
 For more information, refer to Section 2.2of the <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/other-documents/_documents/acs_dhb.pdf">ACS Data Handbook</a>.</p>
 <section id="raw-files">
-<h4>Raw Files<a class="headerlink" href="#raw-files" title="Permalink to this heading">#</a></h4>
+<h4>Raw Files<a class="headerlink" href="#raw-files" title="Link to this heading">#</a></h4>
 <p>A standard raw image file from a subarray has the same structure as you’d expect from full frame observation from ACS/WCS.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1053,7 +884,7 @@ For more information, refer to Section 2.2of the <a class="reference external" h
 </div>
 </section>
 <section id="spt-files">
-<h4>SPT Files<a class="headerlink" href="#spt-files" title="Permalink to this heading">#</a></h4>
+<h4>SPT Files<a class="headerlink" href="#spt-files" title="Link to this heading">#</a></h4>
 <p>SPT files contain telemetry and engineering data from the telescope.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1085,38 +916,12 @@ For more information, refer to Section 2.2of the <a class="reference external" h
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: jdg302ctq_flc.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     325   ()      
-  1  SCI           1 ImageHDU       248   (4096, 2048)   float32   
-  2  ERR           1 ImageHDU        53   (4096, 2048)   float32   
-  3  DQ            1 ImageHDU        45   (4096, 2048)   int16   
-  4  SCI           2 ImageHDU       246   (4096, 2048)   float32   
-  5  ERR           2 ImageHDU        53   (4096, 2048)   float32   
-  6  DQ            2 ImageHDU        45   (4096, 2048)   int16   
-  7  D2IMARR       1 ImageHDU        16   (64, 32)   float32   
-  8  D2IMARR       2 ImageHDU        16   (64, 32)   float32   
-  9  D2IMARR       3 ImageHDU        16   (64, 32)   float32   
- 10  D2IMARR       4 ImageHDU        16   (64, 32)   float32   
- 11  WCSDVARR      1 ImageHDU        16   (64, 32)   float32   
- 12  WCSDVARR      2 ImageHDU        16   (64, 32)   float32   
- 13  WCSDVARR      3 ImageHDU        16   (64, 32)   float32   
- 14  WCSDVARR      4 ImageHDU        16   (64, 32)   float32   
- 15  HDRLET        1 HeaderletHDU     18   ()      
- 16  HDRLET        2 HeaderletHDU     26   ()      
- 17  WCSCORR       1 BinTableHDU     59   14R x 24C   [40A, I, A, 24A, 24A, 24A, 24A, D, D, D, D, D, D, D, D, 24A, 24A, D, D, D, D, J, 40A, 128A]   
- 18  HDRLET       18 HeaderletHDU     26   ()      
- 19  HDRLET        4 HeaderletHDU     26   ()      
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
 </section>
-<section id="prepare-images-a-id-prep-a">
-<h2>1. Prepare Images <a id="_prep"></a><a class="headerlink" href="#prepare-images-a-id-prep-a" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h2>1. Prepare Images <a id="_prep"></a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>For this notebook, we will need two well-aligned images of the same field on the sky. One image should have a short exposure time (eg. 40 seconds) and the other should have a long exposure time (eg. 400 seconds). Here we assume you already know which images those are, and set those observation files to appropriate variable names.</p>
 <div class="cell docutils container">
@@ -1152,11 +957,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jdg302ctq_flc_pam.fits
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now we can run <code class="docutils literal notranslate"><span class="pre">pam_from_file</span></code> on our fits file to create our PAM.</p>
 <div class="cell docutils container">
@@ -1182,7 +982,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </div>
 </div>
-<p>There is one more array we’ll need to extract from our fits file. The data quality (DQ) array labels saturated pixels with the flag number 256. As seen from our <span class="xref myst">file information</span>, the DQ array can be found in extension 3 of the HDU list.</p>
+<p>There is one more array we’ll need to extract from our fits file. The data quality (DQ) array labels saturated pixels with the flag number 256. As seen from our <a class="reference internal" href="#_fileinfo"><span class="xref myst">file information</span></a>, the DQ array can be found in extension 3 of the HDU list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dq_short</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">getdata</span><span class="p">(</span><span class="n">fitsfile</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">256</span>
@@ -1209,8 +1009,8 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </div>
 </section>
-<section id="identify-saturated-stars-a-id-identify-a">
-<h2>2. Identify Saturated Stars <a id="_identify"></a><a class="headerlink" href="#identify-saturated-stars-a-id-identify-a" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h2>2. Identify Saturated Stars <a id="_identify"></a><a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Before we begin our modified aperture photometry routine, we should determine whether or not our sources are saturated. We can identify saturated stars by whether or not their saturation trails extend past a typical extraction radius.</p>
 <p>Here we have the local coordinates of a bright star in our field.</p>
@@ -1261,9 +1061,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/32a1557a1248f07db525328fb2295e0c9cec6ad6ce1ca7a89d089bd5a0121425.png" src="../../../_images/32a1557a1248f07db525328fb2295e0c9cec6ad6ce1ca7a89d089bd5a0121425.png" />
-</div>
 </div>
 <p>Now by indexing our image with our cutter, we can grab just the cutout we need!</p>
 <div class="cell docutils container">
@@ -1271,9 +1068,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="o">.</span><span class="n">ds9_imitate</span><span class="p">(</span><span class="n">plt</span><span class="p">,</span> <span class="n">img_short</span><span class="p">[</span><span class="n">cutter</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/0e94adb1d605b6a292726d9d1a4b94a25e59743a62e1f5a9d89f1614de89da2d.png" src="../../../_images/0e94adb1d605b6a292726d9d1a4b94a25e59743a62e1f5a9d89f1614de89da2d.png" />
 </div>
 </div>
 <p>We can visually confirm that this source is affected by saturation trails in the short exposure. What about the long exposure image? Since our images are aligned, we can use the same coordinates (and the same cutter!) as before.</p>
@@ -1283,9 +1077,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/90bc8deafc0440a398523a131c5e8da8333283dd986de1c84a598cf93ba04d88.png" src="../../../_images/90bc8deafc0440a398523a131c5e8da8333283dd986de1c84a598cf93ba04d88.png" />
-</div>
 </div>
 <p>We can also apply the same cutter to our DQ saturated pixel array!</p>
 <div class="cell docutils container">
@@ -1294,12 +1085,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca25579410&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/5e2906dfaf895d9468cf01c594b320cd62f67072080a9c50900429e79f5dc380.png" src="../../../_images/5e2906dfaf895d9468cf01c594b320cd62f67072080a9c50900429e79f5dc380.png" />
-</div>
 </div>
 <p>As we expect, we do not see very much saturation in our short exposure image. What about our long exposure image?</p>
 <div class="cell docutils container">
@@ -1307,12 +1092,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">dq_long</span><span class="p">[</span><span class="n">cutter</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;bone&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca25622410&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/cace17fef3443f0528127c3ff6b9f0fae19e12198ecaa3c6ed9438e5dc1a423d.png" src="../../../_images/cace17fef3443f0528127c3ff6b9f0fae19e12198ecaa3c6ed9438e5dc1a423d.png" />
 </div>
 </div>
 <p>Now we see a large clump of saturated pixels spilling along the y-axis!</p>
@@ -1333,12 +1112,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.patches.Circle at 0x7fca002f1ad0&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/303bd3d74f79e9a82dab1e23e584fa94d6205bf14078da30c3859dad512a8fe2.png" src="../../../_images/303bd3d74f79e9a82dab1e23e584fa94d6205bf14078da30c3859dad512a8fe2.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1355,17 +1128,11 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.patches.Circle at 0x7fca0039b650&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/82d05b26edf405b31a22e0538dab57c536c21e7db41b9dbbe7c9cc27c45dc0b2.png" src="../../../_images/82d05b26edf405b31a22e0538dab57c536c21e7db41b9dbbe7c9cc27c45dc0b2.png" />
-</div>
 </div>
 <p>Since the saturated pixels extend past our extraction radius, we need to use a different method to improve photometry</p>
 </section>
-<section id="bleed-the-saturation-mask-a-id-bleed-a">
-<h2>3. Bleed the Saturation Mask <a id="_bleed"></a><a class="headerlink" href="#bleed-the-saturation-mask-a-id-bleed-a" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h2>3. Bleed the Saturation Mask <a id="_bleed"></a><a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p>First we need to define a kernel to bleed our saturation mask. We can do this by hand. Since pixels affected by saturation will spill charge along columns, all we need is to convolve our image with a column kernel.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1378,12 +1145,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">bleed_kernel</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca0027eb90&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/18dd265a983a8a01f96b79a747151c28a1b5f12e6e9ae41a74e5bbf1614f4605.png" src="../../../_images/18dd265a983a8a01f96b79a747151c28a1b5f12e6e9ae41a74e5bbf1614f4605.png" />
 </div>
 </div>
 <p>We will use the <code class="docutils literal notranslate"><span class="pre">scipy</span></code> function <code class="docutils literal notranslate"><span class="pre">convolve2d()</span></code> to convolve our cutout with our kernel. Here, <code class="docutils literal notranslate"><span class="pre">mode='same'</span></code> ensures that the returned array is the same shape as the input array.</p>
@@ -1412,16 +1173,10 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca002a5450&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/3b2e955e0c11b9966c74d7e7e19ccc611fcecf02d990b027ed5240c656199b86.png" src="../../../_images/3b2e955e0c11b9966c74d7e7e19ccc611fcecf02d990b027ed5240c656199b86.png" />
-</div>
 </div>
 </section>
-<section id="define-a-custom-aperture-a-id-define-a">
-<h2>4. Define a Custom Aperture <a id="_define"></a><a class="headerlink" href="#define-a-custom-aperture-a-id-define-a" title="Permalink to this heading">#</a></h2>
+<section id="id4">
+<h2>4. Define a Custom Aperture <a id="_define"></a><a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p>Now we want to create a new aperture which includes the pixels with the spilled charge. If we want to use the saturation mask we just created, we need to isolate only the clump associated with our star.</p>
 <p>Here, we give you a function which will return a mask with only the central clump.</p>
 <div class="cell docutils container">
@@ -1467,17 +1222,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]
- ...
- [False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]]
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now we can plot the resulting array to see the clump of interest isolated at the center.</p>
 <div class="cell docutils container">
@@ -1485,12 +1229,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">central_clump</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca0015e090&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/dff58a117baa51d036bf397f3056cddf10e600768a240c2e18e6e8074e0faa97.png" src="../../../_images/dff58a117baa51d036bf397f3056cddf10e600768a240c2e18e6e8074e0faa97.png" />
 </div>
 </div>
 <p>We can use the package <code class="docutils literal notranslate"><span class="pre">photutils</span></code> to define a circular aperture. To combine it with our mask, we need the circular aperture in mask form. Luckily, this is a built-in feature of aperture objects!</p>
@@ -1502,12 +1240,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">aperture_mask</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc9fffdbed0&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/7abdb7b05833e5d7aef087e8318960276e749fff972ce02cb6fab90bcce7b378.png" src="../../../_images/7abdb7b05833e5d7aef087e8318960276e749fff972ce02cb6fab90bcce7b378.png" />
 </div>
 </div>
 <p>To match the size of our cutout, we can create a new array with our circular aperture at the center</p>
@@ -1529,12 +1261,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fca00059650&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/bf7276fe8151e93b2260741d1424e051820e57ff5ad1463f480711017249a55d.png" src="../../../_images/bf7276fe8151e93b2260741d1424e051820e57ff5ad1463f480711017249a55d.png" />
-</div>
 </div>
 <p>We can use the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> function <code class="docutils literal notranslate"><span class="pre">logical_or()</span></code> to combine both of our masks to form one boolean array.</p>
 <div class="cell docutils container">
@@ -1545,16 +1271,10 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc9ffed8b90&gt;
-</pre></div>
-</div>
-<img alt="../../../_images/4b8ca6813e535a643955191cda6cf900af3ebde1ab55914be6160de60aa3b000.png" src="../../../_images/4b8ca6813e535a643955191cda6cf900af3ebde1ab55914be6160de60aa3b000.png" />
-</div>
 </div>
 </section>
-<section id="photometry-with-a-custom-aperture-a-id-phot-a">
-<h2>5. Photometry with a Custom Aperture <a id="_phot"></a><a class="headerlink" href="#photometry-with-a-custom-aperture-a-id-phot-a" title="Permalink to this heading">#</a></h2>
+<section id="id5">
+<h2>5. Photometry with a Custom Aperture <a id="_phot"></a><a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p>Now that we have our custom aperture, let’s use that aperture to perform photometry for one source on boht our short and long expsure images.</p>
 <p>We’ll start with the short exposure image. As before, we will use our cutter to make a cutout around the source.</p>
 <div class="cell docutils container">
@@ -1588,12 +1308,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-</pre></div>
-</div>
-</div>
 </div>
 <p>Subtract the estimated background from our flux sum, and you’re finished!</p>
 <div class="cell docutils container">
@@ -1601,11 +1315,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">final_sum_short</span> <span class="o">=</span> <span class="n">flux_sum</span> <span class="o">-</span> <span class="n">bkg_sum</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">final_sum_short</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2456204.485063127
 </pre></div>
 </div>
 </div>
@@ -1624,15 +1333,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22900478.046977814
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-</pre></div>
-</div>
-</div>
 </div>
 <p>If we have recovered the lost flux with our new aperture, our star in the 400 second exposure should have ~10 times the flux as our star in the 40 second exposure.</p>
 <div class="cell docutils container">
@@ -1641,15 +1341,10 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(9.323522608252729)
-</pre></div>
-</div>
-</div>
 </div>
 </section>
-<section id="additional-results-a-id-results-a">
-<h2>6.  Additional Results<a id="_results"></a><a class="headerlink" href="#additional-results-a-id-results-a" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h2>6.  Additional Results<a id="_results"></a><a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>Here we perform all of the photometry steps on a list of three stars. This section of the notebook is intended as a worked example for multiple stars, and therefore will not guide you through each step.</p>
 <p>Since we are dealing with photometry of more than one star, it will be convenient to define a table to store information for each star. We will create a column each for x-position, y-position, and the final flux sum for each of the images. We set the table length at ‘n’ rows for each star, and fill it with zeros to start.</p>
 <div class="cell docutils container">
@@ -1669,15 +1364,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <span class="n">source_table</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">local_coords</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">source_table</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> x    y  flux_short flux_long flux_ratio
----- --- ---------- --------- ----------
-1711 225        0.0       0.0        0.0
-1205 238        0.0       0.0        0.0
-3159 312        0.0       0.0        0.0
 </pre></div>
 </div>
 </div>
@@ -1748,53 +1434,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]
- ...
- [False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]]
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]
- ...
- [False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]]
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]
- ...
- [False False False ... False False False]
- [False False False ... False False False]
- [False False False ... False False False]]
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-/opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:868: UserWarning: Warning: &#39;partition&#39; will ignore the &#39;mask&#39; of the MaskedArray.
-  a.partition(kth, axis=axis, kind=kind, order=order)
-</pre></div>
-</div>
-</div>
 </div>
 <p>Let’s take a look at our table…</p>
 <div class="cell docutils container">
@@ -1803,15 +1442,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140506187347856" class="table-striped table-bordered table-condensed">
-<thead><tr><th>x</th><th>y</th><th>flux_short</th><th>flux_long</th><th>flux_ratio</th></tr></thead>
-<thead><tr><th>int64</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>1711</td><td>225</td><td>2456204.50900404</td><td>22900478.046977814</td><td>9.323522517375261</td></tr>
-<tr><td>1205</td><td>238</td><td>526491.5473591617</td><td>5258378.775894163</td><td>9.98758442043326</td></tr>
-<tr><td>3159</td><td>312</td><td>3790979.3947301074</td><td>34492877.68300236</td><td>9.098671897544836</td></tr>
-</table></div></div></div>
 </div>
 <p>While this method is an improvement for some saturated stars, it still has limitations. We can make a quick plot to show that the percentage of recovered flux decreases for brighter stars.</p>
 <div class="cell docutils container">
@@ -1831,22 +1461,19 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/81f21d2cc8d9d149053dbd315853e8a1fd3db884018a1c7a90ca4e2e25dc4eb8.png" src="../../../_images/81f21d2cc8d9d149053dbd315853e8a1fd3db884018a1c7a90ca4e2e25dc4eb8.png" />
-</div>
 </div>
 <section id="references">
-<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>http://iopscience.iop.org/article/10.1086/444553</p>
 <p>http://documents.stsci.edu/hst/acs/documents/handbooks/DataHandbookv3/acs_Ch57.html</p>
 </section>
 <section id="for-more-help">
-<h3>For more help:<a class="headerlink" href="#for-more-help" title="Permalink to this heading">#</a></h3>
+<h3>For more help:<a class="headerlink" href="#for-more-help" title="Link to this heading">#</a></h3>
 <p>More details may be found on the <a class="reference external" href="http://www.stsci.edu/hst/instrumentation/acs">ACS website</a> and in the <a class="reference external" href="https://hst-docs.stsci.edu/display/ACSIHB">ACS Instrument</a> and <a class="reference external" href="http://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/other-documents/_documents/acs_dhb.pdf">Data Handbooks</a>.</p>
 <p>Please visit the <a class="reference external" href="http://hsthelp.stsci.edu">HST Help Desk</a>. Through the help desk portal, you can explore the <em>HST</em> Knowledge Base and request additional help from experts.</p>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#titleSaturation"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a>
 <br></br>
 <br></br></p>
@@ -1933,19 +1560,19 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-the-data">Download the Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-proposal-14949-acs-external-cte-monitor">GO Proposal 14949: “ACS External CTE Monitor”</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-information-a-id-fileinfo-a">File Information <a id="_fileinfo"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-information">File Information <a id="_fileinfo"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-files">Raw Files</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spt-files">SPT Files</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-images-a-id-prep-a">1. Prepare Images <a id="_prep"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-saturated-stars-a-id-identify-a">2. Identify Saturated Stars <a id="_identify"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bleed-the-saturation-mask-a-id-bleed-a">3. Bleed the Saturation Mask <a id="_bleed"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-a-custom-aperture-a-id-define-a">4. Define a Custom Aperture <a id="_define"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photometry-with-a-custom-aperture-a-id-phot-a">5. Photometry with a Custom Aperture <a id="_phot"></a></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-results-a-id-results-a">6.  Additional Results<a id="_results"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Prepare Images <a id="_prep"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Identify Saturated Stars <a id="_identify"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Bleed the Saturation Mask <a id="_bleed"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. Define a Custom Aperture <a id="_define"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. Photometry with a Custom Aperture <a id="_phot"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.  Additional Results<a id="_results"></a></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-more-help">For more help:</a></li>
 </ul>

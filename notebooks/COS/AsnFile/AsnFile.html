@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Modifying or Creating an Association File &#8212; HST Notebooks</title>
   
@@ -29,40 +28,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/COS/AsnFile/AsnFile';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -360,9 +366,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -387,14 +393,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/COS/AsnFile/AsnFile.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -552,9 +558,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -622,37 +628,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><a id="topAF"></a></p>
+  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
+<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
+<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
+<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
+<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
+</div>
+<p><a id="topAF"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="modifying-or-creating-an-association-file">
-<h1>Modifying or Creating an Association File<a class="headerlink" href="#modifying-or-creating-an-association-file" title="Permalink to this heading">#</a></h1>
+<h1>Modifying or Creating an Association File<a class="headerlink" href="#modifying-or-creating-an-association-file" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="learning-goals">
-<h1>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h1>
+<h1>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h1>
 <p><font size="4"> This Notebook is designed to walk the user (<em>you</em>) through: <b>Creating or altering the association (<tt>asn</tt>) file used by the Cosmic Origins Spectrograph (<em>COS</em>) pipeline to determine which data to process:</b> </font><br></p>
-<p><strong>1. <span class="xref myst">Examining an association file</span></strong></p>
-<p><strong>2. <span class="xref myst">Editing an existing association file</span></strong></p>
-<p>- 2.1. <span class="xref myst">Removing an exposure</span></p>
-<p>+ 2.1.1. <span class="xref myst">Removing a bad exposure</span></p>
-<p>+ 2.1.2. <span class="xref myst">Filtering to a single exposure (e.g. for LP6 data)</span></p>
-<p>- 2.2. <span class="xref myst">Adding an exposure</span></p>
-<p><strong>3. <span class="xref myst">Creating an entirely new association file</span></strong></p>
-<p>- 3.1. <span class="xref myst">Simplest method</span></p>
-<p>- 3.2. <span class="xref myst">With FITS header metadata</span></p>
-<p>- 3.3. <span class="xref myst">Association files for non-TAGFLASH datasets</span></p>
-<p>+ 3.3.1. <span class="xref myst">Gathering the exposure information</span></p>
-<p>+ 3.3.2. <span class="xref myst">Creating the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal association file</span></p>
+<p><strong>1. <a class="reference internal" href="#examAF"><span class="xref myst">Examining an association file</span></a></strong></p>
+<p><strong>2. <a class="reference internal" href="#editAF"><span class="xref myst">Editing an existing association file</span></a></strong></p>
+<p>- 2.1. <a class="reference internal" href="#subAF"><span class="xref myst">Removing an exposure</span></a></p>
+<p>+ 2.1.1. <a class="reference internal" href="#removebadAF"><span class="xref myst">Removing a bad exposure</span></a></p>
+<p>+ 2.1.2. <a class="reference internal" href="#removefiltAF"><span class="xref myst">Filtering to a single exposure (e.g. for LP6 data)</span></a></p>
+<p>- 2.2. <a class="reference internal" href="#addAF"><span class="xref myst">Adding an exposure</span></a></p>
+<p><strong>3. <a class="reference internal" href="#newAF"><span class="xref myst">Creating an entirely new association file</span></a></strong></p>
+<p>- 3.1. <a class="reference internal" href="#simpleAF"><span class="xref myst">Simplest method</span></a></p>
+<p>- 3.2. <a class="reference internal" href="#metaAF"><span class="xref myst">With FITS header metadata</span></a></p>
+<p>- 3.3. <a class="reference internal" href="#nontagAF"><span class="xref myst">Association files for non-TAGFLASH datasets</span></a></p>
+<p>+ 3.3.1. <a class="reference internal" href="#331-gathering-the-exposure-informationAF"><span class="xref myst">Gathering the exposure information</span></a></p>
+<p>+ 3.3.2. <a class="reference internal" href="#332-creating-the-split-wavecal-association-fileAF"><span class="xref myst">Creating the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal association file</span></a></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>0. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<h1>0. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p><strong>The Cosmic Origins Spectrograph (<a class="reference external" href="https://www.nasa.gov/content/hubble-space-telescope-cosmic-origins-spectrograph"><em>COS</em></a>) is an ultraviolet spectrograph on-board the Hubble Space Telescope (<a class="reference external" href="https://www.stsci.edu/hst/about"><em>HST</em></a>) with capabilities in the near ultraviolet (<em>NUV</em>) and far ultraviolet (<em>FUV</em>).</strong></p>
 <p><strong>This tutorial aims to prepare you to alter the association file used by the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> pipeline.</strong> Association files are <code class="docutils literal notranslate"><span class="pre">fits</span></code> files containing a binary table extension, which list their “member” files: science and calibration exposures which the pipeline will process together into spectral data products.</p>
 <ul class="simple">
 <li><p>For an in-depth manual to working with COS data and a discussion of caveats and user tips, see the <a class="reference external" href="https://hst-docs.stsci.edu/display/COSDHB/">COS Data Handbook</a>.</p></li>
 <li><p>For a detailed overview of the COS instrument, see the <a class="reference external" href="https://hst-docs.stsci.edu/display/COSIHB/">COS Instrument Handbook</a>.</p></li>
 </ul>
-<p>We’ll demonstrate creating an <code class="docutils literal notranslate"><span class="pre">asn</span></code> file in three ways: First, we’ll demonstrate <span class="xref myst">editing an existing <code class="docutils literal notranslate"><span class="pre">asn</span></code> file to add or remove an exposure</span>. Second, we’ll show how to <span class="xref myst">create an entirely new <code class="docutils literal notranslate"><span class="pre">asn</span></code> file</span>. Finally, we’ll show an example of <span class="xref myst">creating an <code class="docutils literal notranslate"><span class="pre">asn</span></code> file for use with SPLIT wavecal data</span>, such as that obtained at COS lifetime position 6 (LP6).</p>
+<p>We’ll demonstrate creating an <code class="docutils literal notranslate"><span class="pre">asn</span></code> file in three ways: First, we’ll demonstrate <a class="reference internal" href="#editAF"><span class="xref myst">editing an existing <code class="docutils literal notranslate"><span class="pre">asn</span></code> file to add or remove an exposure</span></a>. Second, we’ll show how to <a class="reference internal" href="#newAF"><span class="xref myst">create an entirely new <code class="docutils literal notranslate"><span class="pre">asn</span></code> file</span></a>. Finally, we’ll show an example of <a class="reference internal" href="#nontagAF"><span class="xref myst">creating an <code class="docutils literal notranslate"><span class="pre">asn</span></code> file for use with SPLIT wavecal data</span></a>, such as that obtained at COS lifetime position 6 (LP6).</p>
 <section id="we-will-import-the-following-packages">
-<h2>We will import the following packages:<a class="headerlink" href="#we-will-import-the-following-packages" title="Permalink to this heading">#</a></h2>
+<h2>We will import the following packages:<a class="headerlink" href="#we-will-import-the-following-packages" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> to handle array functions</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">astropy.io</span> <span class="pre">fits</span></code> and <code class="docutils literal notranslate"><span class="pre">astropy.table</span> <span class="pre">Table</span></code> for accessing FITS files</p></li>
@@ -686,7 +698,7 @@ document.write(`
 </div>
 </section>
 <section id="we-will-also-define-a-few-directories-we-will-need">
-<h2>We will also define a few directories we will need:<a class="headerlink" href="#we-will-also-define-a-few-directories-we-will-need" title="Permalink to this heading">#</a></h2>
+<h2>We will also define a few directories we will need:<a class="headerlink" href="#we-will-also-define-a-few-directories-we-will-need" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These will be important directories for the Notebook</span>
@@ -704,16 +716,10 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Made the following directories:
-     ./data, ./output, ./output/plots
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="and-we-will-need-to-download-the-data-we-wish-to-filter-and-analyze">
-<h2>And we will need to download the data we wish to filter and analyze<a class="headerlink" href="#and-we-will-need-to-download-the-data-we-wish-to-filter-and-analyze" title="Permalink to this heading">#</a></h2>
+<h2>And we will need to download the data we wish to filter and analyze<a class="headerlink" href="#and-we-will-need-to-download-the-data-we-wish-to-filter-and-analyze" title="Link to this heading">#</a></h2>
 <p>We choose the exposures with the association obs_ids: <code class="docutils literal notranslate"><span class="pre">ldif01010</span></code> and <code class="docutils literal notranslate"><span class="pre">ldif02010</span></code> because we happen to know that some of the exposures in these groups failed, which gives us a real-world use case for editing an association file. Both <code class="docutils literal notranslate"><span class="pre">ldif01010</span></code> and <code class="docutils literal notranslate"><span class="pre">ldif02010</span></code> are far-ultraviolet (FUV) datasets on the quasi-stellar object (QSO) <a class="reference external" href="https://doi.org/10.1051/0004-6361/201935524">PDS 456</a>.</p>
 <p>For more information on downloading COS data, see our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/DataDl/DataDl.ipynb">Notebook tutorial on downloading COS data</a>.</p>
 <div class="cell docutils container">
@@ -742,122 +748,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01010_asn.fits to data/mastDownload/HST/ldif01010/ldif01010_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01tyq_rawtag_a.fits to data/mastDownload/HST/ldif01tyq/ldif01tyq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01tyq_rawtag_b.fits to data/mastDownload/HST/ldif01tyq/ldif01tyq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u0q_rawtag_a.fits to data/mastDownload/HST/ldif01u0q/ldif01u0q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u0q_rawtag_b.fits to data/mastDownload/HST/ldif01u0q/ldif01u0q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u2q_rawtag_a.fits to data/mastDownload/HST/ldif01u2q/ldif01u2q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u2q_rawtag_b.fits to data/mastDownload/HST/ldif01u2q/ldif01u2q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u4q_rawtag_a.fits to data/mastDownload/HST/ldif01u4q/ldif01u4q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif01u4q_rawtag_b.fits to data/mastDownload/HST/ldif01u4q/ldif01u4q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02010_asn.fits to data/mastDownload/HST/ldif02010/ldif02010_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nmq_rawtag_a.fits to data/mastDownload/HST/ldif02nmq/ldif02nmq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nmq_rawtag_b.fits to data/mastDownload/HST/ldif02nmq/ldif02nmq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nsq_rawtag_a.fits to data/mastDownload/HST/ldif02nsq/ldif02nsq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nsq_rawtag_b.fits to data/mastDownload/HST/ldif02nsq/ldif02nsq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nuq_rawtag_a.fits to data/mastDownload/HST/ldif02nuq/ldif02nuq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nuq_rawtag_b.fits to data/mastDownload/HST/ldif02nuq/ldif02nuq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nwq_rawtag_a.fits to data/mastDownload/HST/ldif02nwq/ldif02nwq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/ldif02nwq_rawtag_b.fits to data/mastDownload/HST/ldif02nwq/ldif02nwq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id = examAF></a></p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="examining-an-association-file">
-<h1>1. Examining an association file<a class="headerlink" href="#examining-an-association-file" title="Permalink to this heading">#</a></h1>
+<h1>1. Examining an association file<a class="headerlink" href="#examining-an-association-file" title="Link to this heading">#</a></h1>
 <p>Association files are lists of “member” files - science and wavelength calibration exposures - which the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> pipeline will process together.
 Above, we downloaded two association files and the rawtag data files which are their members. We will begin by searching for the association files and reading one of them (with observation ID <code class="docutils literal notranslate"><span class="pre">LDIF01010</span></code>). We could just as easily pick <code class="docutils literal notranslate"><span class="pre">ldif02010</span></code>.</p>
 <div class="cell docutils container">
@@ -875,17 +771,6 @@ Above, we downloaded two association files and the rawtag data files which are t
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=5</i>
-<table id="table139645597343440" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LDIF01TYQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U0Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U2Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U4Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p>The association file has three columns: <code class="docutils literal notranslate"><span class="pre">MEMNAME</span></code>, <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>, <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> which we describe below. More information can be found in <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration">Section 3 of the COS Data Handbook</a>.</p>
 <ol class="arabic simple">
@@ -916,31 +801,20 @@ Above, we downloaded two association files and the rawtag data files which are t
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Association LDIF01010 has EXP-FP exposure LDIF01TYQ with exptime 0.0 sec at cenwave 1280Å and FP-POS 1.
-
-Association LDIF01010 has EXP-FP exposure LDIF01U0Q with exptime 1404.0 sec at cenwave 1280Å and FP-POS 2.
-
-Association LDIF01010 has EXP-FP exposure LDIF01U2Q with exptime 1404.0 sec at cenwave 1280Å and FP-POS 3.
-
-Association LDIF01010 has EXP-FP exposure LDIF01U4Q with exptime 2923.0 sec at cenwave 1280Å and FP-POS 4.
-</pre></div>
-</div>
-</div>
 </div>
 <p><strong>We notice that something seems amiss with the science exposure LDIF01TYQ</strong>:
-This file has an exposure time of 0.0 seconds - something has gone wrong. In this case, there was a guide star acquisition failure as described on the <a class="reference external" href="http://archive.stsci.edu/cgi-bin/mastpreview?mission=hst&amp;dataid=LDIF01010">data preview page</a>.</p>
+This file has an exposure time of 0.0 seconds - something has gone wrong. In this case, there was a guide star acquisition failure as described on the <a class="reference external" href="http://archive.stsci.edu/cgi-bin/mastpreview?mission=hst&amp;amp;dataid=LDIF01010">data preview page</a>.</p>
 <p>In the next section, we will correct this lack of data by removing the bad exposure and combining in exposures from the other association group.</p>
 <p><a id = editAF></a></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="editing-an-existing-association-file">
-<h1>2. Editing an existing association file<a class="headerlink" href="#editing-an-existing-association-file" title="Permalink to this heading">#</a></h1>
+<h1>2. Editing an existing association file<a class="headerlink" href="#editing-an-existing-association-file" title="Link to this heading">#</a></h1>
 <p><a id = subAF></a></p>
 <section id="removing-an-exposure">
-<h2>2.1. Removing an exposure<a class="headerlink" href="#removing-an-exposure" title="Permalink to this heading">#</a></h2>
+<h2>2.1. Removing an exposure<a class="headerlink" href="#removing-an-exposure" title="Link to this heading">#</a></h2>
 <p><a id = removebadAF></a></p>
 <section id="removing-a-bad-exposure">
-<h3>2.1.1. Removing a bad exposure<a class="headerlink" href="#removing-a-bad-exposure" title="Permalink to this heading">#</a></h3>
+<h3>2.1.1. Removing a bad exposure<a class="headerlink" href="#removing-a-bad-exposure" title="Link to this heading">#</a></h3>
 <p>We know that at least one of our exposures - <code class="docutils literal notranslate"><span class="pre">ldif01tyq</span></code> - is not suited for combination into the final product. It has an exposure time of 0.0 seconds, in this case from a guide star acquisition failure. This is a generalizable issue, as you may often know an exposure is “<em>bad</em>” for many reasons: perhaps it was taken with the shutter closed, or with anomolously high background noise, or any number of reasons we may wish to exclude an exposure from our data. To do this, we will need to alter our existing association file before we re-run <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>. Afterwards we will compare the flux of the resulting spectrum made without the bad exposure to the same dataset with the bad exposure. The flux levels should match closely.</p>
 <p>We again see the contents of our main association file below. Note that <code class="docutils literal notranslate"><span class="pre">True/False</span></code> and <code class="docutils literal notranslate"><span class="pre">1/0</span></code> are essentially interchangable in the <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> column.</p>
 <div class="cell docutils container">
@@ -949,17 +823,6 @@ This file has an exposure time of 0.0 seconds - something has gone wrong. In thi
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=5</i>
-<table id="table139645597244560" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LDIF01TYQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U0Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U2Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U4Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p>We can set the <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> value to <code class="docutils literal notranslate"><span class="pre">False</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> for our bad exposure. If we were to run the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> pipeline on the edited association file, it would not be processed. <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> can take a long time to run. To avoid slowing down this Notebook, the code to run <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> on the association files we have created has been spun out into <code class="docutils literal notranslate"><span class="pre">Python</span></code> files in this directory with the names <code class="docutils literal notranslate"><span class="pre">test_&lt;type</span> <span class="pre">of</span> <span class="pre">association</span> <span class="pre">file&gt;.py</span></code> (in this case, <code class="docutils literal notranslate"><span class="pre">test_removed_exposure_asn.py</span></code>). If you wish to re-run the analysis within, you will need to specify a valid cache of CRDS reference files (see our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/Setup/Setup.ipynb">Setup Notebook</a> for details on downloading reference files) in the <code class="docutils literal notranslate"><span class="pre">Python</span></code> file.</p>
 <div class="cell docutils container">
@@ -982,26 +845,16 @@ This file has an exposure time of 0.0 seconds - something has gone wrong. In thi
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=5</i>
-<table id="table139645597277648" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LDIF01TYQ</td><td>EXP-FP</td><td>0</td></tr>
-<tr><td>LDIF01U0Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U2Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U4Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p>To show what would happen if we run <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> on this association file, we include Figure 1. This figure shows that the flux level of the spectrum retrieved from MAST matches that which was processed after removing the bad exposure. Slight differences in the two spectra may arise from MAST using a different random seed value. What matters for this comparison is that the fluxes match well, as they should because the empty exposure adds 0 counts over 0 time. Thus, for the purposes of flux calibration, it should be ignored. Other types of bad exposures, for instance those taken with the source at the edge of COS’s aperture, would impact the fluxes.</p>
 </section>
 <section id="figure-1-comparison-of-fluxes-between-the-data-retrieved-from-mast-and-the-same-data-reprocessed-after-removing-the-bad-exposure">
-<h3>Figure 1. Comparison of fluxes between the data retrieved from MAST, and the same data reprocessed after removing the bad exposure<a class="headerlink" href="#figure-1-comparison-of-fluxes-between-the-data-retrieved-from-mast-and-the-same-data-reprocessed-after-removing-the-bad-exposure" title="Permalink to this heading">#</a></h3>
-<a class="reference internal image-reference" href="../../../_images/compare_fluxes_after_removing_badfile.png"><img alt="A comparison between the fluxes of our data. One dataset if without our bad exposure removed, and the other is with our bad exposure removed. Both plots are relatively the same, as they should be." src="../../../_images/compare_fluxes_after_removing_badfile.png" style="width: 60%;" /></a>
+<h3>Figure 1. Comparison of fluxes between the data retrieved from MAST, and the same data reprocessed after removing the bad exposure<a class="headerlink" href="#figure-1-comparison-of-fluxes-between-the-data-retrieved-from-mast-and-the-same-data-reprocessed-after-removing-the-bad-exposure" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../../../_images/compare_fluxes_after_removing_badfile.png"><img alt="A comparison between the fluxes of our data. One dataset if without our bad exposure removed, and the other is with our bad exposure removed. Both plots are relatively the same, as they should be." src="../../../_images/compare_fluxes_after_removing_badfile.png" style="width: 60%;" />
+</a>
 <p><a id = removefiltAF></a></p>
 <section id="filtering-to-a-single-exposure-e-g-for-lp6-data">
-<h4>2.1.2. Filtering to a single exposure (e.g. for LP6 data)<a class="headerlink" href="#filtering-to-a-single-exposure-e-g-for-lp6-data" title="Permalink to this heading">#</a></h4>
+<h4>2.1.2. Filtering to a single exposure (e.g. for LP6 data)<a class="headerlink" href="#filtering-to-a-single-exposure-e-g-for-lp6-data" title="Link to this heading">#</a></h4>
 <p>Another situation when users often wish to remove exposures from an association file is when re-processing individual exposures taken at COS’s lifetime position 6 (LP6) or other modes at which the wavelength calibration data is not contained by the science exposures’ <code class="docutils literal notranslate"><span class="pre">rawtag</span></code> files.</p>
 <p>Often users wish to process a single exposure’s file with <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>. With the <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures#id-5.7InternalWavelengthCalibrationExposures-Section5.7.15.7.1ConcurrentWavelengthCalibrationwithTAGFLASH"><code class="docutils literal notranslate"><span class="pre">TAGFLASH</span></code> wavelength calibration method</a> standard at all lifetime positions prior to LP6, the wavelength calibration data was taken concurrently with the science data and was contained by the same <code class="docutils literal notranslate"><span class="pre">rawtag</span></code> data files. However, as described in this <a class="reference external" href="https://aas240-aas.ipostersessions.com/default.aspx?s=06-68-AE-28-CC-4A-12-7A-B0-4F-02-46-BC-D1-BE-7E">COS 2030 plan poster</a>, this is not possible at LP6. Instead, separate wavelength calibration exposures are taken at separate lifetime positions in a process known as <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures#id-5.7InternalWavelengthCalibrationExposures-Section5.7.65.7.6SPLITWavecals(defaultnon-concurrentwavelengthcalibrationatLP6)">SPLIT wavecals</a>. As a result, the wavelength calibration data no longer exists in the same file as the science data for such exposures.</p>
 <p>For <code class="docutils literal notranslate"><span class="pre">TAGFLASH</span></code> data, users could run <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> directly on their <code class="docutils literal notranslate"><span class="pre">rawtag</span></code> file of interest (though using an association file was always recommended). However, doing so with LP6 data would not allow the proper wavelength calibration. Instead, users should create a custom association file created by removing exposures from the default association file. We demonstrate this below.</p>
@@ -1032,31 +885,6 @@ Let’s begin by downloading the default LP6 association file from MAST and disp
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01010_asn.fits to data/mastDownload/HST/letc01010/letc01010_asn.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output text_html"><div><i>Table length=13</i>
-<table id="table139645595149648" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LETC01LMQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LOQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01LRQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LTQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LWQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01M1Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01M6Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MTQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01MVQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MXQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MZQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01N1Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p>As expected, we see 4 <code class="docutils literal notranslate"><span class="pre">EXP-FP</span></code> members, which are the science exposures at COS’s 4 <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-1-cos-overview/1-1-instrument-capabilities-and-design">fixed-pattern noise positions (<code class="docutils literal notranslate"><span class="pre">FP-POS</span></code>)</a>. Each is bracketed by a SPLIT wavecal wavelength calibration exposure on each side (<code class="docutils literal notranslate"><span class="pre">EXP-SWAVE</span></code>).</p>
 <p>If we only wish to process one of the science exposures, (along with its wavelength calibration exposures,) we turn off all the other exposures by setting their <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> values to 0/<code class="docutils literal notranslate"><span class="pre">False</span></code>. The product file (<code class="docutils literal notranslate"><span class="pre">PROD-FP</span></code>) must also be turned on, and should be renamed to show that it will only include data from a single exposure. Below, we do so, assuming we wish to process only the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">3</span></code> science exposure: <code class="docutils literal notranslate"><span class="pre">LETC01MTQ</span></code> (and its wavelength calibration exposures: <code class="docutils literal notranslate"><span class="pre">LETC01M6Q</span></code> and <code class="docutils literal notranslate"><span class="pre">LETC01MVQ</span></code>).</p>
@@ -1094,35 +922,13 @@ Let’s begin by downloading the default LP6 association file from MAST and disp
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We will turn off the input exposures except for: [&#39;LETC01M6Q&#39;, &#39;LETC01MTQ&#39;, &#39;LETC01MVQ&#39;]. We will also leave the output product file turned on.
-</pre></div>
-</div>
-<div class="output text_html"><div><i>Table length=13</i>
-<table id="table139645597413776" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LETC01LMQ</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01LOQ</td><td>EXP-FP</td><td>0</td></tr>
-<tr><td>LETC01LRQ</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01LTQ</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01LWQ</td><td>EXP-FP</td><td>0</td></tr>
-<tr><td>LETC01M1Q</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01M6Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MTQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01MVQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MXQ</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01MZQ</td><td>EXP-FP</td><td>0</td></tr>
-<tr><td>LETC01N1Q</td><td>EXP-SWAVE</td><td>0</td></tr>
-<tr><td>LETC01MTQ_only</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p><a id = addAF></a></p>
 </section>
 </section>
 </section>
 <section id="adding-an-exposure">
-<h2>2.2. Adding an exposure<a class="headerlink" href="#adding-an-exposure" title="Permalink to this heading">#</a></h2>
+<h2>2.2. Adding an exposure<a class="headerlink" href="#adding-an-exposure" title="Link to this heading">#</a></h2>
 <p>In section 2.1.1, we removed the failed exposure taken with <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">1</span></code> from our <code class="docutils literal notranslate"><span class="pre">ldif01010</span></code> association file. When possible, we usually want to combine one or more of each of the four FP-POS types. In this example scenario, let’s add the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">1</span></code> exposure from the other association group. Please note that combining data from separate visits with different target acquisitions can result in true errors which are higher than those calculated by <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>.
 We combine the datasets here as an example only and do not specifically endorse combining these exposures.
 Also note that you should only combine files taken using the same grating and central wavelength settings in this manner.</p>
@@ -1162,16 +968,6 @@ Also note that you should only combine files taken using the same grating and ce
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Association LDIF02010 has EXP-FP exposure LDIF02NMQ with exptime 1653.0 seconds at cenwave 1280 Å and FP-POS 1.
-^^ The one above this has the FP-POS we are looking for (LDIF02NMQ)^^^
-
-Association LDIF02010 has EXP-FP exposure LDIF02NSQ with exptime 1334.0 seconds at cenwave 1280 Å and FP-POS 2.
-Association LDIF02010 has EXP-FP exposure LDIF02NUQ with exptime 1334.0 seconds at cenwave 1280 Å and FP-POS 3.
-Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds at cenwave 1280 Å and FP-POS 4.
-</pre></div>
-</div>
-</div>
 </div>
 <p>There’s a slightly different procedure to add a new exposure to the list rather than remove one.</p>
 <p>Here we will read the table in the FITS association file into an <code class="docutils literal notranslate"><span class="pre">astropy</span></code> Table. We can then add a row into the right spot, filling it with the new file’s <code class="docutils literal notranslate"><span class="pre">MEMNAME</span></code>, <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>, and <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code>. Finally, we have to save this table into the existing FITS association file.</p>
@@ -1196,11 +992,6 @@ Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Added LDIF02NMQ to the association file.
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now, we can see there is a new row with our exposure from the other <code class="docutils literal notranslate"><span class="pre">asn</span></code> file group: <code class="docutils literal notranslate"><span class="pre">LDIF02NMQ</span></code>.</p>
 <div class="cell docutils container">
@@ -1209,28 +1000,16 @@ Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=6</i>
-<table id="table139645595108688" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LDIF01TYQ</td><td>EXP-FP</td><td>0</td></tr>
-<tr><td>LDIF01U0Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U2Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01U4Q</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF02NMQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LDIF01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
 <p><font size="4 "><b>Excellent.</b> In the next section we will create a new association file from scratch.</font></p>
 <p><a id = newAF></a></p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-an-entirely-new-association-file">
-<h1>3. Creating an entirely new association file<a class="headerlink" href="#creating-an-entirely-new-association-file" title="Permalink to this heading">#</a></h1>
+<h1>3. Creating an entirely new association file<a class="headerlink" href="#creating-an-entirely-new-association-file" title="Link to this heading">#</a></h1>
 <p>Users will rarely need to create an entirely new association file. Much more often, they should alter an existing one found on MAST. However, a user may wish to create a new association file if they are combining altered exposures, perhaps after using the <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/COS/SplitTag/SplitTag.ipynb"><code class="docutils literal notranslate"><span class="pre">costools.splittag</span></code> tool</a>. This section describes how to make one from scratch.</p>
 <p>For the sake of demonstration, we will generate a new association file with four exposure members: even-numbered <code class="docutils literal notranslate"><span class="pre">FP-POS</span></code> (2,4) from the first original association (<code class="docutils literal notranslate"><span class="pre">LDIF01010</span></code>), and odd-numbered <code class="docutils literal notranslate"><span class="pre">FP-POS</span></code> (1,3) from from the second original association (<code class="docutils literal notranslate"><span class="pre">LDIF02010</span></code>).</p>
-<p>From <span class="xref myst">Section 2</span>, we see that this corresponds to :</p>
+<p>From <a class="reference internal" href="#editAF"><span class="xref myst">Section 2</span></a>, we see that this corresponds to :</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1260,7 +1039,7 @@ Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds 
 </div>
 <p><a id = simpleAF></a></p>
 <section id="simplest-method">
-<h2>3.1. Simplest method<a class="headerlink" href="#simplest-method" title="Permalink to this heading">#</a></h2>
+<h2>3.1. Simplest method<a class="headerlink" href="#simplest-method" title="Link to this heading">#</a></h2>
 <p>Below, we manually build up an association file from the three necessary columns (<code class="docutils literal notranslate"><span class="pre">MEMNAME</span></code>, <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>, <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1306,11 +1085,6 @@ Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Saved ldifcombo_asn.fits in the output directory: output
-</pre></div>
-</div>
-</div>
 </div>
 <p><strong>Examining the file we have created:</strong></p>
 <p>We see that the data looks correct - exactly the table we want!</p>
@@ -1320,31 +1094,12 @@ Association LDIF02010 has EXP-FP exposure LDIF02NWQ with exptime 2783.0 seconds 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=5</i>
-<table id="table139645597280464" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes40</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LDIF02NMQ</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LDIF01U0Q</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LDIF02NUQ</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LDIF01U4Q</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LDIFCOMBO</td><td>PROD-FP</td><td>True</td></tr>
-</table></div></div></div>
 </div>
 <p><strong>However, the 0th and 1st fits headers no longer contain useful information about the data.</strong>
 While <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> will process these files, vital header keys may not be propagated. If it’s important to preserve the header information, you may follow the steps in the next section.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fits</span><span class="o">.</span><span class="n">getheader</span><span class="p">(</span><span class="n">outputdir</span> <span class="o">/</span> <span class="s1">&#39;ldifcombo_asn.fits&#39;</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SIMPLE  =                    T / conforms to FITS standard                      
-BITPIX  =                    8 / array data type                                
-NAXIS   =                    0 / number of array dimensions                     
-EXTEND  =                    T                                                  
 </pre></div>
 </div>
 </div>
@@ -1355,29 +1110,11 @@ EXTEND  =                    T
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XTENSION= &#39;BINTABLE&#39;           / binary table extension                         
-BITPIX  =                    8 / array data type                                
-NAXIS   =                    2 / number of array dimensions                     
-NAXIS1  =                   55 / length of dimension 1                          
-NAXIS2  =                    5 / length of dimension 2                          
-PCOUNT  =                    0 / number of group parameters                     
-GCOUNT  =                    1 / number of groups                               
-TFIELDS =                    3 / number of table fields                         
-TTYPE1  = &#39;MEMNAME &#39;                                                            
-TFORM1  = &#39;40A     &#39;                                                            
-TTYPE2  = &#39;MEMTYPE &#39;                                                            
-TFORM2  = &#39;14A     &#39;                                                            
-TTYPE3  = &#39;MEMPRSNT&#39;                                                            
-TFORM3  = &#39;L       &#39;                                                            
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id = metaAF></a></p>
 </section>
 <section id="with-fits-header-metadata">
-<h2>3.2. With FITS header metadata<a class="headerlink" href="#with-fits-header-metadata" title="Permalink to this heading">#</a></h2>
+<h2>3.2. With FITS header metadata<a class="headerlink" href="#with-fits-header-metadata" title="Link to this heading">#</a></h2>
 <p><strong>We can instead build up a new file with our old file’s FITS header, and alter it to reflect our changes.</strong></p>
 <p>We first build a new association file, a piecewise combination of our original file’s headers and our new table.</p>
 <p>A FITS header is essentially a section of data and its associated metadata. See <a class="reference external" href="https://fits.gsfc.nasa.gov/fits_primer.html">this site</a> for info on FITS structures.</p>
@@ -1409,17 +1146,6 @@ TFORM3  = &#39;L       &#39;
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Saved &#39;</span> <span class="o">+</span> <span class="s1">&#39;ldifcombo_2_asn.fits&#39;</span>
       <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;in the output directory: </span><span class="si">{</span><span class="n">outputdir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: data/ldif01010_asn.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU      43   ()      
-  1  ASN           1 BinTableHDU     24   6R x 3C   [14A, 14A, L]   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Saved ldifcombo_2_asn.fitsin the output directory: output
 </pre></div>
 </div>
 </div>
@@ -1459,19 +1185,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Editing DATE in Extension 0
-Editing FILENAME in Extension 0
-Editing ROOTNAME in Extension 0
-Editing ROOTNAME in Extension 1
-Editing ASN_ID in Extension 0
-Editing ASN_TAB in Extension 0
-Editing ASN_PROD in Extension 0
-Editing EXTVER in Extension 1
-Editing EXPNAME in Extension 1
-</pre></div>
-</div>
-</div>
 </div>
 <p><font size="4 "><b>And now we have created our new association file.</b> The file is now ready to be used in the <code>CalCOS</code> pipeline!</font></p>
 <p>If you’re interested in testing your file by running it through the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> pipeline, you may wish to run the <code class="docutils literal notranslate"><span class="pre">test_asn.py</span> <span class="pre">file</span></code> included in this subdirectory of the GitHub repository. i.e. from the command line:</p>
@@ -1487,10 +1200,10 @@ Editing EXPNAME in Extension 1
 <p><a id = nontagAF></a></p>
 </section>
 <section id="association-files-for-non-tagflash-datasets">
-<h2>3.3. Association files for non-TAGFLASH datasets<a class="headerlink" href="#association-files-for-non-tagflash-datasets" title="Permalink to this heading">#</a></h2>
-<p>As touched upon in <span class="xref myst">Section 2.1.2.</span>, most COS exposures contain the calibration lamp data necessary to perform wavelength calibration; however, exposures taken at LP6 and those taken with <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures#id-5.7InternalWavelengthCalibrationExposures-Section5.7.25.7.2AUTOWavecals(whenTAGFLASHisnotused)">AUTO and GO wavecals</a> (including BOA and ACCUM mode exposures) have separate exposures for wavelength calibration. Table 1 below summarizes the types of wavelength calibration modes. More information may be found in <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures">Section 5.7 of the COS Instrument Handbook</a>.</p>
+<h2>3.3. Association files for non-TAGFLASH datasets<a class="headerlink" href="#association-files-for-non-tagflash-datasets" title="Link to this heading">#</a></h2>
+<p>As touched upon in <a class="reference internal" href="#removefiltAF"><span class="xref myst">Section 2.1.2.</span></a>, most COS exposures contain the calibration lamp data necessary to perform wavelength calibration; however, exposures taken at LP6 and those taken with <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures#id-5.7InternalWavelengthCalibrationExposures-Section5.7.25.7.2AUTOWavecals(whenTAGFLASHisnotused)">AUTO and GO wavecals</a> (including BOA and ACCUM mode exposures) have separate exposures for wavelength calibration. Table 1 below summarizes the types of wavelength calibration modes. More information may be found in <a class="reference external" href="https://hst-docs.stsci.edu/cosihb/chapter-5-spectroscopy-with-cos/5-7-internal-wavelength-calibration-exposures">Section 5.7 of the COS Instrument Handbook</a>.</p>
 <section id="table-1-comparison-of-wavelength-calibration-modes">
-<h3>Table 1. Comparison of wavelength calibration modes<a class="headerlink" href="#table-1-comparison-of-wavelength-calibration-modes" title="Permalink to this heading">#</a></h3>
+<h3>Table 1. Comparison of wavelength calibration modes<a class="headerlink" href="#table-1-comparison-of-wavelength-calibration-modes" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Wavelength calibration mode</strong></p></th>
@@ -1527,13 +1240,13 @@ Editing EXPNAME in Extension 1
 </table>
 </div>
 <p>Non-<code class="docutils literal notranslate"><span class="pre">TAGFLASH</span></code> datasets must be processed from a single association file which includes all the science and wavelength calibration exposures, properly labeled with the correct <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>s.</p>
-<p>Users will rarely need to build an entirely new association file for non-TAGFLASH datasets. The most common reason for a user to have non-TAGFLASH data is that the exposures were obtained using the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal method at LP6. The association files for these files are correctly created and made available in the MAST archive. Removing specific exposures can most easily be done as in <span class="xref myst">Section 2.1.2</span>. However, if a user needed to craft a completely customized <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> run, for instance to combine multiple non-TAGFLASH datasets, they can follow this section.</p>
-<p>In this section we will manually recreate the association file for the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal data from the same dataset whose association file we altered as part of <span class="xref myst">Section 2.1.2</span>. We could just as easily do so with <code class="docutils literal notranslate"><span class="pre">AUTO</span></code> or GO wavecal data. We will first select and examine the relevant exposures, then we will combine them into an association file.</p>
+<p>Users will rarely need to build an entirely new association file for non-TAGFLASH datasets. The most common reason for a user to have non-TAGFLASH data is that the exposures were obtained using the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal method at LP6. The association files for these files are correctly created and made available in the MAST archive. Removing specific exposures can most easily be done as in <a class="reference internal" href="#212-filtering-to-a-single-exposure-eg-for-lp6-data"><span class="xref myst">Section 2.1.2</span></a>. However, if a user needed to craft a completely customized <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> run, for instance to combine multiple non-TAGFLASH datasets, they can follow this section.</p>
+<p>In this section we will manually recreate the association file for the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal data from the same dataset whose association file we altered as part of <a class="reference internal" href="#removefiltAF"><span class="xref myst">Section 2.1.2</span></a>. We could just as easily do so with <code class="docutils literal notranslate"><span class="pre">AUTO</span></code> or GO wavecal data. We will first select and examine the relevant exposures, then we will combine them into an association file.</p>
 <p><a id = 331-gathering-the-exposure-informationAF></a></p>
 </section>
 <section id="gathering-the-exposure-information">
-<h3>3.3.1. Gathering the exposure information<a class="headerlink" href="#gathering-the-exposure-information" title="Permalink to this heading">#</a></h3>
-<p>We begin by downloading the data from a visit which utilized COS’ LP6 split wavecal mode (proposal ID: <code class="docutils literal notranslate"><span class="pre">16907</span></code>, observation ID: <code class="docutils literal notranslate"><span class="pre">letc01010</span></code>). We previously downloaded the association file for this dataset in <span class="xref myst">Section 2.1.2</span>, but here we download the rest of the data products we will need.</p>
+<h3>3.3.1. Gathering the exposure information<a class="headerlink" href="#gathering-the-exposure-information" title="Link to this heading">#</a></h3>
+<p>We begin by downloading the data from a visit which utilized COS’ LP6 split wavecal mode (proposal ID: <code class="docutils literal notranslate"><span class="pre">16907</span></code>, observation ID: <code class="docutils literal notranslate"><span class="pre">letc01010</span></code>). We previously downloaded the association file for this dataset in <a class="reference internal" href="#removefiltAF"><span class="xref myst">Section 2.1.2</span></a>, but here we download the rest of the data products we will need.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search for the correct obs_ids and get the list of data products</span>
@@ -1555,152 +1268,6 @@ Editing EXPNAME in Extension 1
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lmq_rawtag_a.fits to data/mastDownload/HST/letc01lmq/letc01lmq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lmq_rawtag_b.fits to data/mastDownload/HST/letc01lmq/letc01lmq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01loq_rawtag_a.fits to data/mastDownload/HST/letc01loq/letc01loq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01loq_rawtag_b.fits to data/mastDownload/HST/letc01loq/letc01loq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lrq_rawtag_a.fits to data/mastDownload/HST/letc01lrq/letc01lrq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lrq_rawtag_b.fits to data/mastDownload/HST/letc01lrq/letc01lrq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01ltq_rawtag_a.fits to data/mastDownload/HST/letc01ltq/letc01ltq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01ltq_rawtag_b.fits to data/mastDownload/HST/letc01ltq/letc01ltq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lwq_rawtag_a.fits to data/mastDownload/HST/letc01lwq/letc01lwq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01lwq_rawtag_b.fits to data/mastDownload/HST/letc01lwq/letc01lwq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01m1q_rawtag_a.fits to data/mastDownload/HST/letc01m1q/letc01m1q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01m1q_rawtag_b.fits to data/mastDownload/HST/letc01m1q/letc01m1q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01m6q_rawtag_a.fits to data/mastDownload/HST/letc01m6q/letc01m6q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01m6q_rawtag_b.fits to data/mastDownload/HST/letc01m6q/letc01m6q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mtq_rawtag_a.fits to data/mastDownload/HST/letc01mtq/letc01mtq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mtq_rawtag_b.fits to data/mastDownload/HST/letc01mtq/letc01mtq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mvq_rawtag_a.fits to data/mastDownload/HST/letc01mvq/letc01mvq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mvq_rawtag_b.fits to data/mastDownload/HST/letc01mvq/letc01mvq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mxq_rawtag_a.fits to data/mastDownload/HST/letc01mxq/letc01mxq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mxq_rawtag_b.fits to data/mastDownload/HST/letc01mxq/letc01mxq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mzq_rawtag_a.fits to data/mastDownload/HST/letc01mzq/letc01mzq_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01mzq_rawtag_b.fits to data/mastDownload/HST/letc01mzq/letc01mzq_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01n1q_rawtag_a.fits to data/mastDownload/HST/letc01n1q/letc01n1q_rawtag_a.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/letc01n1q_rawtag_b.fits to data/mastDownload/HST/letc01n1q/letc01n1q_rawtag_b.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-</div>
 </div>
 <p>We’ll begin by taking a look at the original association file from MAST in the cell below. Note that the exposures are ordered in groups of a single <code class="docutils literal notranslate"><span class="pre">EXP-FP</span></code> (also known as science or <code class="docutils literal notranslate"><span class="pre">EXTERNAL/SCI</span></code>) exposure bracketed on both sides by an <code class="docutils literal notranslate"><span class="pre">EXP-SWAVE</span></code> (<code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal) exposure (i.e. <code class="docutils literal notranslate"><span class="pre">WAVECAL</span></code>–&gt; <code class="docutils literal notranslate"><span class="pre">SCIENCE</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">WAVECAL</span></code>). This is often the case for non-<code class="docutils literal notranslate"><span class="pre">TAGFLASH</span></code> files, especially for exposures longer than ~600 seconds.</p>
 <div class="cell docutils container">
@@ -1709,27 +1276,8 @@ Editing EXPNAME in Extension 1
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=13</i>
-<table id="table139645597366672" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes14</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LETC01LMQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LOQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01LRQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LTQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01LWQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01M1Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01M6Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MTQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01MVQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MXQ</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01MZQ</td><td>EXP-FP</td><td>1</td></tr>
-<tr><td>LETC01N1Q</td><td>EXP-SWAVE</td><td>1</td></tr>
-<tr><td>LETC01010</td><td>PROD-FP</td><td>1</td></tr>
-</table></div></div></div>
 </div>
-<p>We’ll simulate an occasion on which we would need to create our own association file by supposing we want to process only data from this observation taken in the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">3</span></code> configuration. We could achieve the same result by taking the default association file from MAST and turning the <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> value to False for all the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">4</span></code> files, similarly to in <span class="xref myst">Section 2.1.2</span>.</p>
+<p>We’ll simulate an occasion on which we would need to create our own association file by supposing we want to process only data from this observation taken in the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">3</span></code> configuration. We could achieve the same result by taking the default association file from MAST and turning the <code class="docutils literal notranslate"><span class="pre">MEMPRSNT</span></code> value to False for all the <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">FP-POS</span> <span class="pre">=</span> <span class="pre">4</span></code> files, similarly to in <a class="reference internal" href="#removefiltAF"><span class="xref myst">Section 2.1.2</span></a>.</p>
 <p>Below, we filter to such exposures and check whether they meet our expectations for <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal data. Namely, we check that:</p>
 <ol class="arabic simple">
 <li><p>The files are listed in chronological order.</p></li>
@@ -1777,13 +1325,6 @@ Editing EXPNAME in Extension 1
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Passed Test #1: The exposures are in chronological order.
-Passed Test #2: Each EXTERNAL/SCI is bracketted on both sides by a WAVECAL exposure.
-Passed Test #3: No unexpected groupings of files were found.
-</pre></div>
-</div>
-</div>
 </div>
 <p>Below, we may inspect these files by eye, and see that they are indeed ordered correctly.</p>
 <div class="cell docutils container">
@@ -1800,77 +1341,6 @@ Passed Test #3: No unexpected groupings of files were found.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Rootname</th>
-      <th>Exposure_type</th>
-      <th>Exposure_start_date</th>
-      <th>Seconds_since_first_exposure</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>LETC01LMQ</td>
-      <td>WAVECAL</td>
-      <td>59648.009183</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>LETC01LOQ</td>
-      <td>EXTERNAL/SCI</td>
-      <td>59648.010537</td>
-      <td>116.991648</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>LETC01LRQ</td>
-      <td>WAVECAL</td>
-      <td>59648.019426</td>
-      <td>884.991744</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>LETC01M6Q</td>
-      <td>WAVECAL</td>
-      <td>59648.045549</td>
-      <td>3142.016352</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>LETC01MTQ</td>
-      <td>EXTERNAL/SCI</td>
-      <td>59648.065745</td>
-      <td>4887.007776</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>LETC01MVQ</td>
-      <td>WAVECAL</td>
-      <td>59648.074634</td>
-      <td>5655.007872</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p>Once we are sure that the correct exposures are selected, we gather the information we need for an association table:</p>
 <ul class="simple">
@@ -1913,17 +1383,12 @@ Passed Test #3: No unexpected groupings of files were found.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gathered exposure information for creating a new non-TAGFLASH association file.
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id = 332-creating-the-split-wavecal-association-fileAF></a></p>
 </section>
 <section id="creating-the-split-wavecal-association-file">
-<h3>3.3.2. Creating the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal association file<a class="headerlink" href="#creating-the-split-wavecal-association-file" title="Permalink to this heading">#</a></h3>
-<p>Now that we’ve gathered <code class="docutils literal notranslate"><span class="pre">MEMNAME</span></code>s and <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>s of our exposures, we can create the association file. This very closely mirrors <span class="xref myst">Section 3.2</span>.</p>
+<h3>3.3.2. Creating the <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal association file<a class="headerlink" href="#creating-the-split-wavecal-association-file" title="Link to this heading">#</a></h3>
+<p>Now that we’ve gathered <code class="docutils literal notranslate"><span class="pre">MEMNAME</span></code>s and <code class="docutils literal notranslate"><span class="pre">MEMTYPE</span></code>s of our exposures, we can create the association file. This very closely mirrors <a class="reference internal" href="#32-with-fits-header-metadata"><span class="xref myst">Section 3.2</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adding the exposure file details to the association table</span>
@@ -1985,17 +1450,6 @@ Passed Test #3: No unexpected groupings of files were found.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: data/mastDownload/HST/letc01010/letc01010_asn.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU      43   ()      
-  1  ASN           1 BinTableHDU     25   13R x 3C   [14A, 14A, L]   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Saved splitwave_asn.fits in the output directory: output
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2003,19 +1457,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=7</i>
-<table id="table139645595854480" class="table-striped table-bordered table-condensed">
-<thead><tr><th>MEMNAME</th><th>MEMTYPE</th><th>MEMPRSNT</th></tr></thead>
-<thead><tr><th>bytes40</th><th>bytes14</th><th>bool</th></tr></thead>
-<tr><td>LETC01LMQ</td><td>EXP-SWAVE</td><td>True</td></tr>
-<tr><td>LETC01LOQ</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LETC01LRQ</td><td>EXP-SWAVE</td><td>True</td></tr>
-<tr><td>LETC01M6Q</td><td>EXP-SWAVE</td><td>True</td></tr>
-<tr><td>LETC01MTQ</td><td>EXP-FP</td><td>True</td></tr>
-<tr><td>LETC01MVQ</td><td>EXP-SWAVE</td><td>True</td></tr>
-<tr><td>SPLITWAVE</td><td>PROD-FP</td><td>True</td></tr>
-</table></div></div></div>
 </div>
 <p>Well done - you have now successfully created the association file you need to process your <code class="docutils literal notranslate"><span class="pre">SPLIT</span></code> wavecal data. If you wish to test it by running the <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> data calibration pipeline on it, you may run the file <code class="docutils literal notranslate"><span class="pre">test_splitwave_asn.py</span></code> in this directory. Note the following requirements:</p>
 <ol class="arabic simple">
@@ -2026,12 +1467,12 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </section>
 </section>
 <section id="congratulations-you-finished-this-notebook">
-<h2>Congratulations! You finished this Notebook!<a class="headerlink" href="#congratulations-you-finished-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>Congratulations! You finished this Notebook!<a class="headerlink" href="#congratulations-you-finished-this-notebook" title="Link to this heading">#</a></h2>
 <p><font size="5">There are more COS data walkthrough Notebooks on different topics. You can find them <a href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/COS">here</a>.</font></p>
 </section>
 <hr class="docutils" />
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Author:</strong> Nat Kerman: <a class="reference external" href="mailto:nkerman&#37;&#52;&#48;stsci&#46;edu">nkerman<span>&#64;</span>stsci<span>&#46;</span>edu</a></p>
 <p><strong>Contributors:</strong> Elaine Mae Frazer, Travis Fischer</p>
 <p><strong>Updated On:</strong> 2023-03-27</p>
@@ -2040,7 +1481,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div></blockquote>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the
 authors. Follow these links for more information about citations:</p>
 <ul class="simple">
@@ -2050,7 +1491,7 @@ authors. Follow these links for more information about citations:</p>
 <li><p><a class="reference external" href="https://astroquery.readthedocs.io/en/latest/">Citing <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></a></p></li>
 </ul>
 <hr class="docutils" />
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#topAF"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 <p><br></br>
 <br></br>
