@@ -630,6 +630,18 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the stistools package can be run with TEAL:
+   basic2d      calstis     ocrreject     wavecal        x1d          x2d
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/micromamba/envs/ci-env/lib/python3.11/site-packages/stsci/tools/nmpfit.py:8: UserWarning: NMPFIT is deprecated - stsci.tools v 3.5 is the last version to contain it.
+  warnings.warn(&quot;NMPFIT is deprecated - stsci.tools v 3.5 is the last version to contain it.&quot;)
+/home/runner/micromamba/envs/ci-env/lib/python3.11/site-packages/stsci/tools/gfit.py:18: UserWarning: GFIT is deprecated - stsci.tools v 3.4.12 is the last version to contain it.Use astropy.modeling instead.
+  warnings.warn(&quot;GFIT is deprecated - stsci.tools v 3.4.12 is the last version to contain it.&quot;
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="collect-data-set-from-the-mast-archive-using-astroquery">
@@ -648,6 +660,53 @@ document.write(`
     <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;./mastDownload/HST/o5f301010/o5f301010_wav.fits&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_g430l-g750l_o5f301_cspec.fits with expected size 57600. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_g430l_o5f301_cspec.fits with expected size 37440. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_g430l_o5f3_cspec.fits with expected size 37440. [astroquery.query]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_g750l_o5f301_cspec.fits with expected size 40320. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_g750l_o5f3_cspec.fits with expected size 40320. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_sg230l-g430l-g750l_o5f3_cspec.fits with expected size 74880. [astroquery.query]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_sg230l_o5f302_cspec.fits with expected size 37440. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/hst_hasp_8336_stis_0957p561a_o5f3/hst_8336_stis_0957p561a_sg230l_o5f3_cspec.fits with expected size 37440. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_asn.fits with expected size 11520. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_crj.fits with expected size 10537920. [astroquery.query]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_flt.fits with expected size 21052800. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_jif.fits with expected size 60480. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_jit.fits with expected size 60480. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_jwf.fits with expected size 17280. [astroquery.query]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_jwt.fits with expected size 11520. [astroquery.query]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o5f301010_raw.fits to ./mastDownload/HST/o5f301010/o5f301010_raw.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_spt.fits with expected size 112320. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_sx1.fits with expected size 80640. [astroquery.query]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_sx2.fits with expected size 14477760. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_trl.fits with expected size 20160. [astroquery.query]
+Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o5f301010_wav.fits to ./mastDownload/HST/o5f301010/o5f301010_wav.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/o5f301010/o5f301010_wsp.fits with expected size 69120. [astroquery.query]
+Destination path &#39;./o5f301010_raw.fits&#39; already exists
 </pre></div>
 </div>
 </div>
@@ -677,6 +736,19 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  No comparison context or source comparison requested.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  ===&gt; Processing o5f301010_raw.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  0 errors
+CRDS - INFO -  0 warnings
+CRDS - INFO -  2 infos
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -694,6 +766,32 @@ document.write(`
 <span class="k">for</span> <span class="n">switch</span> <span class="ow">in</span> <span class="n">switches</span><span class="p">:</span>
     <span class="n">fits</span><span class="o">.</span><span class="n">setval</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keyword</span><span class="o">=</span><span class="n">switch</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;OMIT&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">switch</span><span class="si">:</span><span class="s1">8</span><span class="si">}</span><span class="s1">:</span><span class="se">\t</span><span class="si">{</span><span class="n">fits</span><span class="o">.</span><span class="n">getheader</span><span class="p">(</span><span class="n">raw</span><span class="p">)[</span><span class="n">switch</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DQICORR :	OMIT
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BLEVCORR:	OMIT
+BIASCORR:	OMIT
+CRCORR  :	OMIT
+RPTCORR :	OMIT
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>EXPSCORR:	OMIT
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DARKCORR:	OMIT
+FLATCORR:	OMIT
+WAVECORR:	OMIT
+X1DCORR :	OMIT
+BACKCORR:	OMIT
+HELCORR :	OMIT
+DISPCORR:	OMIT
+FLUXCORR:	OMIT
+CTECORR :	OMIT
+X2DCORR :	OMIT
 </pre></div>
 </div>
 </div>
@@ -849,6 +947,87 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:29 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./DQICORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:29 UTC
+Input    o5f301010_raw.fits
+Output   ./DQICORR/o5f301010_flt.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:29 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR OMIT
+         Uncertainty array initialized, readnoise=3.99, gain=1, bias=1329
+
+BIASCORR OMIT
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 1  End 18:54:29 UTC
+
+Imset 2  Begin 18:54:29 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR OMIT
+         Uncertainty array initialized, readnoise=3.99, gain=1, bias=1329
+
+BIASCORR OMIT
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 2  End 18:54:29 UTC
+
+End      08-Jul-2025 18:54:29 UTC
+
+*** CALSTIS-1 complete ***
+
+End      08-Jul-2025 18:54:29 UTC
+
+*** CALSTIS-0 complete ***
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -872,6 +1051,93 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Turn on the BLEVCORR switch and perform calibration.</span>
 <span class="n">calibrate</span><span class="p">(</span><span class="s2">&quot;BLEVCORR&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:29 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./BLEVCORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:29 UTC
+Input    o5f301010_raw.fits
+Output   ./BLEVCORR/o5f301010_flt.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:29 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1330.96.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR OMIT
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 1  End 18:54:30 UTC
+
+Imset 2  Begin 18:54:30 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1329.14.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR OMIT
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 2  End 18:54:30 UTC
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-1 complete ***
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-0 complete ***
 </pre></div>
 </div>
 </div>
@@ -911,6 +1177,98 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./BIASCORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    o5f301010_raw.fits
+Output   ./BIASCORR/o5f301010_flt.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:30 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1330.96.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASFILE oref$k1k1319qo_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+BIASFILE DESCRIP =Weekly bias created from proposal(s) 8081,7949 (delosSantos &amp; Coffma
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 1  End 18:54:30 UTC
+
+Imset 2  Begin 18:54:30 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1329.14.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 2  End 18:54:30 UTC
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-1 complete ***
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-0 complete ***
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -938,11 +1296,123 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./CRCORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    o5f301010_raw.fits
+Output   ./CRCORR/o5f301010_blv_tmp.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:30 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1330.96.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASFILE oref$k1k1319qo_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+BIASFILE DESCRIP =Weekly bias created from proposal(s) 8081,7949 (delosSantos &amp; Coffma
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+Imset 1  End 18:54:30 UTC
+
+Imset 2  Begin 18:54:30 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1329.14.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+Imset 2  End 18:54:30 UTC
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-1 complete ***
+
+*** CALSTIS-2 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    ./CRCORR/o5f301010_blv_tmp.fits
+Output   ./CRCORR/o5f301010_crj.fits
+
+CRCORR   PERFORM
+Total number of input image sets = 2
+CRREJTAB oref$j3m1403io_crr.fits
+CRCORR   COMPLETE
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-2 complete ***
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-0 complete ***
+</pre></div>
+</div>
+</div>
 </div>
 <p>Since the CRCORR step sums the CRSPLIT exposures, now there is only one set of SCI, ERR, and DQ extension in the _crj data file:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fits</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;./CRCORR/o5f301010_crj.fits&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: ./CRCORR/o5f301010_crj.fits
+No.    Name      Ver    Type      Cards   Dimensions   Format
+  0  PRIMARY       1 PrimaryHDU     247   ()      
+  1  SCI           1 ImageHDU       119   (1024, 1024)   float32   
+  2  ERR           1 ImageHDU        61   (1024, 1024)   float32   
+  3  DQ            1 ImageHDU        44   (1024, 1024)   int16   
 </pre></div>
 </div>
 </div>
@@ -963,6 +1433,153 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Turn on the DARKCORR switch and perform calibration.</span>
 <span class="n">calibrate</span><span class="p">(</span><span class="s2">&quot;DARKCORR&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./DARKCORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    o5f301010_raw.fits
+Output   ./DARKCORR/o5f301010_blv_tmp.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:30 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1330.96.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASFILE oref$k1k1319qo_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+BIASFILE DESCRIP =Weekly bias created from proposal(s) 8081,7949 (delosSantos &amp; Coffma
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+Imset 1  End 18:54:30 UTC
+
+Imset 2  Begin 18:54:30 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1329.14.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+Imset 2  End 18:54:30 UTC
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-1 complete ***
+
+*** CALSTIS-2 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    ./DARKCORR/o5f301010_blv_tmp.fits
+Output   ./DARKCORR/o5f301010_crj_tmp.fits
+
+CRCORR   PERFORM
+Total number of input image sets = 2
+CRREJTAB oref$j3m1403io_crr.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRCORR   COMPLETE
+
+End      08-Jul-2025 18:54:30 UTC
+
+*** CALSTIS-2 complete ***
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:30 UTC
+Input    ./DARKCORR/o5f301010_crj_tmp.fits
+Output   ./DARKCORR/o5f301010_crj.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:30 UTC
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  OMIT
+
+ATODCORR OMIT
+
+BLEVCORR OMIT
+
+BIASCORR OMIT
+
+DARKCORR PERFORM
+DARKFILE oref$k1k1319ho_drk.fits
+DARKFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+DARKFILE DESCRIP =Weekly superdark created by R. de los Santos from proposals 8408/843
+DARKCORR COMPLETE
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 1  End 18:54:31 UTC
+
+End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-1 complete ***
+
+End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-0 complete ***
 </pre></div>
 </div>
 </div>
@@ -988,6 +1605,159 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Turn on the FLATCORR switch and perform calibration.</span>
 <span class="n">calibrate</span><span class="p">(</span><span class="s2">&quot;FLATCORR&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*** CALSTIS-0 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:31 UTC
+
+Input    o5f301010_raw.fits
+Outroot  ./FLATCORR/o5f301010_raw.fits
+Warning  WAVECAL was specified, but WAVECORR is not PERFORM.
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:31 UTC
+Input    o5f301010_raw.fits
+Output   ./FLATCORR/o5f301010_blv_tmp.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:31 UTC
+
+CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  PERFORM
+DQITAB   oref$h1v11475o_bpx.fits
+DQITAB   PEDIGREE=GROUND
+DQITAB   DESCRIP =Prel. Ground Calib
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1330.96.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASFILE oref$k1k1319qo_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+BIASFILE DESCRIP =Weekly bias created from proposal(s) 8081,7949 (delosSantos &amp; Coffma
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+Imset 1  End 18:54:31 UTC
+
+Imset 2  Begin 18:54:31 UTC
+
+DQICORR  PERFORM
+DQICORR  COMPLETE
+
+ATODCORR OMIT
+
+BLEVCORR PERFORM
+         Bias level from overscan has been subtracted; \
+         mean of bias levels subtracted was 1329.14.
+BLEVCORR COMPLETE
+         Uncertainty array initialized, readnoise=3.99, gain=1
+
+BIASCORR PERFORM
+BIASCORR COMPLETE
+
+DARKCORR OMIT
+
+FLATCORR OMIT
+
+SHADCORR OMIT
+Imset 2  End 18:54:31 UTC
+
+End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-1 complete ***
+
+*** CALSTIS-2 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:31 UTC
+Input    ./FLATCORR/o5f301010_blv_tmp.fits
+Output   ./FLATCORR/o5f301010_crj_tmp.fits
+
+CRCORR   PERFORM
+Total number of input image sets = 2
+CRREJTAB oref$j3m1403io_crr.fits
+CRCORR   COMPLETE
+
+End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-2 complete ***
+
+*** CALSTIS-1 -- Version 3.4.2 (19-Jan-2018) ***
+Begin    08-Jul-2025 18:54:31 UTC
+Input    ./FLATCORR/o5f301010_crj_tmp.fits
+Output   ./FLATCORR/o5f301010_crj.fits
+OBSMODE  ACCUM
+APERTURE 52X0.2
+OPT_ELEM G430L
+DETECTOR CCD
+
+Imset 1  Begin 18:54:31 UTC
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCDTAB   oref$0841734eo_ccd.fits
+CCDTAB   PEDIGREE=INFLIGHT 01/05/1999 01/05/1999
+CCDTAB   DESCRIP =Updated readnoise values-------------------------------------------
+CCDTAB   DESCRIP =Proposal 8057, by I. Dashevsky &amp; P. Goudfrooij
+
+DQICORR  OMIT
+
+ATODCORR OMIT
+
+BLEVCORR OMIT
+
+BIASCORR OMIT
+
+DARKCORR PERFORM
+DARKFILE oref$k1k1319ho_drk.fits
+DARKFILE PEDIGREE=INFLIGHT 10/04/1999 16/04/1999
+DARKFILE DESCRIP =Weekly superdark created by R. de los Santos from proposals 8408/843
+DARKCORR COMPLETE
+
+FLATCORR PERFORM
+PFLTFILE oref$k2910262o_pfl.fits
+PFLTFILE PEDIGREE=INFLIGHT 14/04/1997 27/12/1998
+PFLTFILE DESCRIP =ON-ORBIT CCD P-FLAT
+LFLTFILE oref$pcc2026jo_lfl.fits
+LFLTFILE PEDIGREE=INFLIGHT 27/05/1997 03/08/2004
+LFLTFILE DESCRIP =CCD G430L Low-Order Flat
+FLATCORR COMPLETE
+
+SHADCORR OMIT
+
+PHOTCORR OMIT
+
+STATFLAG PERFORM
+STATFLAG COMPLETE
+Imset 1  End 18:54:31 UTC
+
+End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-1 complete ***
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>End      08-Jul-2025 18:54:31 UTC
+
+*** CALSTIS-0 complete ***
 </pre></div>
 </div>
 </div>

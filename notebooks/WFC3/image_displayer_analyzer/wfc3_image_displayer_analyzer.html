@@ -771,11 +771,31 @@ being a <code class="docutils literal notranslate"><span class="pre">ima.fits</s
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/idgga5m1q_flt.fits to ./mastDownload/HST/idgga5m1q/idgga5m1q_flt.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/idggabk1q_ima.fits to ./mastDownload/HST/idggabk1q/idggabk1q_ima.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+</div>
 </div>
 <p>List the fits files to verify they were moved properly</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>ls<span class="w"> </span>-ltr<span class="w"> </span>*.fits
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-rw-r--r-- 1 runner docker 168796800 Jul  8 19:06 idgga5m1q_flt.fits
+-rw-r--r-- 1 runner docker 126201600 Jul  8 19:06 idggabk1q_ima.fits
 </pre></div>
 </div>
 </div>
@@ -801,6 +821,22 @@ of the <a class="reference external" href="https://hst-docs.stsci.edu/wfc3dhb">W
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>	WFC3/UVIS idgga5m1q_flt.fits 
+--------------------------------------------
+Filter = F350LP, Date-Obs = 2018-03-04 T21:11:43,
+Target = N2525, Exptime = 355.0, Subarray = False, Units = ELECTRONS
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>	WFC3/IR idggabk1q_ima.fits 
+--------------------------------------------
+Filter = F160W, Date-Obs = 2018-09-11 T18:16:13,
+Target = N2525, Exptime = 502.936462, Subarray = False, Units = ELECTRONS/S
+</pre></div>
+</div>
+<img alt="../../../_images/88301387adc8d342c00bc92c0f1738219892a42655d2b4552832e928018e8d81.png" src="../../../_images/88301387adc8d342c00bc92c0f1738219892a42655d2b4552832e928018e8d81.png" />
+<img alt="../../../_images/312725c5d2d473dd86379afae791dc89e2816ba43f1b6b4fed988375643ba0e4.png" src="../../../_images/312725c5d2d473dd86379afae791dc89e2816ba43f1b6b4fed988375643ba0e4.png" />
+</div>
 </div>
 <p><a id="perchip"></a></p>
 </section>
@@ -816,6 +852,12 @@ image name as shown below. Notice how we need to specify the full axis range <co
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Display UVIS1
+</pre></div>
+</div>
+<img alt="../../../_images/d40e70c712d692ef6d6156fcad26c2aa75309f1cc3124da690b53e9963b66fdb.png" src="../../../_images/d40e70c712d692ef6d6156fcad26c2aa75309f1cc3124da690b53e9963b66fdb.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -823,6 +865,12 @@ image name as shown below. Notice how we need to specify the full axis range <co
 <span class="n">display_image</span><span class="p">(</span><span class="s1">&#39;idgga5m1q_flt.fits[0:4096,0:2051]&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Display UVIS2
+</pre></div>
+</div>
+<img alt="../../../_images/a0c15243cacf8bd5bcda119713c0c115f9972d9ce3ffac8b75b77b54104161d0.png" src="../../../_images/a0c15243cacf8bd5bcda119713c0c115f9972d9ce3ffac8b75b77b54104161d0.png" />
 </div>
 </div>
 <p><a id="colormap"></a></p>
@@ -837,6 +885,9 @@ colormaps must be provided. The elements of <code class="docutils literal notran
               <span class="n">colormaps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="s2">&quot;Greys_r&quot;</span><span class="p">,</span> <span class="s2">&quot;inferno_r&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/45e09c991eeba3ca592c0418507884846991f95afd0f2af0623bc4d82273d61a.png" src="../../../_images/45e09c991eeba3ca592c0418507884846991f95afd0f2af0623bc4d82273d61a.png" />
 </div>
 </div>
 <p><a id="scaling"></a></p>
@@ -855,6 +906,9 @@ The default scaling value of <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/5f294018160595a6c85f88283e6d0956086e4ce88398a019009755d0b60342cb.png" src="../../../_images/5f294018160595a6c85f88283e6d0956086e4ce88398a019009755d0b60342cb.png" />
+</div>
 </div>
 <p><a id="allreads"></a></p>
 </section>
@@ -869,6 +923,20 @@ The default scaling value of <code class="docutils literal notranslate"><span cl
               <span class="n">ima_multiread</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/398e6f1cb01c98d968a9264aaefbeb789f77f7fe7d9f69fc18cc6b06d063ec5e.png" src="../../../_images/398e6f1cb01c98d968a9264aaefbeb789f77f7fe7d9f69fc18cc6b06d063ec5e.png" />
+<img alt="../../../_images/b28dea6c0da7742d08e7fc1f1c0a512cba5ed8385ed0090e93eaeb6ec434bd82.png" src="../../../_images/b28dea6c0da7742d08e7fc1f1c0a512cba5ed8385ed0090e93eaeb6ec434bd82.png" />
+<img alt="../../../_images/f77c135f20c8c09dcdc93ad332117d1890a867c0fbfc55cf54f7a82bc3ac205c.png" src="../../../_images/f77c135f20c8c09dcdc93ad332117d1890a867c0fbfc55cf54f7a82bc3ac205c.png" />
+<img alt="../../../_images/f361dd6fcf5e8475d37b1569d7a8dd07f97952906a2df44d016659aa6888c8d6.png" src="../../../_images/f361dd6fcf5e8475d37b1569d7a8dd07f97952906a2df44d016659aa6888c8d6.png" />
+<img alt="../../../_images/7c1a808dde197f41ae398fd2bc378e0a063a73b5de8d5776fbd3391510012d55.png" src="../../../_images/7c1a808dde197f41ae398fd2bc378e0a063a73b5de8d5776fbd3391510012d55.png" />
+<img alt="../../../_images/9452a72dbce0b9659094991d6a293a4a4ea640b0224d9a8e8d4cdbf72888b750.png" src="../../../_images/9452a72dbce0b9659094991d6a293a4a4ea640b0224d9a8e8d4cdbf72888b750.png" />
+<img alt="../../../_images/d7a681aff5020a183e28454b71f56de2ec860f246a7493def44ab1820662c2d8.png" src="../../../_images/d7a681aff5020a183e28454b71f56de2ec860f246a7493def44ab1820662c2d8.png" />
+<img alt="../../../_images/44d94ad8b5926eadf6ceb764bc7dced4fff0ad52e41689885112743d23780a35.png" src="../../../_images/44d94ad8b5926eadf6ceb764bc7dced4fff0ad52e41689885112743d23780a35.png" />
+<img alt="../../../_images/11a055f618928cfb5efd3e83ad03f9a391fb4056c5ae3f6a147ebf0653e0e6e4.png" src="../../../_images/11a055f618928cfb5efd3e83ad03f9a391fb4056c5ae3f6a147ebf0653e0e6e4.png" />
+<img alt="../../../_images/ab08f01cb2d15affa51b035efc1e2c8b1a89e8954a93900ca0b554d8085ae339.png" src="../../../_images/ab08f01cb2d15affa51b035efc1e2c8b1a89e8954a93900ca0b554d8085ae339.png" />
+<img alt="../../../_images/fd85753229b59d7677ba265592aea467385c52621c1cb4f0e55a0b4e9e23a4a3.png" src="../../../_images/fd85753229b59d7677ba265592aea467385c52621c1cb4f0e55a0b4e9e23a4a3.png" />
+<img alt="../../../_images/aebec39dbb9621ffc18351b4d90790c24485b36e5730bfc03458fbce4bd311b7.png" src="../../../_images/aebec39dbb9621ffc18351b4d90790c24485b36e5730bfc03458fbce4bd311b7.png" />
 </div>
 </div>
 <p><a id="row_col"></a></p>
@@ -896,6 +964,10 @@ an image, and individual <code class="docutils literal notranslate"><span class=
                         <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;column&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/018c6d4c1c8f18fb6f83f6b8b9d35f717a730d540b4d639a99aa7d86ab0cbab0.png" src="../../../_images/018c6d4c1c8f18fb6f83f6b8b9d35f717a730d540b4d639a99aa7d86ab0cbab0.png" />
+<img alt="../../../_images/ce968c1385d80372559ef24731740f87d9e842c08272c590caccf6347a349512.png" src="../../../_images/ce968c1385d80372559ef24731740f87d9e842c08272c590caccf6347a349512.png" />
 </div>
 </div>
 <p><a id="overplotccds"></a></p>
@@ -929,6 +1001,12 @@ an image, and individual <code class="docutils literal notranslate"><span class=
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f5a3ab268d0&gt;
+</pre></div>
+</div>
+<img alt="../../../_images/d8f08bfd923e5968941da38db51eb91298a8f40a6097ce624fc3c073c981e884.png" src="../../../_images/d8f08bfd923e5968941da38db51eb91298a8f40a6097ce624fc3c073c981e884.png" />
+</div>
 </div>
 <p><a id="imgsectionmean"></a></p>
 </section>
@@ -951,6 +1029,11 @@ an image, and individual <code class="docutils literal notranslate"><span class=
                         <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;column&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/b90ffb1bdf39c6dbb5b7f352f42439f87b998edc0084690112580f65471e7a44.png" src="../../../_images/b90ffb1bdf39c6dbb5b7f352f42439f87b998edc0084690112580f65471e7a44.png" />
+<img alt="../../../_images/31a446e4d949ec23d2a701a084b4950d44c3bb7488cba4404e87629d8ad29d07.png" src="../../../_images/31a446e4d949ec23d2a701a084b4950d44c3bb7488cba4404e87629d8ad29d07.png" />
+<img alt="../../../_images/3a82f8df5289335bd8c4db20cccf22f58d5c34ef444f678a1aaee9658e407f90.png" src="../../../_images/3a82f8df5289335bd8c4db20cccf22f58d5c34ef444f678a1aaee9658e407f90.png" />
 </div>
 </div>
 <p><strong>Note: Without specifying <code class="docutils literal notranslate"><span class="pre">ylim</span></code>, the y-axis limits (above) are set to <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> defaults. <br>
@@ -977,6 +1060,11 @@ Set <code class="docutils literal notranslate"><span class="pre">ylim</span></co
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/b90ffb1bdf39c6dbb5b7f352f42439f87b998edc0084690112580f65471e7a44.png" src="../../../_images/b90ffb1bdf39c6dbb5b7f352f42439f87b998edc0084690112580f65471e7a44.png" />
+<img alt="../../../_images/89b1f27bdc4898fe15e8f6ffdf54c6b05a5806c792d7f123bc8a05f9f73deeae.png" src="../../../_images/89b1f27bdc4898fe15e8f6ffdf54c6b05a5806c792d7f123bc8a05f9f73deeae.png" />
+<img alt="../../../_images/061d2f2a742467a02667863805fb07e34d437fb88882f21c1136810947f66db0.png" src="../../../_images/061d2f2a742467a02667863805fb07e34d437fb88882f21c1136810947f66db0.png" />
+</div>
 </div>
 <p><a id="columnavgima"></a></p>
 </section>
@@ -995,6 +1083,21 @@ Set <code class="docutils literal notranslate"><span class="pre">ylim</span></co
                         <span class="n">ima_multiread</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/61c1e50895f4150b5f0353e5f224f237a1794c6b06d96b754a1093cb9fab07f7.png" src="../../../_images/61c1e50895f4150b5f0353e5f224f237a1794c6b06d96b754a1093cb9fab07f7.png" />
+<img alt="../../../_images/178423c0adf0381334f7dd14d7a5e281f67e67831b86db9dc6430c10e1baf56b.png" src="../../../_images/178423c0adf0381334f7dd14d7a5e281f67e67831b86db9dc6430c10e1baf56b.png" />
+<img alt="../../../_images/f12adc7be373bb1759a4bba8ab425a076c55f09b153d2ab2eec02f05f5363740.png" src="../../../_images/f12adc7be373bb1759a4bba8ab425a076c55f09b153d2ab2eec02f05f5363740.png" />
+<img alt="../../../_images/eb208e0ac419ee43efbd3cc56c068a78846e9043afcc4d1cfd8cb206307b1f0b.png" src="../../../_images/eb208e0ac419ee43efbd3cc56c068a78846e9043afcc4d1cfd8cb206307b1f0b.png" />
+<img alt="../../../_images/d3d2b162014d1dfbf787c3ca96beb6fc8402f30d4459ded04894b0a413acf462.png" src="../../../_images/d3d2b162014d1dfbf787c3ca96beb6fc8402f30d4459ded04894b0a413acf462.png" />
+<img alt="../../../_images/37cdf865762843d35b9449c0007934bf0cecdbd925d0e11aaa71899a900fbb27.png" src="../../../_images/37cdf865762843d35b9449c0007934bf0cecdbd925d0e11aaa71899a900fbb27.png" />
+<img alt="../../../_images/4e3fb1e4a76f03ed587ce622b249b4a8e98049e7ed0182fa7578ed91d0b56061.png" src="../../../_images/4e3fb1e4a76f03ed587ce622b249b4a8e98049e7ed0182fa7578ed91d0b56061.png" />
+<img alt="../../../_images/eeafa2950be8211b8a4298f55c16f3946b9b5398174830a23ee68c444ae5a1d9.png" src="../../../_images/eeafa2950be8211b8a4298f55c16f3946b9b5398174830a23ee68c444ae5a1d9.png" />
+<img alt="../../../_images/1874f27d2987d4cc5928598f2d45fe3b2e1ec95fd64f9a17fded63323266c809.png" src="../../../_images/1874f27d2987d4cc5928598f2d45fe3b2e1ec95fd64f9a17fded63323266c809.png" />
+<img alt="../../../_images/ffc55e71474017e45e7d3ee4004e77425ecdb044f924aa14880df733325260cd.png" src="../../../_images/ffc55e71474017e45e7d3ee4004e77425ecdb044f924aa14880df733325260cd.png" />
+<img alt="../../../_images/51bb5f862c7ec8f094ef1a9f4830ff963c83c162ab79082eeae06797d69a3ead.png" src="../../../_images/51bb5f862c7ec8f094ef1a9f4830ff963c83c162ab79082eeae06797d69a3ead.png" />
+<img alt="../../../_images/464af1b92056436597c3fd3267371797898290cad5124f5f0293c7593da7599a.png" src="../../../_images/464af1b92056436597c3fd3267371797898290cad5124f5f0293c7593da7599a.png" />
+<img alt="../../../_images/9408ace6083fd0bf5e07bcd2a22c5bb8b829d76da1b98000a89fa041fd617ca6.png" src="../../../_images/9408ace6083fd0bf5e07bcd2a22c5bb8b829d76da1b98000a89fa041fd617ca6.png" />
 </div>
 </div>
 <p><a id="conclusions"></a></p>
