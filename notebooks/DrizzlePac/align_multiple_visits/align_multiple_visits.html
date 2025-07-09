@@ -683,26 +683,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/micromamba/envs/ci-env/lib/python3.11/site-packages/stsci/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools&lt;81.
-  __import__(&#39;pkg_resources&#39;).declare_namespace(__name__)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
-                                    skymatch                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the drizzlepac package can be run with TEAL:
-    astrodrizzle       config_testbed      imagefindpars           mapreg       
-       photeq            pixreplace           pixtopix            pixtosky      
-  refimagefindpars       resetbits          runastrodriz          skytopix      
-     tweakback            tweakreg           updatenpol
-</pre></div>
-</div>
-</div>
 </div>
 <p>Along with the above imports, we also set up the required local reference files.</p>
 <div class="cell docutils container">
@@ -755,40 +735,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j9irw3fwq_flc.fits to ./mastDownload/HST/j9irw3fwq/j9irw3fwq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j9irw4b1q_flc.fits to ./mastDownload/HST/j9irw4b1q/j9irw4b1q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j9irw4b3q_flc.fits to ./mastDownload/HST/j9irw4b3q/j9irw4b3q_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j9irw5kaq_flc.fits to ./mastDownload/HST/j9irw5kaq/j9irw5kaq_flc.fits ...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
-</pre></div>
-</div>
-<div class="output text_html"><div><i>Table length=4</i>
-<table id="table140395502765840" class="table-striped table-bordered table-condensed">
-<thead><tr><th>Local Path</th><th>Status</th><th>Message</th><th>URL</th></tr></thead>
-<thead><tr><th>str47</th><th>str8</th><th>object</th><th>object</th></tr></thead>
-<tr><td>./mastDownload/HST/j9irw3fwq/j9irw3fwq_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/j9irw4b1q/j9irw4b1q_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/j9irw4b3q/j9irw4b3q_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-<tr><td>./mastDownload/HST/j9irw5kaq/j9irw5kaq_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
-</table></div></div></div>
 </div>
 <p>Move the files to the local working directory.</p>
 <div class="cell docutils container">
@@ -809,11 +755,6 @@ document.write(`
     <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;j9irw4b3q_flc.fits&quot;</span><span class="p">)</span>
 <span class="n">input_flcs</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;*flc.fits&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">input_flcs</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;j9irw3fwq_flc.fits&#39;, &#39;j9irw5kaq_flc.fits&#39;, &#39;j9irw4b1q_flc.fits&#39;]
 </pre></div>
 </div>
 </div>
@@ -883,15 +824,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140395509486032" class="table-striped table-bordered table-condensed">
-<thead><tr><th>rootname</th><th>ASN_ID</th><th>TARGNAME</th><th>detector</th><th>filter1</th><th>exptime</th><th>ra_targ</th><th>dec_targ</th><th>date-obs</th><th>postarg1</th><th>postarg2</th><th>orientat</th></tr></thead>
-<thead><tr><th>str32</th><th>str32</th><th>str32</th><th>str32</th><th>str32</th><th>float64</th><th>float64</th><th>float64</th><th>str32</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>j9irw3fwq</td><td>NONE</td><td>NGC104-WFC</td><td>WFC</td><td>F606W</td><td>339.0</td><td>5.6604</td><td>-72.0678</td><td>2006-05-30</td><td>0.000</td><td>0.000</td><td>-125.24</td></tr>
-<tr><td>j9irw4b1q</td><td>J9IRW4040</td><td>NGC104-WFC</td><td>WFC</td><td>F606W</td><td>339.0</td><td>5.6604</td><td>-72.0678</td><td>2006-07-08</td><td>0.000</td><td>0.000</td><td>-88.60</td></tr>
-<tr><td>j9irw5kaq</td><td>NONE</td><td>NGC104-WFC</td><td>WFC</td><td>F606W</td><td>339.0</td><td>5.6604</td><td>-72.0678</td><td>2006-08-31</td><td>0.000</td><td>0.000</td><td>-31.45</td></tr>
-</table></div></div></div>
 </div>
 </section>
 <section id="inspect-the-alignment">
@@ -935,15 +867,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140396724306384" class="table-striped table-bordered table-condensed">
-<thead><tr><th>filename</th><th>DETECTOR</th><th>WCSNAME</th><th>NMATCHES</th><th>RMS_RA</th><th>RMS_DEC</th><th>RMS_RA_pix</th><th>RMS_DEC_pix</th></tr></thead>
-<thead><tr><th>str18</th><th>str3</th><th>str30</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>j9irw3fwq_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_IMG_GAIAeDR3</td><td>356</td><td>12.4</td><td>12.2</td><td>0.25</td><td>0.24</td></tr>
-<tr><td>j9irw4b1q_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_REL_GAIAeDR3</td><td>391</td><td>14.5</td><td>11.8</td><td>0.29</td><td>0.24</td></tr>
-<tr><td>j9irw5kaq_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_IMG_GAIAeDR3</td><td>361</td><td>13.5</td><td>12.6</td><td>0.27</td><td>0.25</td></tr>
-</table></div></div></div>
 </div>
 <p>Here we see that the FLC images from each separate visit have each been fit to the reference catalog GAIA eDR3.</p>
 <p>For visits w3 and w5, the WCSNAME ‘FIT_IMG_catalog’ implies that each FLC was aligned separately, whereas for visit w4, the drizzle combined image ‘j9irw4040_drc.fits’ was aligned to GAIA and the solution was propogated back to the FLC exposures. (Note that the number of matches and fit rms values are different for each FLC frame.)</p>
@@ -1037,275 +960,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 18:55:28.350 (08/07/2025) 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    j9irw3fwq_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    j9irw5kaq_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    j9irw4b1q_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;j9irw3fwq_flc.fits&#39;:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw3fwq_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 18:55:28.431 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 626 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw3fwq_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 18:55:28.754 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 408 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;j9irw3fwq_flc.fits&#39;: 1034
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;j9irw5kaq_flc.fits&#39;:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw5kaq_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 18:55:29.309 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 524 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw5kaq_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 18:55:29.631 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 343 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;j9irw5kaq_flc.fits&#39;: 867
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;j9irw4b1q_flc.fits&#39;:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw4b1q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 18:55:30.241 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 708 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;j9irw4b1q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 18:55:30.559 (08/07/2025)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 398 objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;j9irw4b1q_flc.fits&#39;: 1106
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===============================================================
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Performing alignment in the projection plane defined by the WCS
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>derived from &#39;j9irw3fwq_flc.fits&#39;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===============================================================
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>====================
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Performing fit for: j9irw5kaq_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matching sources from &#39;j9irw5kaq_flc.fits&#39; with sources from reference image &#39;j9irw3fwq_flc.fits&#39;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Computing initial guess for X and Y shifts...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Found initial X and Y shifts of 0, 0.002805 with significance of 690.5 and 713 matches
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Found 713 matches for j9irw5kaq_flc.fits...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Computed  rscale  fit for  j9irw5kaq_flc.fits : 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XSH: 0.0604  YSH: -0.0459    ROT: 359.9997958    SCALE: 1.000020
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FIT XRMS: 0.05       FIT YRMS: 0.046  
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FIT RMSE: 0.068      FIT MAE: 0.06   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS_RA: 5.3e-07 (deg)   RMS_DEC: 9.3e-07 (deg)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Final solution based on  702  objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wrote XY data to:  j9irw5kaq_flc_catalog_fit.match
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total # points: 702
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># of points after clipping: 702
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total # points: 702
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># of points after clipping: 702
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>====================
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Performing fit for: j9irw4b1q_flc.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matching sources from &#39;j9irw4b1q_flc.fits&#39; with sources from reference image &#39;j9irw3fwq_flc.fits&#39;
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Computing initial guess for X and Y shifts...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Found initial X and Y shifts of -0.001445, -0.00289 with significance of 668.5 and 692 matches
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Found 691 matches for j9irw4b1q_flc.fits...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Computed  rscale  fit for  j9irw4b1q_flc.fits : 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XSH: -0.0524  YSH: -0.0136    ROT: 2.186356149e-05    SCALE: 1.000000
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FIT XRMS: 0.042      FIT YRMS: 0.04   
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FIT RMSE: 0.058      FIT MAE: 0.052  
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS_RA: 5e-07 (deg)   RMS_DEC: 7.9e-07 (deg)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Final solution based on  681  objects.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wrote XY data to:  j9irw4b1q_flc_catalog_fit.match
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total # points: 681
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># of points after clipping: 681
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total # points: 681
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># of points after clipping: 681
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing out shiftfile : shift_rscale.txt
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png"><img alt="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" src="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" style="width: 600px; height: 454px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/b99103111a192ec3705562b626c0ae6b6469ca0eadb5cc99b31f2f27e97c2720.png"><img alt="../../../_images/b99103111a192ec3705562b626c0ae6b6469ca0eadb5cc99b31f2f27e97c2720.png" src="../../../_images/b99103111a192ec3705562b626c0ae6b6469ca0eadb5cc99b31f2f27e97c2720.png" style="width: 723px; height: 455px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/9d3fc6023d5048898b1260dd99009c7675282437bca0d0ea6766eac541d943fc.png"><img alt="../../../_images/9d3fc6023d5048898b1260dd99009c7675282437bca0d0ea6766eac541d943fc.png" src="../../../_images/9d3fc6023d5048898b1260dd99009c7675282437bca0d0ea6766eac541d943fc.png" style="width: 585px; height: 476px;" />
-</a>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1339,15 +993,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140395496293328" class="table-striped table-bordered table-condensed">
-<thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
-<thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>j9irw3fwq_flc.fits</td><td>0.00</td><td>0.00</td><td>0.000</td><td>1.00000</td><td>0.00</td><td>0.00</td></tr>
-<tr><td>j9irw5kaq_flc.fits</td><td>0.06</td><td>-0.05</td><td>360.000</td><td>1.00002</td><td>0.05</td><td>0.05</td></tr>
-<tr><td>j9irw4b1q_flc.fits</td><td>-0.05</td><td>-0.01</td><td>0.000</td><td>1.00000</td><td>0.04</td><td>0.04</td></tr>
-</table></div></div></div>
 </div>
 <p>When <code class="docutils literal notranslate"><span class="pre">interactive</span></code> = False, <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> outputs several diagnostic plots in the working directory for you to inspect the fit quality. For each input file, except the reference file, TweakReg creates an x/y plot of fit residuals and a vector plot. Let’s take a look at these.</p>
 <div class="cell docutils container">
@@ -1363,11 +1008,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 
 <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;vector_</span><span class="si">{</span><span class="n">rootname_A</span><span class="si">}</span><span class="s2">_flc.png&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;images/vector_</span><span class="si">{</span><span class="n">rootname_A</span><span class="si">}</span><span class="s2">_flc_rscale.png&quot;</span><span class="p">)</span>
 <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;vector_</span><span class="si">{</span><span class="n">rootname_B</span><span class="si">}</span><span class="s2">_flc.png&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;images/vector_</span><span class="si">{</span><span class="n">rootname_B</span><span class="si">}</span><span class="s2">_flc_rscale.png&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;images/vector_j9irw5kaq_flc_rscale.png&#39;
 </pre></div>
 </div>
 </div>
@@ -1390,10 +1030,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/f0adcc81a4af9d4242388b6a24d31e37207ab8f9464ad79224c88c1ee2c0663d.png"><img alt="../../../_images/f0adcc81a4af9d4242388b6a24d31e37207ab8f9464ad79224c88c1ee2c0663d.png" src="../../../_images/f0adcc81a4af9d4242388b6a24d31e37207ab8f9464ad79224c88c1ee2c0663d.png" style="width: 1979px; height: 756px;" />
-</a>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1411,10 +1047,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/aff13637909bd3edeb896d9d77b93f87c89824c726e5d6a6ce3f91d0a98f05b3.png"><img alt="../../../_images/aff13637909bd3edeb896d9d77b93f87c89824c726e5d6a6ce3f91d0a98f05b3.png" src="../../../_images/aff13637909bd3edeb896d9d77b93f87c89824c726e5d6a6ce3f91d0a98f05b3.png" style="width: 989px; height: 378px;" />
-</a>
 </div>
 </div>
 <p>The residual plots show a fit RMS of ~0.04 pixels, but there is still a systematic skew in the fit residuals, which is believed to be caused by an uncorrected ‘skew’ in the ACS distortion solution.</p>
@@ -1467,15 +1099,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140395568744720" class="table-striped table-bordered table-condensed">
-<thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
-<thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>j9irw3fwq_flc.fits</td><td>0.00</td><td>0.00</td><td>0.000</td><td>1.00000</td><td>0.00</td><td>0.00</td></tr>
-<tr><td>j9irw5kaq_flc.fits</td><td>0.06</td><td>-0.03</td><td>360.000</td><td>1.00002</td><td>0.04</td><td>0.03</td></tr>
-<tr><td>j9irw4b1q_flc.fits</td><td>-0.04</td><td>-0.01</td><td>360.000</td><td>1.00000</td><td>0.03</td><td>0.03</td></tr>
-</table></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1493,12 +1116,6 @@ Convert the fit RMS values to pixels for comparison with the alignment results p
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>j9irw4b1q      Number of Gaia Matches= {681}
-j9irw5kaq      Number of Gaia Matches= {705}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1507,15 +1124,6 @@ j9irw5kaq      Number of Gaia Matches= {705}
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=3</i>
-<table id="table140396724306384" class="table-striped table-bordered table-condensed">
-<thead><tr><th>filename</th><th>DETECTOR</th><th>WCSNAME</th><th>NMATCHES</th><th>RMS_RA</th><th>RMS_DEC</th><th>RMS_RA_pix</th><th>RMS_DEC_pix</th></tr></thead>
-<thead><tr><th>str18</th><th>str3</th><th>str30</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>j9irw3fwq_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_IMG_GAIAeDR3</td><td>356</td><td>12.4</td><td>12.2</td><td>0.25</td><td>0.24</td></tr>
-<tr><td>j9irw4b1q_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_REL_GAIAeDR3</td><td>391</td><td>14.5</td><td>11.8</td><td>0.29</td><td>0.24</td></tr>
-<tr><td>j9irw5kaq_flc.fits</td><td>WFC</td><td>IDC_4bb1536oj-FIT_IMG_GAIAeDR3</td><td>361</td><td>13.5</td><td>12.6</td><td>0.27</td><td>0.25</td></tr>
-</table></div></div></div>
 </div>
 <p>While the shift file looks nearly identical to the prior run, this is because the axis-dependent rotation and scale values are averaged together in the shiftfile.  To determine the actual values, it is necessary to inspect the ‘tweakreg.log’ logfile.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>j9irw4b1q  SCALE_X: 0.9999720117  SCALE_Y: 1.000014811  ROT_X: 359.9999  ROT_Y:   0.0014   SKEW: -359.9985
@@ -1531,11 +1139,6 @@ j9irw5kaq  SCALE_X: 0.9999851345  SCALE_Y: 1.000030317  ROT_X:   0.0015  ROT_Y: 
 
 <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;vector_</span><span class="si">{</span><span class="n">rootname_A</span><span class="si">}</span><span class="s2">_flc.png&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;images/vector_</span><span class="si">{</span><span class="n">rootname_A</span><span class="si">}</span><span class="s2">_flc_general.png&quot;</span><span class="p">)</span>
 <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;vector_</span><span class="si">{</span><span class="n">rootname_B</span><span class="si">}</span><span class="s2">_flc.png&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;images/vector_</span><span class="si">{</span><span class="n">rootname_B</span><span class="si">}</span><span class="s2">_flc_general.png&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;images/vector_j9irw5kaq_flc_general.png&#39;
 </pre></div>
 </div>
 </div>
@@ -1558,16 +1161,6 @@ j9irw5kaq  SCALE_X: 0.9999851345  SCALE_Y: 1.000030317  ROT_X:   0.0015  ROT_Y: 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png"><img alt="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" src="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" style="width: 600px; height: 454px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png"><img alt="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png" src="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png" style="width: 723px; height: 455px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png"><img alt="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png" src="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png" style="width: 585px; height: 476px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/84f521d0d826e22388b01af237d6fc7b83f3abe2da5a4a2d4cc2f4f39db23639.png"><img alt="../../../_images/84f521d0d826e22388b01af237d6fc7b83f3abe2da5a4a2d4cc2f4f39db23639.png" src="../../../_images/84f521d0d826e22388b01af237d6fc7b83f3abe2da5a4a2d4cc2f4f39db23639.png" style="width: 3980px; height: 1506px;" />
-</a>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1585,10 +1178,6 @@ j9irw5kaq  SCALE_X: 0.9999851345  SCALE_Y: 1.000030317  ROT_X:   0.0015  ROT_Y: 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/bb92225af1410c571ec2698a1a5a3ebd5f1fb320b8473552925afcffdf18d97e.png"><img alt="../../../_images/bb92225af1410c571ec2698a1a5a3ebd5f1fb320b8473552925afcffdf18d97e.png" src="../../../_images/bb92225af1410c571ec2698a1a5a3ebd5f1fb320b8473552925afcffdf18d97e.png" style="width: 989px; height: 378px;" />
-</a>
 </div>
 </div>
 <p>The direction and the magnitude of the arrows in the vector plot above represent the offsets in the source position between the image in question and the reference image. These should visually appear random if the alignment was sucessful.</p>
@@ -1639,10 +1228,6 @@ j9irw5kaq  SCALE_X: 0.9999851345  SCALE_Y: 1.000030317  ROT_X:   0.0015  ROT_Y: 
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/634741e05e828c4db9370648ff815e132acb3f271c7ab476934d0c2b22330cd7.png"><img alt="../../../_images/634741e05e828c4db9370648ff815e132acb3f271c7ab476934d0c2b22330cd7.png" src="../../../_images/634741e05e828c4db9370648ff815e132acb3f271c7ab476934d0c2b22330cd7.png" style="width: 852px; height: 847px;" />
-</a>
 </div>
 </div>
 </section>
@@ -1698,22 +1283,6 @@ j9irw5kaq  SCALE_X: 0.9999851345  SCALE_Y: 1.000030317  ROT_X:   0.0015  ROT_Y: 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Searching for the MDRIZTAB file: 37g1550cj_mdz.fits
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  Symbolic context &#39;hst-latest&#39; resolves to &#39;hst_1247.pmap&#39;
-CRDS - INFO -  Reorganizing 0 references from &#39;instrument&#39; to &#39;flat&#39;
-CRDS - INFO -  Reorganizing from &#39;instrument&#39; to &#39;flat&#39; cache,  removing instrument directories.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CRDS - INFO -  Syncing explicitly listed files.
-CRDS - INFO -  0 errors
-CRDS - INFO -  0 warnings
-CRDS - INFO -  4 infos
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1745,19 +1314,6 @@ CRDS - INFO -  4 infos
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selected_params</span> <span class="o">=</span> <span class="n">get_vals_from_mdriztab</span><span class="p">(</span><span class="n">input_flcs</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>- MDRIZTAB: AstroDrizzle parameters read from row 2.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Outputting the following parameters:
-driz_sep_bits 336
-combine_type minmed
-driz_cr_snr 3.5 3.0
-driz_cr_scale 1.5 1.2
-final_bits 336
 </pre></div>
 </div>
 </div>
@@ -1824,16 +1380,6 @@ final_bits 336
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png"><img alt="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" src="../../../_images/fa4718411ee334ff3234309a4673f8d0df58408a7da65f1f4a71171f66082ec0.png" style="width: 600px; height: 454px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png"><img alt="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png" src="../../../_images/88624b669799f84e8b53ffb12563b32e16448cd6c7af9a0f993316a02d720614.png" style="width: 723px; height: 455px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png"><img alt="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png" src="../../../_images/2b25856f2d58ebbaf83a3532e3cca79a4147531a4b9716cd9fa7910336fd8e78.png" style="width: 585px; height: 476px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/d46ac9a7b964ddb62d6ae72ce58512335189d6c92000f38b8f4fbcdb91837106.png"><img alt="../../../_images/d46ac9a7b964ddb62d6ae72ce58512335189d6c92000f38b8f4fbcdb91837106.png" src="../../../_images/d46ac9a7b964ddb62d6ae72ce58512335189d6c92000f38b8f4fbcdb91837106.png" style="width: 633px; height: 689px;" />
-</a>
-</div>
 </div>
 </section>
 <section id="inspect-the-final-weight-image">
@@ -1851,10 +1397,6 @@ final_bits 336
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/bcd4b3f64a2f49c9ba7132df7aa1626e005edc86a9267463c3dda98b748e912a.png"><img alt="../../../_images/bcd4b3f64a2f49c9ba7132df7aa1626e005edc86a9267463c3dda98b748e912a.png" src="../../../_images/bcd4b3f64a2f49c9ba7132df7aa1626e005edc86a9267463c3dda98b748e912a.png" style="width: 633px; height: 689px;" />
-</a>
 </div>
 </div>
 </section>

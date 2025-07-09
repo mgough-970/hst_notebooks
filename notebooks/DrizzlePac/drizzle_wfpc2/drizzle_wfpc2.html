@@ -750,26 +750,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/micromamba/envs/ci-env/lib/python3.11/site-packages/stsci/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools&lt;81.
-  __import__(&#39;pkg_resources&#39;).declare_namespace(__name__)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
-                                    skymatch                                    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the drizzlepac package can be run with TEAL:
-    astrodrizzle       config_testbed      imagefindpars           mapreg       
-       photeq            pixreplace           pixtopix            pixtosky      
-  refimagefindpars       resetbits          runastrodriz          skytopix      
-     tweakback            tweakreg           updatenpol
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
@@ -856,45 +836,10 @@ hst_8447_01_wfpc2_pc_f555w_u5jx01_drz.fits [6258, 6215]  0.0455   flt.fits    Y
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: u5jx010hr_c0m.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     251   ()      
-  1  SCI           1 ImageHDU       143   (800, 800)   float32   
-  2  SCI           2 ImageHDU       132   (800, 800)   float32   
-  3  SCI           3 ImageHDU       132   (800, 800)   float32   
-  4  SCI           4 ImageHDU       132   (800, 800)   float32   
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fits</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;u5jx010hr_flt.fits&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: u5jx010hr_flt.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     241   ()      
-  1  SCI           1 ImageHDU       212   (800, 800)   float32   
-  2  SCI           2 ImageHDU       205   (800, 800)   float32   
-  3  SCI           3 ImageHDU       205   (800, 800)   float32   
-  4  SCI           4 ImageHDU       205   (800, 800)   float32   
-  5  DQ            1 ImageHDU       107   (800, 800)   int16   
-  6  ERR           1 ImageHDU       141   (800, 800)   float32   
-  7  DQ            2 ImageHDU       107   (800, 800)   int16   
-  8  ERR           2 ImageHDU       132   (800, 800)   float32   
-  9  DQ            3 ImageHDU       107   (800, 800)   int16   
- 10  ERR           3 ImageHDU       132   (800, 800)   float32   
- 11  DQ            4 ImageHDU       107   (800, 800)   int16   
- 12  ERR           4 ImageHDU       137   (800, 800)   float32   
- 13  D2IMARR       1 ImageHDU        16   (800, 1)   float32   
- 14  HDRLET        1 HeaderletHDU     21   ()      
- 15  WCSCORR       1 BinTableHDU     59   28R x 24C   [40A, I, A, 24A, 24A, 24A, 24A, D, D, D, D, D, D, D, D, 24A, 24A, D, D, D, D, J, 40A, 128A]   
- 16  HDRLET       16 HeaderletHDU     21   ()      
- 17  HDRLET        3 HeaderletHDU     21   ()      
 </pre></div>
 </div>
 </div>
@@ -903,17 +848,6 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fits</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;u5jx010hr_drw.fits&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: u5jx010hr_drw.fits
-No.    Name      Ver    Type      Cards   Dimensions   Format
-  0  PRIMARY       1 PrimaryHDU     797   ()      
-  1  SCI           1 ImageHDU       106   (4171, 4143)   float32   
-  2  WHT           1 ImageHDU        89   (4171, 4143)   float32   
-  3  CTX           1 ImageHDU        92   (4171, 4143)   int32   
-  4  HDRTAB        1 BinTableHDU    557   4R x 274C   [9A, 3A, K, D, D, D, D, D, D, D, D, D, D, D, D, K, D, D, D, D, 8A, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, K, D, 8A, 18A, D, D, D, D, D, D, 8A, D, 6A, 19A, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, 23A, D, D, D, D, D, D, D, D, D, D, D, D, D, 12A, 12A, 8A, 18A, D, D, 19A, 10A, D, D, D, 2A, D, 3A, D, D, 7A, D, K, D, 6A, 9A, D, D, D, 4A, 18A, 3A, K, D, D, D, D, 8A, D, D, D, D, D, 23A, 1A, D, 23A, D, D, D, 3A, L, D, 5A, 21A, D, 6A, D, D, D, D, D, D, D, D, D, D, D, L, K, K, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, 8A, 8A, D, D, D, D, K, K, D, 12A, D, 37A, D, D, 1A, 1A, D, K, D, D, 1A, 1A, D, D, D, D, D, D, D, D, D, D, D, 4A, D, K, D, D, D, D, D, 23A, D, D, K, D, D, D, D, D, 2A, D, D, K, 20A, 1A, 1A, 2A, D, D, D, D, D, D, 4A, D, D, D, D, D, D, D, D, D, D, D, D, D, D, 4A, 18A, D, L, D, D, D, D, D, D, D, K, K, 6A, D, D, D, D, 1A, 12A, D, 3A, 8A, D, D, K, 21A, D, D]   
 </pre></div>
 </div>
 </div>
@@ -955,16 +889,6 @@ f555w 	 3.483e-18     3.396e-18     3.439e-18     3.507e-18
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PHOTFLAM for PC1:  3.482944e-18  Factor Relative to WF3:  1.0128
-PHOTFLAM for WF2:  3.395806e-18  Factor Relative to WF3:  0.9874
-PHOTFLAM for WF3:  3.439046e-18  Factor Relative to WF3:  1.0
-PHOTFLAM for WF4:  3.506729e-18  Factor Relative to WF3:  1.0197
-Gain Value is:  7.0
-Units are:  COUNTS
-</pre></div>
-</div>
-</div>
 </div>
 <p>Note the unique PHOTFLAM values for each chip in the original <code class="docutils literal notranslate"><span class="pre">c0m</span></code> data products (above).</p>
 <p>In the new <code class="docutils literal notranslate"><span class="pre">flt</span></code> data products, the PHOTFLAM values are all set to the value for WF3 (below).</p>
@@ -987,16 +911,6 @@ Units are:  COUNTS
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PHOTFLAM for PC1:  3.439046e-18  Factor Relative to WF3:  1.0
-PHOTFLAM for WF2:  3.439046e-18  Factor Relative to WF3:  1.0
-PHOTFLAM for WF3:  3.439046e-18  Factor Relative to WF3:  1.0
-PHOTFLAM for WF4:  3.439046e-18  Factor Relative to WF3:  1.0
-Gain Value is:  7.0
-Units are:  COUNTS
-</pre></div>
-</div>
-</div>
 </div>
 <p>The new <code class="docutils literal notranslate"><span class="pre">drw</span></code> data products carry the WF3 PHOTFLAM values. While the BUNIT keyword says ‘counts’, it should say ‘counts/sec’</p>
 <div class="cell docutils container">
@@ -1009,13 +923,6 @@ Units are:  COUNTS
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PHOTFLAM for Combined image&#39;</span><span class="p">,</span> <span class="n">phot1</span><span class="p">,</span> <span class="s1">&#39; Factor Relative to WF3: &#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">phot1</span><span class="o">/</span><span class="n">phot3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gain Value is: &#39;</span><span class="p">,</span> <span class="n">gain</span><span class="p">)</span>    
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Units are: &#39;</span><span class="p">,</span> <span class="n">bunit</span><span class="p">)</span>  
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PHOTFLAM for Combined image 3.439046e-18  Factor Relative to WF3:  1.0
-Gain Value is:  7.0
-Units are:  counts
 </pre></div>
 </div>
 </div>
@@ -1068,14 +975,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=2</i>
-<table id="table140370818118032" class="table-striped table-bordered table-condensed">
-<thead><tr><th>ROOTNAME</th><th>TARGNAME</th><th>FILTNAM1</th><th>EXPTIME</th><th>ORIENTAT</th><th>PHOTMODE</th><th>PHOTFLAM</th><th>WCSNAME</th><th>NMATCHES</th></tr></thead>
-<thead><tr><th>str32</th><th>str32</th><th>str32</th><th>float64</th><th>float64</th><th>str32</th><th>float64</th><th>str32</th><th>int64</th></tr></thead>
-<tr><td>u5jx0108r</td><td>NGC5139-POS2</td><td>F555W</td><td>16.0</td><td>162.26</td><td>WFPC2,1,A2D7,F555W,,CAL</td><td>3.43905e-18</td><td>IDC_ta81040lu-FIT_IMG_GAIAeDR3</td><td>140</td></tr>
-<tr><td>u5jx010hr</td><td>NGC5139-POS2</td><td>F555W</td><td>16.0</td><td>162.28</td><td>WFPC2,1,A2D7,F555W,,CAL</td><td>3.43905e-18</td><td>IDC_ta81040lu-FIT_IMG_GAIAeDR3</td><td>112</td></tr>
-</table></div></div></div>
 </div>
 <p>Here we see that the images have been aligned to Gaia eDR3 with ~ 100 matched objects in the HST data.</p>
 </section>
@@ -1145,14 +1044,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png"><img alt="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png" src="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png" style="width: 531px; height: 454px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/41021065e8176e7ce30e9858a75894c1a8fffe9bdb6eefbc7dfe2716e250fcab.png"><img alt="../../../_images/41021065e8176e7ce30e9858a75894c1a8fffe9bdb6eefbc7dfe2716e250fcab.png" src="../../../_images/41021065e8176e7ce30e9858a75894c1a8fffe9bdb6eefbc7dfe2716e250fcab.png" style="width: 691px; height: 455px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/a2b1ef4be28f825235d1a8039bce8612a8963052bf1d3bf555b3e38451f763e2.png"><img alt="../../../_images/a2b1ef4be28f825235d1a8039bce8612a8963052bf1d3bf555b3e38451f763e2.png" src="../../../_images/a2b1ef4be28f825235d1a8039bce8612a8963052bf1d3bf555b3e38451f763e2.png" style="width: 572px; height: 476px;" />
-</a>
-</div>
 </div>
 <section id="if-the-alignment-is-unsuccessful-stop-the-notebook">
 <h3>If the alignment is unsuccessful, stop the notebook<a class="headerlink" href="#if-the-alignment-is-unsuccessful-stop-the-notebook" title="Link to this heading">#</a></h3>
@@ -1188,14 +1079,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=2</i>
-<table id="table140369739487696" class="table-striped table-bordered table-condensed">
-<thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
-<thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>u5jx0108r_flt.fits</td><td>0.00</td><td>0.00</td><td>0.000</td><td>1.00000</td><td>0.00</td><td>0.00</td></tr>
-<tr><td>u5jx010hr_flt.fits</td><td>1.81</td><td>-0.40</td><td>0.014</td><td>1.00001</td><td>0.15</td><td>0.15</td></tr>
-</table></div></div></div>
 </div>
 </section>
 <section id="inspect-the-astrometric-residual-scatter-plots">
@@ -1206,10 +1089,6 @@ Units are:  counts
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;residuals_u5jx010hr_flt.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/91774e8e7d199f937bd68a6568654a643d28cd2500d443e9a61cbbf65b9a01d2.png"><img alt="../../../_images/91774e8e7d199f937bd68a6568654a643d28cd2500d443e9a61cbbf65b9a01d2.png" src="../../../_images/91774e8e7d199f937bd68a6568654a643d28cd2500d443e9a61cbbf65b9a01d2.png" style="width: 500px; height: 300px;" />
-</a>
 </div>
 </div>
 <p>Here we align the <code class="docutils literal notranslate"><span class="pre">c0m</span></code> files with the same parameter settings:</p>
@@ -1250,14 +1129,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=2</i>
-<table id="table140369736802064" class="table-striped table-bordered table-condensed">
-<thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
-<thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>u5jx0108r_c0m.fits</td><td>0.00</td><td>0.00</td><td>0.000</td><td>1.00000</td><td>0.00</td><td>0.00</td></tr>
-<tr><td>u5jx010hr_c0m.fits</td><td>1.81</td><td>-0.40</td><td>0.014</td><td>1.00001</td><td>0.15</td><td>0.15</td></tr>
-</table></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1265,14 +1136,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div><i>Table length=2</i>
-<table id="table140369739487696" class="table-striped table-bordered table-condensed">
-<thead><tr><th>file</th><th>dx</th><th>dy</th><th>rot</th><th>scale</th><th>xrms</th><th>yrms</th></tr></thead>
-<thead><tr><th>str18</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
-<tr><td>u5jx0108r_flt.fits</td><td>0.00</td><td>0.00</td><td>0.000</td><td>1.00000</td><td>0.00</td><td>0.00</td></tr>
-<tr><td>u5jx010hr_flt.fits</td><td>1.81</td><td>-0.40</td><td>0.014</td><td>1.00001</td><td>0.15</td><td>0.15</td></tr>
-</table></div></div></div>
 </div>
 </section>
 </section>
@@ -1366,16 +1229,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png"><img alt="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png" src="../../../_images/b173725d6ddad127cce9e1135ea943887d11a9c0dda56cf54a5ed0e453164fc4.png" style="width: 531px; height: 454px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/d8d82ec7eded7d391c9aeed8fe1e67e4d312a4724860e23084ca0e6d8cfb1c61.png"><img alt="../../../_images/d8d82ec7eded7d391c9aeed8fe1e67e4d312a4724860e23084ca0e6d8cfb1c61.png" src="../../../_images/d8d82ec7eded7d391c9aeed8fe1e67e4d312a4724860e23084ca0e6d8cfb1c61.png" style="width: 710px; height: 455px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/cdc3c03e7b07338dd26ff369ad390ab489fad4dfe164b0b36990e333b490e30e.png"><img alt="../../../_images/cdc3c03e7b07338dd26ff369ad390ab489fad4dfe164b0b36990e333b490e30e.png" src="../../../_images/cdc3c03e7b07338dd26ff369ad390ab489fad4dfe164b0b36990e333b490e30e.png" style="width: 572px; height: 476px;" />
-</a>
-<a class="reference internal image-reference" href="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png"><img alt="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png" src="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png" style="width: 1626px; height: 907px;" />
-</a>
-</div>
 </div>
 </section>
 <section id="inspect-the-single-drizzled-output-frames-derived-from-the-dithered-c0m-inputs">
@@ -1399,10 +1252,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png"><img alt="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png" src="../../../_images/845c25ee077d425693619f1efbeb310e2a66a33afe2e1e1b7ea18532f22b19eb.png" style="width: 1626px; height: 907px;" />
-</a>
-</div>
 </div>
 </section>
 <section id="inspect-the-ratio-of-the-two-drizzled-images-to-see-changes-due-to-photometric-normalization">
@@ -1416,10 +1265,6 @@ Units are:  counts
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/3d79675edeb618afa390170368492c6f9ddf9389e675e1b52304ecf5511b93d5.png"><img alt="../../../_images/3d79675edeb618afa390170368492c6f9ddf9389e675e1b52304ecf5511b93d5.png" src="../../../_images/3d79675edeb618afa390170368492c6f9ddf9389e675e1b52304ecf5511b93d5.png" style="width: 594px; height: 573px;" />
-</a>
 </div>
 </div>
 </section>
@@ -1442,10 +1287,6 @@ Units are:  counts
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/766c5678fd11e2b8daa7880a80cfdf2d390d5a2b1f252769804234e71f96ab79.png"><img alt="../../../_images/766c5678fd11e2b8daa7880a80cfdf2d390d5a2b1f252769804234e71f96ab79.png" src="../../../_images/766c5678fd11e2b8daa7880a80cfdf2d390d5a2b1f252769804234e71f96ab79.png" style="width: 1626px; height: 907px;" />
-</a>
-</div>
 </div>
 <p>Note the Planetary Chip (PC) has ~4x WHT because the native pixel scale is ~2x smaller.</p>
 <div class="cell docutils container">
@@ -1455,12 +1296,6 @@ Units are:  counts
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PIXEL SCALE RATIO: WF/PC = (0.0996/0.0455) =    &#39;</span><span class="p">,</span> <span class="n">scale_ratio</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PIXEL AREA  RATIO: WF/PC = (0.0996/0.0455)**2 = &#39;</span><span class="p">,</span> <span class="n">area_ratio</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PIXEL SCALE RATIO: WF/PC = (0.0996/0.0455) =     2.189010989010989
-PIXEL AREA  RATIO: WF/PC = (0.0996/0.0455)**2 =  4.7917691100108675
 </pre></div>
 </div>
 </div>
@@ -1484,10 +1319,6 @@ PIXEL AREA  RATIO: WF/PC = (0.0996/0.0455)**2 =  4.7917691100108675
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/2e04f828e2299723e8cca2564013079219184338cd5320e908e6d9bb051d4965.png"><img alt="../../../_images/2e04f828e2299723e8cca2564013079219184338cd5320e908e6d9bb051d4965.png" src="../../../_images/2e04f828e2299723e8cca2564013079219184338cd5320e908e6d9bb051d4965.png" style="width: 1218px; height: 601px;" />
-</a>
-</div>
 </div>
 </section>
 <section id="plot-the-ratio-of-the-combined-drizzled-images-from-flt-and-c0m">
@@ -1502,10 +1333,6 @@ PIXEL AREA  RATIO: WF/PC = (0.0996/0.0455)**2 =  4.7917691100108675
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<a class="reference internal image-reference" href="../../../_images/c58ecd3acc7a05cc99e0a3efafdd539cc53d3ee3cc893fb008705d5fac573dad.png"><img alt="../../../_images/c58ecd3acc7a05cc99e0a3efafdd539cc53d3ee3cc893fb008705d5fac573dad.png" src="../../../_images/c58ecd3acc7a05cc99e0a3efafdd539cc53d3ee3cc893fb008705d5fac573dad.png" style="width: 594px; height: 573px;" />
-</a>
-</div>
 </div>
 </section>
 <section id="perform-aperture-photometry-on-three-stars-in-the-wf2-wf4-overlap-region">
@@ -1519,21 +1346,6 @@ PIXEL AREA  RATIO: WF/PC = (0.0996/0.0455)**2 =  4.7917691100108675
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Aperture radius:&#39;</span><span class="p">,</span> <span class="n">aperture</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Annulus:&#39;</span><span class="p">,</span> <span class="n">annulus_aperture</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Aperture radius: Aperture: CircularAperture
-positions: [[1180., 1381.],
-            [1388., 1190.],
-            [1232., 1210.]]
-r: 5.0
-Annulus: Aperture: CircularAnnulus
-positions: [[1180., 1381.],
-            [1388., 1190.],
-            [1232., 1210.]]
-r_in: 10.0
-r_out: 15.0
 </pre></div>
 </div>
 </div>
@@ -1556,18 +1368,6 @@ r_out: 15.0
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>drz_flt_combined: &quot;wfpc2_flt_drw_sci.fits&quot;
-     SKY values : [0.31061331 0.25361143 0.25064782]
----------------------------------
- id xcenter ycenter aperture_sum
---- ------- ------- ------------
-  1    1180    1381    1139.9086
-  2    1388    1190    484.00455
-  3    1232    1210    210.30805
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1584,18 +1384,6 @@ r_out: 15.0
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     SKY values :&#39;</span><span class="p">,</span> <span class="n">bkg_mean</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---------------------------------&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">phot_table</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>drz_c0m_combined: &quot;wfpc2_c0m_drw_sci.fits&quot;
-     SKY values : [0.31046403 0.25329725 0.25064313]
----------------------------------
- id xcenter ycenter aperture_sum
---- ------- ------- ------------
-  1    1180    1381    1136.0271
-  2    1388    1190    482.57234
-  3    1232    1210    209.71238
 </pre></div>
 </div>
 </div>
