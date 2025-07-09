@@ -607,13 +607,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
-<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
-<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
-<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
-<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
-</div>
-<section class="tex2jax_ignore mathjax_ignore" id="tweakreg-tips-using-ds9-regions-for-source-inclusion-exclusion">
+  <section class="tex2jax_ignore mathjax_ignore" id="tweakreg-tips-using-ds9-regions-for-source-inclusion-exclusion">
 <h1>TWEAKREG Tips - Using DS9 Regions for Source Inclusion/Exclusion<a class="headerlink" href="#tweakreg-tips-using-ds9-regions-for-source-inclusion-exclusion" title="Link to this heading">#</a></h1>
 <div class="alert alert-block alert-warning" style="color:black"><b>This notebook requires creating and activating a virtual environment using the requirements file in this notebook's repository. Please also review the README file before using the notebook.</b><br></div>
 <p><a id='toc'></a></p>
@@ -677,6 +671,26 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/runner/micromamba/envs/ci-env/lib/python3.11/site-packages/stsci/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools&lt;81.
+  __import__(&#39;pkg_resources&#39;).declare_namespace(__name__)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following task in the stsci.skypac package can be run with TEAL:
+                                    skymatch                                    
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following tasks in the drizzlepac package can be run with TEAL:
+    astrodrizzle       config_testbed      imagefindpars           mapreg       
+       photeq            pixreplace           pixtopix            pixtosky      
+  refimagefindpars       resetbits          runastrodriz          skytopix      
+     tweakback            tweakreg           updatenpol
+</pre></div>
+</div>
+</div>
 </div>
 <p><a id="download"></a></p>
 </section>
@@ -700,6 +714,14 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div><i>Table length=2</i>
+<table id="table139637243073424" class="table-striped table-bordered table-condensed">
+<thead><tr><th>obsID</th><th>productFilename</th></tr></thead>
+<thead><tr><th>str8</th><th>str50</th></tr></thead>
+<tr><td>24127375</td><td>jcdua3f4q_flc.fits</td></tr>
+<tr><td>24127376</td><td>jcdua3f8q_flc.fits</td></tr>
+</table></div></div></div>
 </div>
 <p>Based on this table, the <code class="docutils literal notranslate"><span class="pre">obsID</span></code> values for <code class="docutils literal notranslate"><span class="pre">jcdua3f4q_flc.fits</span></code> and <code class="docutils literal notranslate"><span class="pre">jcdua3f8q_flc.fits</span></code> are 24127375 and 24127376. We use this information to download these two FITS files.</p>
 <div class="alert alert-block alert-warning" style="color:black" >  Depending on your connection speed, this cell may take a few minutes to execute. </div><div class="cell docutils container">
@@ -717,6 +739,26 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcdua3f4q_flc.fits to ./mastDownload/HST/jcdua3f4q/jcdua3f4q_flc.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/jcdua3f8q_flc.fits to ./mastDownload/HST/jcdua3f8q/jcdua3f8q_flc.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output text_html"><div><i>Table length=2</i>
+<table id="table139635950306192" class="table-striped table-bordered table-condensed">
+<thead><tr><th>Local Path</th><th>Status</th><th>Message</th><th>URL</th></tr></thead>
+<thead><tr><th>str47</th><th>str8</th><th>object</th><th>object</th></tr></thead>
+<tr><td>./mastDownload/HST/jcdua3f4q/jcdua3f4q_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
+<tr><td>./mastDownload/HST/jcdua3f8q/jcdua3f8q_flc.fits</td><td>COMPLETE</td><td>None</td><td>None</td></tr>
+</table></div></div></div>
 </div>
 <p><strong>If the cell above produces an error, try running it again.</strong> Connection issues can cause errors on the first try.</p>
 <div class="cell docutils container">
@@ -748,6 +790,83 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 19:07:06.934 (08/07/2025) 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;jcdua3f4q_flc.fits&#39;:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 19:07:07.131 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10334 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 19:07:07.756 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10638 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;jcdua3f4q_flc.fits&#39;: 20972
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Fewer than two images available for alignment. Quitting...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
+</pre></div>
+</div>
+</div>
 </div>
 <p>This creates four output files:</p>
 <ul class="simple">
@@ -768,6 +887,17 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div><i>Table length=5</i>
+<table id="table139635897644816" class="table-striped table-bordered table-condensed">
+<thead><tr><th>X</th><th>Y</th><th>Flux</th><th>ID</th></tr></thead>
+<thead><tr><th>float64</th><th>float64</th><th>float64</th><th>int64</th></tr></thead>
+<tr><td>486.984</td><td>3.91527</td><td>6330.1</td><td>0</td></tr>
+<tr><td>2079.01</td><td>3.93333</td><td>7025.01</td><td>1</td></tr>
+<tr><td>3365.99</td><td>4.92493</td><td>6264.28</td><td>2</td></tr>
+<tr><td>2935.1</td><td>5.00032</td><td>10566.8</td><td>3</td></tr>
+<tr><td>471.271</td><td>5.04838</td><td>24495.6</td><td>4</td></tr>
+</table></div></div></div>
 </div>
 <p>Now read in the FITS image. This step will be used for demonstrative plots and is not necessary to run <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code>.</p>
 <div class="cell docutils container">
@@ -796,6 +926,10 @@ document.write(`
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="../../../_images/10c7f1ff930d7095e5c3aa972f416bf53b2e7fed122bc1c2b4ee694715b7ca5e.png"><img alt="../../../_images/10c7f1ff930d7095e5c3aa972f416bf53b2e7fed122bc1c2b4ee694715b7ca5e.png" src="../../../_images/10c7f1ff930d7095e5c3aa972f416bf53b2e7fed122bc1c2b4ee694715b7ca5e.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p><a id="regions"></a></p>
@@ -828,6 +962,13 @@ box(3541,393,113,96,0)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: &quot;select&quot; frame or shape is not a valid frame or region shape; unable to parse line &quot;select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1&quot;, skipping. [regions.io.ds9.read]
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/318a2ee7405be90b562d67133e957a181dcbf149500823844356119fb36c6e94.png"><img alt="../../../_images/318a2ee7405be90b562d67133e957a181dcbf149500823844356119fb36c6e94.png" src="../../../_images/318a2ee7405be90b562d67133e957a181dcbf149500823844356119fb36c6e94.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p>You can see the polygon outlining a galaxy, including the extended tidal stream. The other shapes are placed randomly as demonstration.</p>
@@ -904,12 +1045,99 @@ image
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 19:07:55.766 (08/07/2025) 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f8q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;jcdua3f4q_flc.fits&#39;:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 19:07:55.852 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10273 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 19:07:58.069 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10638 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;jcdua3f4q_flc.fits&#39;: 20911
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Fewer than two images available for alignment. Quitting...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">read_tweak_cat_and_plot</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="../../../_images/7afe5544d2610019f50c77672d6e68bd575a3f9df5b6a8f95567bb09a6b62638.png"><img alt="../../../_images/7afe5544d2610019f50c77672d6e68bd575a3f9df5b6a8f95567bb09a6b62638.png" src="../../../_images/7afe5544d2610019f50c77672d6e68bd575a3f9df5b6a8f95567bb09a6b62638.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p>As expected, sources within the defined DS9 exlusion regions are no longer in the <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> source catalog.</p>
@@ -946,12 +1174,99 @@ box(3541,393,113,96,0)
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 19:08:21.951 (08/07/2025) 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f8q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;jcdua3f4q_flc.fits&#39;:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 19:08:22.038 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 63 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 19:08:22.960 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10638 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;jcdua3f4q_flc.fits&#39;: 10701
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Fewer than two images available for alignment. Quitting...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">read_tweak_cat_and_plot</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="../../../_images/d718b6e4490b2f4d922d38fff74e0587708a910a621c53aefe2cce3da7945a8c.png"><img alt="../../../_images/d718b6e4490b2f4d922d38fff74e0587708a910a621c53aefe2cce3da7945a8c.png" src="../../../_images/d718b6e4490b2f4d922d38fff74e0587708a910a621c53aefe2cce3da7945a8c.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p>This shows that only sources in the DS9 regions are included in the <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> source catalog. Note that only <span class="math notranslate nohighlight">\(\approx60\)</span> objects were found by <code class="docutils literal notranslate"><span class="pre">TweakReg</span></code> for SCI1, compared to <span class="math notranslate nohighlight">\(\approx10,000\)</span> found in the original catalog. The number of objects for SCI2 is unchanged.</p>
@@ -987,12 +1302,99 @@ circle(3613,396,75)
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 19:08:24.904 (08/07/2025) 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f8q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;jcdua3f4q_flc.fits&#39;:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 19:08:24.990 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 51 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 19:08:25.913 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10638 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;jcdua3f4q_flc.fits&#39;: 10689
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Fewer than two images available for alignment. Quitting...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">read_tweak_cat_and_plot</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="../../../_images/077cdb6a9603822768f6e8d550af0f8b39c40cd787e1ab67a26926c67fca753a.png"><img alt="../../../_images/077cdb6a9603822768f6e8d550af0f8b39c40cd787e1ab67a26926c67fca753a.png" src="../../../_images/077cdb6a9603822768f6e8d550af0f8b39c40cd787e1ab67a26926c67fca753a.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p>This shows the sources detected within the inclusion regions except for those excluded from the box.</p>
@@ -1018,12 +1420,99 @@ circle(3613,396,75)
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up logfile :  tweakreg.log
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TweakReg Version 3.9.1 started at: 19:08:27.816 (08/07/2025) 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Version Information
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--------------------
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python Version 3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy Version -&gt; 2.3.1 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>astropy Version -&gt; 7.1.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>stwcs Version -&gt; 1.7.4 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>photutils Version -&gt; 2.2.0 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>jcdua3f8q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finding shifts for: 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    jcdua3f4q_flc.fits
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  Source finding for image &#39;jcdua3f4q_flc.fits&#39;:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 1) started at: 19:08:27.904 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 58 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  #  Source finding for &#39;jcdua3f4q_flc.fits&#39;, EXT=(&#39;SCI&#39;, 2) started at: 19:08:29.822 (08/07/2025)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Found 10638 objects.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===  FINAL number of objects in image &#39;jcdua3f4q_flc.fits&#39;: 10696
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Fewer than two images available for alignment. Quitting...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trailer file written to:  tweakreg.log
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">read_tweak_cat_and_plot</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<a class="reference internal image-reference" href="../../../_images/ebad1d4ea4c287e2346d14b0c92a64d33ab2ad32ab9f42d706dbd52c522e0ae9.png"><img alt="../../../_images/ebad1d4ea4c287e2346d14b0c92a64d33ab2ad32ab9f42d706dbd52c522e0ae9.png" src="../../../_images/ebad1d4ea4c287e2346d14b0c92a64d33ab2ad32ab9f42d706dbd52c522e0ae9.png" style="width: 1632px; height: 1502px;" />
+</a>
 </div>
 </div>
 <p>Now the circle is given precedence because it is the last region shape processed, and therefore the section of overlap with the box is not removed as it was in the previous figure.</p>

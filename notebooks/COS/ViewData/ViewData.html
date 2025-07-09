@@ -663,13 +663,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
-<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
-<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
-<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
-<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
-</div>
-<p><a id="topV"></a></p>
+  <p><a id="topV"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="viewing-cos-data">
 <h1>Viewing COS Data<a class="headerlink" href="#viewing-cos-data" title="Link to this heading">#</a></h1>
 </section>
@@ -818,6 +812,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/ldm701020/ldm701020_x1dsum.fits with expected size 1814400. [astroquery.query]
+</pre></div>
+</div>
+<img alt="../../../_images/dff8588c3d996f65d2e9feaa9e6d9b2ea8dbf57d0ccc3a37ba3bc0336b9d8d26.png" src="../../../_images/dff8588c3d996f65d2e9feaa9e6d9b2ea8dbf57d0ccc3a37ba3bc0336b9d8d26.png" />
+</div>
 </div>
 <section id="now-returning-to-our-more-detailed-walkthrough">
 <h3>Now, returning to our more detailed walkthrough<a class="headerlink" href="#now-returning-to-our-more-detailed-walkthrough" title="Link to this heading">#</a></h3>
@@ -851,6 +851,11 @@ document.write(`
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">quantity_support</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;astropy.visualization.units.quantity_support.&lt;locals&gt;.MplQuantityConverter at 0x7fad073c3a90&gt;
 </pre></div>
 </div>
 </div>
@@ -903,6 +908,32 @@ document.write(`
                         <span class="n">extension</span><span class="o">=</span><span class="s1">&#39;fits&#39;</span><span class="p">,</span>
                         <span class="n">mrp_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                         <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lbbd01020_asn.fits to data/mastDownload/HST/lbbd01020/lbbd01020_asn.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lbbd01020_x1dsum.fits to data/mastDownload/HST/lbbd01020/lbbd01020_x1dsum.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lcxv13050_asn.fits to data/mastDownload/HST/lcxv13050/lcxv13050_asn.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading URL https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/lcxv13050_x1dsum.fits to data/mastDownload/HST/lcxv13050/lcxv13050_x1dsum.fits ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> [Done]
 </pre></div>
 </div>
 </div>
@@ -989,6 +1020,37 @@ Reading the file’s primary FITS header gives us information about its data, as
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(SIMPLE  =                    T / conforms to FITS standard                      
+ BITPIX  =                    8 / array data type                                
+ NAXIS   =                    0 / number of array dimensions                     
+ EXTEND  =                    T                                                  
+ NEXTEND =                    1 / Number of standard extensions                  
+ DATE    = &#39;2025-03-11&#39;         / date this file was written (yyyy-mm-dd)        
+ FILENAME= &#39;lcxv13050_x1dsum.fits&#39; / name of file                                
+ FILETYPE= &#39;SCI      &#39;          / type of data found in data file                
+                                                                                 
+ TELESCOP= &#39;HST&#39;                / telescope used to acquire data                 
+ INSTRUME= &#39;COS   &#39;             / identifier for instrument used to acquire data 
+ EQUINOX =               2000.0 / equinox of celestial coord. system             
+                                                                                 
+               / DATA DESCRIPTION KEYWORDS                                       
+                                                                                 
+ ROOTNAME= &#39;lcxv13flq                         &#39; / rootname of the observation set
+ IMAGETYP= &#39;TIME-TAG          &#39; / type of exposure identifier                    
+ PRIMESI = &#39;COS   &#39;             / instrument designated as prime                 ,
+ &#39;...&#39;,
+               / DIAGNOSTIC KEYWORDS                                             
+                                                                                 
+ PROCTIME=   6.074500740741E+04 / pipeline processing time (MJD)                 
+ OPUS_VER= &#39;HSTDP 2024_4                &#39; / data processing software system versi
+ AWSYSVER= &#39;v0.4.46-rc2&#39;        / cloud infrastructure package version           
+ AWSDPVER= &#39;v0.2.28-rc1&#39;        / cloud docker image version                     
+ CSYS_VER= &#39;2024.10.2.3-enchilada-py311&#39; / calibration software system version id
+ CAL_VER = &#39;3.6.0rc1&#39;           / CALCOS code version                            )
+</pre></div>
+</div>
+</div>
 </div>
 <p>For instance, we notice that the FUV data was taken in <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-5-cos-data-analysis/5-4-working-with-time-tag-data">TIME-TAG mode</a> and calibrated with the COS calibration pipeline, <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> version <code class="docutils literal notranslate"><span class="pre">3.4.3</span></code> (at the time of writing this sentence - it may have been reprocessed by the time you read this).</p>
 <p>However, some metadata information, such as the time of observation and calculated exposure time, can be found in the <strong>1-th header</strong> rather than the 0th. We will read and print this below:</p>
@@ -1024,6 +1086,12 @@ Reading the file’s primary FITS header gives us information about its data, as
 <span class="nb">print</span><span class="p">(</span>
     <span class="sa">f</span><span class="s2">&quot;This NUV data was taken on </span><span class="si">{</span><span class="n">nuv_date</span><span class="si">}</span><span class="s2"> starting at </span><span class="si">{</span><span class="n">nuv_time</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="sa">f</span><span class="s2">&quot; with a net exposure time of </span><span class="si">{</span><span class="n">nuv_exptime</span><span class="si">}</span><span class="s2"> seconds.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This FUV data was taken on 2016-06-13 starting at 23:56:29 with a net exposure time of 6532.512 seconds.
+This NUV data was taken on 2009-08-14 starting at 06:03:56 with a net exposure time of 999.136 seconds.
 </pre></div>
 </div>
 </div>
@@ -1063,6 +1131,23 @@ We will then display all the fields contained in this data table using the <code
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Method 1 gets data as type: &lt;class &#39;astropy.io.fits.fitsrec.FITS_rec&#39;&gt;
+Method 2 gets data as type: &lt;class &#39;astropy.io.fits.fitsrec.FITS_rec&#39;&gt;
+Method 3 gets data as type: &lt;class &#39;astropy.table.table.Table&#39;&gt;
+
+Table of FUV data with columns:
+ [&#39;SEGMENT&#39;, &#39;EXPTIME&#39;, &#39;NELEM&#39;, &#39;WAVELENGTH&#39;, &#39;FLUX&#39;, &#39;ERROR&#39;, &#39;ERROR_LOWER&#39;, &#39;GROSS&#39;, &#39;GCOUNTS&#39;, &#39;VARIANCE_FLAT&#39;, &#39;VARIANCE_COUNTS&#39;, &#39;VARIANCE_BKG&#39;, &#39;NET&#39;, &#39;BACKGROUND&#39;, &#39;DQ&#39;, &#39;DQ_WGT&#39;] 
+</pre></div>
+</div>
+<div class="output text_html"><div><i>Table length=2</i>
+<table id="table140381130503632" class="table-striped table-bordered table-condensed">
+<thead><tr><th>SEGMENT</th><th>EXPTIME</th><th>NELEM</th><th>WAVELENGTH</th><th>FLUX</th><th>ERROR</th><th>ERROR_LOWER</th><th>GROSS</th><th>GCOUNTS</th><th>VARIANCE_FLAT</th><th>VARIANCE_COUNTS</th><th>VARIANCE_BKG</th><th>NET</th><th>BACKGROUND</th><th>DQ</th><th>DQ_WGT</th></tr></thead>
+<thead><tr><th></th><th>s</th><th></th><th>Angstrom</th><th>erg / (Angstrom s cm2)</th><th>erg / (Angstrom s cm2)</th><th>erg / (Angstrom s cm2)</th><th>ct / s</th><th>ct</th><th>ct</th><th>ct</th><th>ct</th><th>ct / s</th><th>ct / s</th><th></th><th></th></tr></thead>
+<thead><tr><th>bytes4</th><th>float64</th><th>int32</th><th>float64[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>float32[16384]</th><th>int16[16384]</th><th>float32[16384]</th></tr></thead>
+<tr><td>FUVA</td><td>6532.512</td><td>16384</td><td>1610.2408333820224 .. 1810.9448636791049</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>128 .. 128</td><td>0.0 .. 0.0</td></tr>
+<tr><td>FUVB</td><td>6532.512</td><td>16384</td><td>1421.9464241857763 .. 1622.5957869332856</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>128 .. 128</td><td>0.0 .. 0.0</td></tr>
+</table></div></div></div>
 </div>
 <p><strong>In the case of the FUV data, we see an <code class="docutils literal notranslate"><span class="pre">astropy</span></code> style table of 2 rows</strong> which are labeled FUVA and FUVB. These rows contain data from the 2 segments of FUV Detector (see Figure 1.1).</p>
 <section id="fig-1-1-from-cos-dhb-fig-1-6">
@@ -1094,6 +1179,27 @@ We will then display all the fields contained in this data table using the <code
 <span class="n">fuv_asn_data</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">fuv_asn_filepath</span><span class="p">)</span>
 <span class="c1"># Printing said table</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fuv_asn_data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filename: data/mastDownload/HST/lcxv13050/lcxv13050_asn.fits
+No.    Name      Ver    Type      Cards   Dimensions   Format
+  0  PRIMARY       1 PrimaryHDU      43   ()      
+  1  ASN           1 BinTableHDU     25   5R x 3C   [14A, 14A, L]   
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None 
+
+----
+
+   MEMNAME        MEMTYPE     MEMPRSNT
+-------------- -------------- --------
+     LCXV13FLQ         EXP-FP        1
+     LCXV13FXQ         EXP-FP        1
+     LCXV13G4Q         EXP-FP        1
+     LCXV13GXQ         EXP-FP        1
+     LCXV13050        PROD-FP        1
 </pre></div>
 </div>
 </div>
@@ -1173,6 +1279,9 @@ We will then display all the fields contained in this data table using the <code
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/ead770f6ef08d8082a1b11f38f48c0e493573dbf7d1416b257e50ba59ff448e7.png" src="../../../_images/ead770f6ef08d8082a1b11f38f48c0e493573dbf7d1416b257e50ba59ff448e7.png" />
 </div>
 </div>
 </section>
@@ -1296,6 +1405,9 @@ We will then display all the fields contained in this data table using the <code
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/ba8937713bde7eb0049f9afa3035b7e4db540bf205fc2e9b68a749f41b9fcddc.png" src="../../../_images/ba8937713bde7eb0049f9afa3035b7e4db540bf205fc2e9b68a749f41b9fcddc.png" />
+</div>
 </div>
 <p><a id = plotcloserV></a></p>
 </section>
@@ -1360,6 +1472,9 @@ We will then display all the fields contained in this data table using the <code
             <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/3770437d5958aa8a62453dd361103e777e65b9ddd3d72b880aeff83f42e77c1c.png" src="../../../_images/3770437d5958aa8a62453dd361103e777e65b9ddd3d72b880aeff83f42e77c1c.png" />
 </div>
 </div>
 <p>The source we’re looking at - the quasar 3C48 has a substantial redshift: $<span class="math notranslate nohighlight">\(z \approx 0.37\)</span>$</p>
@@ -1439,6 +1554,16 @@ We will then display all the fields contained in this data table using the <code
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/4a84a6715878072421aa0e54d1f6b71dedba3e197aea6d4faad89fbb00f0babd.png" src="../../../_images/4a84a6715878072421aa0e54d1f6b71dedba3e197aea6d4faad89fbb00f0babd.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----
+</pre></div>
+</div>
+<img alt="../../../_images/3699d770596334d37fa445dddbc07359dffa710077a17cbda0a13f1bc10189c4.png" src="../../../_images/3699d770596334d37fa445dddbc07359dffa710077a17cbda0a13f1bc10189c4.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="exercise-2-2-choosing-and-plotting-a-useful-data-range">
@@ -1504,6 +1629,16 @@ We will then display all the fields contained in this data table using the <code
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: AstropyDeprecationWarning: The Spectrum1D class is deprecated and may be removed in a future version.
+        Use Spectrum instead. [astropy.io.registry.core]
+WARNING: AstropyDeprecationWarning: The Spectrum1D class is deprecated and may be removed in a future version.
+        Use Spectrum instead. [specutils.spectra.spectrum]
+WARNING: Model is linear in parameters; consider using linear fitting methods. [astropy.modeling.fitting]
+</pre></div>
+</div>
+<img alt="../../../_images/36e74ca3ae2d269b52871ff2e6daa36554c663fb4277e9121f5b71a83c411c4f.png" src="../../../_images/36e74ca3ae2d269b52871ff2e6daa36554c663fb4277e9121f5b71a83c411c4f.png" />
 </div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">specutils</span></code> also works with the visualization <a class="reference external" href="https://github.com/spacetelescope/jdaviz">package <code class="docutils literal notranslate"><span class="pre">Jdaviz.Specviz</span></code></a>, to produce very useful interactive spectral plots within a Jupyter Notebook GUI framework. Currently, this interactive program works well within the Jupyter Notebook environment, but not within Jupyter Lab environment.</p>
@@ -1590,6 +1725,9 @@ We will then display all the fields contained in this data table using the <code
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/380aed6413b1cd0cd400296820f1aba7572b72d5e652650395984df36c37c31c.png" src="../../../_images/380aed6413b1cd0cd400296820f1aba7572b72d5e652650395984df36c37c31c.png" />
 </div>
 </div>
 <p><a id = nuv2V></a></p>
@@ -1696,6 +1834,9 @@ We will then display all the fields contained in this data table using the <code
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/b316677a4f9f21da4c9e3957c808313319eb2d5491d6b32ee8d0841d8dbdfa19.png" src="../../../_images/b316677a4f9f21da4c9e3957c808313319eb2d5491d6b32ee8d0841d8dbdfa19.png" />
 </div>
 </div>
 <p><strong>Clearly, our errorbars on the second-order spectrum (NUVC) are <em>much larger</em>.</strong></p>
@@ -1838,6 +1979,15 @@ These zeros are regions on the active area of the detector which don’t receive
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2784/2395070808.py:47: RuntimeWarning: divide by zero encountered in log2
+  logDQ = np.log2(dataQual)
+/tmp/ipykernel_2784/2395070808.py:80: RuntimeWarning: divide by zero encountered in log2
+  logDQ = np.log2(dataQual)
+</pre></div>
+</div>
+<img alt="../../../_images/9b7d9a5b6a499563127544158a1388bedffe8331a21b0efa08a167686a154fee.png" src="../../../_images/9b7d9a5b6a499563127544158a1388bedffe8331a21b0efa08a167686a154fee.png" />
+</div>
 </div>
 <p>When the data is processed through <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code>, it has a summed set of “Serious Data Quality” <a class="reference external" href="https://hst-docs.stsci.edu/cosdhb/chapter-3-cos-calibration/3-4-descriptions-of-spectroscopic-calibration-steps">SDQ</a> flags attached to it in the form of a single integer between 0 and <span class="math notranslate nohighlight">\(2^{15}\)</span>. This value is found in the 1-th header as <code class="docutils literal notranslate"><span class="pre">&quot;SDQFLAGS&quot;</span></code>. This can be decomposed into the powers of 2 data flags above, (by showing its binary representation,) and tells the pipeline whether to weight that pixel in that exposure by 0 or 1. These weights are then stored in the <code class="docutils literal notranslate"><span class="pre">x1d</span></code> and <code class="docutils literal notranslate"><span class="pre">x1dsum</span></code> files, in the <code class="docutils literal notranslate"><span class="pre">&quot;DQ_WGT&quot;</span></code> column. The <code class="docutils literal notranslate"><span class="pre">&quot;DQ_WGT&quot;</span></code> value for a given pixel in the <code class="docutils literal notranslate"><span class="pre">x1dsum</span></code> file will then be equal to the number of exposures which went into creating that <code class="docutils literal notranslate"><span class="pre">x1dsum</span></code> file in which no serious data quality flags apply to that pixel.</p>
 <p>Below, we first see <em>which</em> data quality flags the pipeline considered “serious”, and then demonstrate masking out the datapoints assigned a weight of 0.</p>
@@ -1854,6 +2004,18 @@ These zeros are regions on the active area of the detector which don’t receive
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">sdqFlags_fuv</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]):</span>
     <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\t</span><span class="si">{</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="si">}</span><span class="se">\&#39;</span><span class="s1">s place - &#39;</span><span class="p">,</span> <span class="n">meanings</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The FUV was processed with SDQFLAGS = 8346, which in binary is 10000010011010
+Thus, the following DQ-flagged data get weighted by 0:
+
+	2&#39;s place -  Hot Spot
+	128&#39;s place -  Pixel Out-of-bounds
+	1024&#39;s place -  Low Response Region
+	2048&#39;s place -  Bad Time Interval
+	8192&#39;s place -  Gain-sag Hole
 </pre></div>
 </div>
 </div>
@@ -1886,6 +2048,9 @@ These zeros are regions on the active area of the detector which don’t receive
             <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/e56c57d7b93bdfcc35d633e08b80d8235cd5bcf5f942c31b00c2f7b005a71516.png" src="../../../_images/e56c57d7b93bdfcc35d633e08b80d8235cd5bcf5f942c31b00c2f7b005a71516.png" />
 </div>
 </div>
 <p>Alternatively, we can ignore the <code class="docutils literal notranslate"><span class="pre">SDQFLAGS</span></code> and the weights decided by <code class="docutils literal notranslate"><span class="pre">CalCOS</span></code> and pick which data quality flags we want to filter out. From Fig 3.1, we know the only problem in the FUV and the largest problem in the NUV are pixels flagged by <strong>“out of bounds”</strong>, corresponding to Data Quality: <strong>128</strong>.</p>
@@ -1935,6 +2100,9 @@ These zeros are regions on the active area of the detector which don’t receive
 <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">plotsdir</span> <span class="o">/</span> <span class="s1">&#39;Fig3.3.png&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/417ea65276bb4008caed5ed80d98025108f7d2165b43e40191e2aa305f613f69.png" src="../../../_images/417ea65276bb4008caed5ed80d98025108f7d2165b43e40191e2aa305f613f69.png" />
 </div>
 </div>
 <section id="exercise-3-1-removing-all-flagged-data-from-the-nuv">
@@ -1993,6 +2161,26 @@ COS data is generally binned to a resolution element, or <a class="reference ext
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function bin_by_resel in module cos_functions:
+
+bin_by_resel(data_table, binsize=6, weighted=True, verbose=True)
+    Bins an entire COS dataset (in astropy Table form)
+        * Wavelength and flux are combined by taking an exposure-time weighted mean of all the pixels in a bin.
+        * Errors are combined as above and divided by the square root of the number of pixels in a bin
+        * Counts and count rate are summed over all the pixels in a bin.
+    
+    Parameters:
+    data_table (Table) : Astropy Table of COS spectral data.
+    binsize (int) : What to bin by.
+    weighted (bool) : Whether to weight the averages by exposure time of a pixel; Default is True.
+    verbose (bool) : Whether to print major steps the function is taking; Default is True.
+    
+    Returns:
+    Table : New binned table of values
+</pre></div>
+</div>
+</div>
 </div>
 <p><a id = binfuvV></a></p>
 </section>
@@ -2017,6 +2205,21 @@ COS data is generally binned to a resolution element, or <a class="reference ext
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>function `bin_by_resel` is binning by 6
+
+Original Dataset Length is 16384
+Binned Dataset Length is 2730
+	16384 over 2730 = 6.0014652014652015
+</pre></div>
+</div>
+<div class="output text_html"><div><i>Table length=2</i>
+<table id="table140380306142288" class="table-striped table-bordered table-condensed">
+<thead><tr><th>EXPTIME</th><th>WAVELENGTH</th><th>FLUX</th><th>ERROR</th><th>ERROR_LOWER</th><th>GROSS</th><th>GCOUNTS</th></tr></thead>
+<thead><tr><th>float64</th><th>float64[2730]</th><th>float32[2730]</th><th>float64[2730]</th><th>float64[2730]</th><th>float32[2730]</th><th>float32[2730]</th></tr></thead>
+<tr><td>6532.512</td><td>1610.2714602559613 .. 1810.8652338068634</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td></tr>
+<tr><td>6532.512</td><td>1421.9770427176002 .. 1622.516178750544</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td><td>0.0 .. 0.0</td></tr>
+</table></div></div></div>
 </div>
 <p><a id=SnrV></a></p>
 </section>
@@ -2038,6 +2241,28 @@ This simplification may not hold very well if your source is diffuse or faint.<d
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">cos_functions</span><span class="w"> </span><span class="kn">import</span> <span class="n">estimate_snr</span>
 <span class="n">help</span><span class="p">(</span><span class="n">estimate_snr</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function estimate_snr in module cos_functions:
+
+estimate_snr(data_table, snr_range=[-1, -1], bin_data_first=False, binsize_=6, weighted=False, verbose=True)
+    Gets an estimate of the Signal to Noise Ratio (SNR), either over wvln-range or whole spectrum, using Poisson noise assumption SNR ~sqrt(N_Counts).
+    Weights the SNR
+    
+    Parameters:
+    data_table (Astropy Table) : astropy table of COS data.
+    snr_range (list) : list of two values - [wvln_range_start , wvln_range_end]; Default is [-1,-1], indicating that we will take over all values.
+    bin_data_first (bool) : Should we begin by binning the data by the binsize_? Default is False.
+    binsize_ (int) : If bin_data_first == True, what to bin by; Default is 6 for fuv resel.
+    weighted (bool) : Do you want the average to be an exposure time weighted average rather than the default unweighted mean; Default is False.
+    verbose (bool) : Whether to give a few print statements; default is True.
+    
+    Returns:
+    float : A single value for the exptime-weighted average or mean SNR over the specified snr_range; -1 if no specified range.
+    nested list : 1st level of list corresponds to the segments/rows of the input data_table, 2nd level holds wvln, snr, segmentnumber over snr_range -
+                 ie [[-1,-1,-1],[wvln over range array, wvln over range array, row in input data_table int][-1,-1,-1]].
 </pre></div>
 </div>
 </div>
@@ -2083,6 +2308,9 @@ Looking back to <a class="reference internal" href="#fig2p4V"><span class="xref 
             <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/984f727716d96757e8cd53ad2b11a488ec11dcd6fc190c796e14594f791c7bd0.png" src="../../../_images/984f727716d96757e8cd53ad2b11a488ec11dcd6fc190c796e14594f791c7bd0.png" />
 </div>
 </div>
 <p>Our chosen region, between the black lines, looks quite good for calculating SNR, as it lacks obvious spectral lines.
@@ -2146,6 +2374,16 @@ Looking back to <a class="reference internal" href="#fig2p4V"><span class="xref 
             <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First, Binning the data by  6
+function `bin_by_resel` is binning by 6
+In range on 0-th segment with limits: 1610.2714602559613 1810.8652338068634 
+Unweighted mean SNR over the range [1675, 1690] is: 8.13060474395752
+Out of range on 1-th segment with limits: 1421.9770427176002 1622.516178750544
+</pre></div>
+</div>
+<img alt="../../../_images/f188e09a6a41ad33644501a8e95d38ac1b7297c4ea53fa940ad06c5552a1659f.png" src="../../../_images/f188e09a6a41ad33644501a8e95d38ac1b7297c4ea53fa940ad06c5552a1659f.png" />
 </div>
 </div>
 </section>
@@ -2219,6 +2457,17 @@ authors. Follow these links for more information about citations:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processed at MJD = 60592.68001157
+Taken with 1 wavecal flashes
+
+   MEMNAME        MEMTYPE     MEMPRSNT
+-------------- -------------- --------
+     LBBD01HPQ         EXP-FP        1
+     LBBD01020        PROD-FP        1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2267,6 +2516,9 @@ authors. Follow these links for more information about citations:</p>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/2f11f0442e734ee4b51128894a4a80b8d5f125c13a693729a80d25c1ac6d696c.png" src="../../../_images/2f11f0442e734ee4b51128894a4a80b8d5f125c13a693729a80d25c1ac6d696c.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2328,6 +2580,9 @@ authors. Follow these links for more information about citations:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/8cd3101b515f2012526518a39e0c8fa31fd1483ca1837a4d201bfea5e921c855.png" src="../../../_images/8cd3101b515f2012526518a39e0c8fa31fd1483ca1837a4d201bfea5e921c855.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2366,6 +2621,9 @@ authors. Follow these links for more information about citations:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/3c267caae628c768f123bd24961958257e7d7b7d20ab06d3bcdc3f1ac3826ee4.png" src="../../../_images/3c267caae628c768f123bd24961958257e7d7b7d20ab06d3bcdc3f1ac3826ee4.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2408,6 +2666,17 @@ authors. Follow these links for more information about citations:</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First, Binning the data by  3
+function `bin_by_resel` is binning by 3
+Out of range on 0-th segment with limits: 2055.2227946721123 2551.202543205818
+In range on 1-th segment with limits: 3144.4680068817165 3639.1168209501548 
+Unweighted mean SNR over the range [3400, 3450] is: 29.33061408996582
+Out of range on 2-th segment with limits: 2141.381207452109 2387.0087020695464
+</pre></div>
+</div>
+<img alt="../../../_images/0897c4705ef6ceec0518e9bf343c6ec2818df28489156e4228d1b989f6f3b003.png" src="../../../_images/0897c4705ef6ceec0518e9bf343c6ec2818df28489156e4228d1b989f6f3b003.png" />
 </div>
 </div>
 </section>

@@ -639,13 +639,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style='background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 10px 0; border-left: 4px solid #f39c12;'>
-<h3 style='color: #856404; margin-top: 0;'>⚠️ EXECUTION WARNING</h3>
-<p style='color: #856404; margin-bottom: 0;'><strong>This notebook may not execute properly in the current environment.</strong></p>
-<p style='color: #856404; margin-bottom: 0;'>Some cells may have failed during automated testing. Please review the notebook content and test manually before use.</p>
-<p style='color: #856404; margin-bottom: 0; font-size: 0.9em;'><em>Generated during CI/CD pipeline - some outputs may be incomplete or missing.</em></p>
-</div>
-<p><a id="topL"></a></p>
+  <p><a id="topL"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="working-with-the-cos-line-spread-function-lsf">
 <h1>Working with the COS Line Spread Function (LSF)<a class="headerlink" href="#working-with-the-cos-line-spread-function-lsf" title="Link to this heading">#</a></h1>
 <section id="learning-goals">
@@ -765,6 +759,11 @@ document.write(`
 
 <span class="c1"># Give the program the path to your downloaded data</span>
 <span class="n">fuvFile</span> <span class="o">=</span> <span class="n">download</span><span class="p">[</span><span class="s2">&quot;Local Path&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file data/mastDownload/HST/lcrs51010/lcrs51010_x1dsum.fits with expected size 1814400. [astroquery.query]
 </pre></div>
 </div>
 </div>
@@ -907,6 +906,16 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For the file data/mastDownload/HST/lcrs51010/lcrs51010_x1dsum.fits, the relevant parameters are: 
+DETECTOR = FUV
+OPT_ELEM = G130M
+LIFE_ADJ = 3
+CENWAVE = 1291
+DISPTAB = 5b919205l_disp.fits
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Now that you know <em>which</em> LSF files you need, we’ll go gather them from the COS team’s website:</strong></p>
 <p><font size="4 "><b>Where can you find the LSF files?</b></font>
@@ -1001,6 +1010,12 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloaded LSF file to data/aa_LSFTable_G130M_1291_LP3_cn.dat
+Downloaded DISPTAB file to data/5b919205l_disp.fits
+</pre></div>
+</div>
+</div>
 </div>
 <p><a id = lookL></a></p>
 </section>
@@ -1054,6 +1069,35 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: fuv
+</pre></div>
+</div>
+<div class="output text_html"><div><i>Table length=321</i>
+<table id="table139633363661200" class="table-striped table-bordered table-condensed">
+<thead><tr><th>1134</th><th>1139</th><th>1144</th><th>1149</th><th>1154</th></tr></thead>
+<thead><tr><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th></tr></thead>
+<tr><td>4.885797114010963e-06</td><td>4.787755984607906e-06</td><td>4.713489842513227e-06</td><td>4.735199692705489e-06</td><td>4.7784485923017495e-06</td></tr>
+<tr><td>4.916023102906068e-06</td><td>4.873309105308387e-06</td><td>4.752957668230419e-06</td><td>4.749528365900715e-06</td><td>4.8460096205578055e-06</td></tr>
+<tr><td>4.941950149310319e-06</td><td>4.954122351536572e-06</td><td>4.829737664959035e-06</td><td>4.819638005845053e-06</td><td>4.959435869169078e-06</td></tr>
+<tr><td>4.975031355401172e-06</td><td>5.043803066313383e-06</td><td>4.943558000555235e-06</td><td>4.944166202963326e-06</td><td>5.105983074318574e-06</td></tr>
+<tr><td>5.024945714942217e-06</td><td>5.132957330887238e-06</td><td>5.08655216831887e-06</td><td>5.110203690134147e-06</td><td>5.257588174065823e-06</td></tr>
+<tr><td>5.1062647374008795e-06</td><td>5.226843223712312e-06</td><td>5.249334040421822e-06</td><td>5.292011369183484e-06</td><td>5.4004601352656915e-06</td></tr>
+<tr><td>5.22334211429479e-06</td><td>5.329101494747061e-06</td><td>5.421819580311945e-06</td><td>5.476126509683101e-06</td><td>5.537769117220119e-06</td></tr>
+<tr><td>5.363562444717191e-06</td><td>5.438680038755283e-06</td><td>5.589977083978292e-06</td><td>5.661455266614987e-06</td><td>5.679786309281309e-06</td></tr>
+<tr><td>5.503054802394619e-06</td><td>5.554937875874203e-06</td><td>5.742187109577016e-06</td><td>5.841583683466683e-06</td><td>5.828667384063064e-06</td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>5.538829078895442e-06</td><td>5.61452382644541e-06</td><td>5.785171777030175e-06</td><td>5.938726800824539e-06</td><td>6.006545611677446e-06</td></tr>
+<tr><td>5.4710939230511685e-06</td><td>5.533244491994195e-06</td><td>5.726741058629339e-06</td><td>5.822288317661374e-06</td><td>5.894784543374904e-06</td></tr>
+<tr><td>5.387839481809153e-06</td><td>5.458103038764225e-06</td><td>5.6470377934756154e-06</td><td>5.691283605758636e-06</td><td>5.750873288909732e-06</td></tr>
+<tr><td>5.2992064517062305e-06</td><td>5.387313076900991e-06</td><td>5.540020267903346e-06</td><td>5.551977719200976e-06</td><td>5.5868670831158e-06</td></tr>
+<tr><td>5.221160697526395e-06</td><td>5.320366681451691e-06</td><td>5.415092210912367e-06</td><td>5.402179516688138e-06</td><td>5.4169404397396914e-06</td></tr>
+<tr><td>5.164281884145832e-06</td><td>5.2577636408949785e-06</td><td>5.289233084543136e-06</td><td>5.246140365509941e-06</td><td>5.258296979675213e-06</td></tr>
+<tr><td>5.127032374917626e-06</td><td>5.1935627777544765e-06</td><td>5.173617813851988e-06</td><td>5.106882557229389e-06</td><td>5.115096193521994e-06</td></tr>
+<tr><td>5.0992742707624055e-06</td><td>5.125375786306556e-06</td><td>5.076003036824709e-06</td><td>5.01082452583297e-06</td><td>4.988808887440265e-06</td></tr>
+<tr><td>5.061823427754464e-06</td><td>5.04372509224167e-06</td><td>4.984863851741219e-06</td><td>4.952955359048715e-06</td><td>4.883922635184996e-06</td></tr>
+<tr><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</table></div></div></div>
 </div>
 <p><a id = plotL></a></p>
 </section>
@@ -1084,6 +1128,9 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
             <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/7aec7c4f574b1886aa18c1a8934a4fc8e0f0be4cd35ba04e39b16c26e128ce74.png" src="../../../_images/7aec7c4f574b1886aa18c1a8934a4fc8e0f0be4cd35ba04e39b16c26e128ce74.png" />
 </div>
 </div>
 <p><strong>We’ll now make a more complex plot showing all of the lines contained in the LSF file, distributed in wavelength space.</strong></p>
@@ -1153,6 +1200,9 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/76f42e621fd6096418ef332a9315cf3f8c6ff7c4eb1152465642d2dd90b68e87.png" src="../../../_images/76f42e621fd6096418ef332a9315cf3f8c6ff7c4eb1152465642d2dd90b68e87.png" />
+</div>
 </div>
 <section id="we-will-also-demonstrate-all-of-the-above-for-a-nuv-dataset">
 <h4>We will also demonstrate all of the above for a NUV dataset:<a class="headerlink" href="#we-will-also-demonstrate-all-of-the-above-for-a-nuv-dataset" title="Link to this heading">#</a></h4>
@@ -1208,6 +1258,17 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file data/mastDownload/HST/lby606010/lby606010_x1dsum.fits with expected size 244800. [astroquery.query]
+For the file data/mastDownload/HST/lby606010/lby606010_x1dsum.fits, the relevant parameters are: 
+DETECTOR = NUV
+OPT_ELEM = G185M
+LIFE_ADJ = 1
+CENWAVE = 1921
+DISPTAB = 63p1559jl_disp.fits
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Downloading the disptab and LSF files:</strong></p>
 <div class="cell docutils container">
@@ -1219,12 +1280,23 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloaded LSF file to data/nuv_model_lsf.dat
+Downloaded DISPTAB file to data/63p1559jl_disp.fits
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Read in the NUV LSF kernels and plot them:</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read in the NUV LSF kernels:</span>
 <span class="n">lsf_nuv</span><span class="p">,</span> <span class="n">pix_nuv</span><span class="p">,</span> <span class="n">colnames_nuv</span> <span class="o">=</span> <span class="n">read_lsf</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">datadir</span> <span class="o">/</span> <span class="n">nuv_LSF_file_name</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: nuv
 </pre></div>
 </div>
 </div>
@@ -1251,6 +1323,9 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
             <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/437855c36768c7470f1101b774452ea63a31ef86bbbcff497c6c4e40f87e0397.png" src="../../../_images/437855c36768c7470f1101b774452ea63a31ef86bbbcff497c6c4e40f87e0397.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1301,6 +1376,9 @@ The COS team maintains up-to-date LSF files on the <a class="reference external"
             <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/826b86d777ce3fef29e467bfe1ef80eaead8be82eed8c4da713b1e192b551ab2.png" src="../../../_images/826b86d777ce3fef29e467bfe1ef80eaead8be82eed8c4da713b1e192b551ab2.png" />
 </div>
 </div>
 <p><a id = convL></a></p>
@@ -1569,6 +1647,12 @@ This effectively converts an LSF kernel from a function of pixel to a function o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: fuv
+</pre></div>
+</div>
+<img alt="../../../_images/a1c033bcd5f082b524b641708c326017d904ea87430d3abea5c963684a819b9d.png" src="../../../_images/a1c033bcd5f082b524b641708c326017d904ea87430d3abea5c963684a819b9d.png" />
+</div>
 </div>
 <p><a id = fnconvL></a></p>
 </section>
@@ -1699,6 +1783,11 @@ This effectively converts an LSF kernel from a function of pixel to a function o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: fuv
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1736,6 +1825,9 @@ This effectively converts an LSF kernel from a function of pixel to a function o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/fec89ecb9e1932b2b0c6a8f8e0965fcfd1f224d4f7c669fa8e205eb604dbe5a4.png" src="../../../_images/fec89ecb9e1932b2b0c6a8f8e0965fcfd1f224d4f7c669fa8e205eb604dbe5a4.png" />
+</div>
 </div>
 <p>As shown above, the LSF pushes power from the line’s peak into the wings of the line profile.</p>
 <p>And, as we confirm below, the total flux has not changed, but has just been spread out:</p>
@@ -1745,6 +1837,17 @@ This effectively converts an LSF kernel from a function of pixel to a function o
 <span class="n">integral2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">wvln_out</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">spec_out</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The integrated fluxes are within </span><span class="si">{</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">integral1</span><span class="o">-</span><span class="n">integral2</span><span class="p">)</span><span class="o">/</span><span class="n">integral2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> % of eachother&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The integrated fluxes are within 0.06 % of eachother
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2814/3203720875.py:1: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  integral1 = np.trapz(x=wvln_in, y=spec_in)
+/tmp/ipykernel_2814/3203720875.py:2: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  integral2 = np.trapz(x=wvln_out, y=spec_out)
 </pre></div>
 </div>
 </div>
@@ -1899,6 +2002,12 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: fuv
+</pre></div>
+</div>
+<img alt="../../../_images/8571626a0b2c5e6dd24c5a4ad290a5037a60e285575b927ea39af59e25928fad.png" src="../../../_images/8571626a0b2c5e6dd24c5a4ad290a5037a60e285575b927ea39af59e25928fad.png" />
+</div>
 </div>
 <p><strong>The figure above demonstrates the way in which the LSF changes significantly throughout the wavelength range of a spectrum.</strong></p>
 <p>It can be difficult to distinguish the LSFs plotted on their own; however, the results of their convolution with a synthetic line shows some are more sharply peaked, or contain more flux in the wings, etc.</p>
@@ -1970,6 +2079,19 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The integrated fluxes are within </span><span class="si">{</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">integral1</span><span class="o">-</span><span class="n">integral2</span><span class="p">)</span><span class="o">/</span><span class="n">integral2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> % of eachother&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: nuv
+The integrated fluxes are within 0.12 % of eachother
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2814/2282636597.py:60: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  integral1 = np.trapz(x=wvln_in, y=spec_in)
+/tmp/ipykernel_2814/2282636597.py:61: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  integral2 = np.trapz(x=wvln_out, y=spec_out)
+</pre></div>
+</div>
+<img alt="../../../_images/cae4902206e7b5b649bc415997dc44fde4896f87b566168fff3e88a211ce876b.png" src="../../../_images/cae4902206e7b5b649bc415997dc44fde4896f87b566168fff3e88a211ce876b.png" />
 </div>
 </div>
 <p><strong>And we’ll create an <em>NUV</em> equivalent of Fig. 3.3:</strong></p>
@@ -2102,6 +2224,12 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: nuv
+</pre></div>
+</div>
+<img alt="../../../_images/c244068832d2202fdc2a0c3e228e3ab2492a911df35125e98a9c717d07464d55.png" src="../../../_images/c244068832d2202fdc2a0c3e228e3ab2492a911df35125e98a9c717d07464d55.png" />
+</div>
 </div>
 <p><a id = stisL></a></p>
 </section>
@@ -2149,6 +2277,11 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file data/mastDownload/HST/o4wr11010/o4wr11010_x1d.fits with expected size 1716480. [astroquery.query]
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>We now read in the STIS spectrum.</strong></p>
 <p>This is a bit trickier than with the COS data, as there are many more segments of the STIS data (one per echelle order), each represented by a row of the table. We choose to combine them all here and sort by wavelength, but this may or may not be the right choice for your data. For more information on working with STIS data, see the <a class="reference external" href="https://hst-docs.stsci.edu/stisdhb">STIS Instrument Handbook</a>.</p>
@@ -2176,6 +2309,15 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: UnitsWarning: &#39;Angstroms&#39; did not parse as fits unit: At col 0, Unit &#39;Angstroms&#39; not supported by the FITS standard. Did you mean Angstrom or angstrom? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
+WARNING: UnitsWarning: &#39;Counts/s&#39; did not parse as fits unit: At col 0, Unit &#39;Counts&#39; not supported by the FITS standard. Did you mean count? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
+WARNING: UnitsWarning: &#39;Counts/s&#39; did not parse as fits unit: At col 0, Unit &#39;Counts&#39; not supported by the FITS standard. Did you mean count? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
+WARNING: UnitsWarning: &#39;Counts/s&#39; did not parse as fits unit: At col 0, Unit &#39;Counts&#39; not supported by the FITS standard. Did you mean count? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
+WARNING: UnitsWarning: &#39;Counts/s&#39; did not parse as fits unit: At col 0, Unit &#39;Counts&#39; not supported by the FITS standard. Did you mean count? If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html [astropy.units.core]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2187,6 +2329,11 @@ We do this by creating a <a class="reference external" href="https://en.wikipedi
     <span class="nb">str</span><span class="p">(</span><span class="n">datadir</span> <span class="o">/</span> <span class="n">LSF_file_name</span><span class="p">),</span>
     <span class="nb">str</span><span class="p">(</span><span class="n">datadir</span> <span class="o">/</span> <span class="n">param_dict</span><span class="p">[</span><span class="s2">&quot;DISPTAB&quot;</span><span class="p">]),</span>
 <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: fuv
 </pre></div>
 </div>
 </div>
@@ -2239,6 +2386,9 @@ We’ll first plot the entire spectrum:</p>
             <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/1b7017611814d07600d5b7ad508c02e13d648a4e5bd3ccbcf5124ede4fd3692f.png" src="../../../_images/1b7017611814d07600d5b7ad508c02e13d648a4e5bd3ccbcf5124ede4fd3692f.png" />
 </div>
 </div>
 <p>We can tell that the peaks have been cut shorter in the STIS convolved spectrum.</p>
@@ -2309,6 +2459,9 @@ We’ll first plot the entire spectrum:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/b99dc5aa44dab8f85d4bbad330cec88db81914b953927143c2357908ec4db881.png" src="../../../_images/b99dc5aa44dab8f85d4bbad330cec88db81914b953927143c2357908ec4db881.png" />
+</div>
 </div>
 <section id="we-ll-do-something-similar-again-for-the-nuv">
 <h4>We’ll do something similar again for the NUV:<a class="headerlink" href="#we-ll-do-something-similar-again-for-the-nuv" title="Link to this heading">#</a></h4>
@@ -2324,6 +2477,11 @@ We’ll first plot the entire spectrum:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file hlsp_ullyses_hst_stis_bi173_e230m_dr6_cspec.fits with expected size 417600. [astroquery.query]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2331,6 +2489,12 @@ We’ll first plot the entire spectrum:</p>
 <span class="n">nuv_cos_x1dsum</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">download_products</span><span class="p">(</span>
     <span class="n">Observations</span><span class="o">.</span><span class="n">get_product_list</span><span class="p">(</span><span class="n">Observations</span><span class="o">.</span><span class="n">query_criteria</span><span class="p">(</span><span class="n">obs_id</span><span class="o">=</span><span class="s2">&quot;LBY615010&quot;</span><span class="p">)),</span>
     <span class="n">mrp_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;Local Path&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: Found cached file ./mastDownload/HST/lby615010/lby615010_asn.fits with expected size 11520. [astroquery.query]
+INFO: Found cached file ./mastDownload/HST/lby615010/lby615010_x1dsum.fits with expected size 244800. [astroquery.query]
 </pre></div>
 </div>
 </div>
@@ -2365,6 +2529,14 @@ We’ll first plot the entire spectrum:</p>
                                               <span class="nb">str</span><span class="p">(</span><span class="n">datadir</span> <span class="o">/</span> <span class="n">nuv_LSF_file_name</span><span class="p">),</span>
                                               <span class="n">nuv_disptab_path</span><span class="p">,</span>
                                               <span class="n">detector</span><span class="o">=</span><span class="s2">&quot;NUV&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Detector used: nuv
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: hdu= was not specified but multiple tables are present, reading in first available table (hdu=1) [astropy.io.fits.connect]
 </pre></div>
 </div>
 </div>
@@ -2435,6 +2607,9 @@ We’ll first plot the entire spectrum:</p>
             <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/9ce28bba9c3eea6788fd3cf6ff8a6cd286e58d59ca9e19227447728e4d55aa2b.png" src="../../../_images/9ce28bba9c3eea6788fd3cf6ff8a6cd286e58d59ca9e19227447728e4d55aa2b.png" />
 </div>
 </div>
 </section>
